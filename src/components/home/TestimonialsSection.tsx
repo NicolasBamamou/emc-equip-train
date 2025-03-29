@@ -9,19 +9,19 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "EMC Training provided me with the skills I needed to secure a well-paying job as an excavator operator. The instructors were knowledgeable and supportive throughout my training.",
-    name: "Michael Johnson",
-    position: "Excavator Operator at Smith Construction"
+    quote: "EMC Formation m'a fourni les compétences dont j'avais besoin pour obtenir un emploi bien rémunéré en tant qu'opérateur d'excavatrice. Les instructeurs étaient compétents et m'ont soutenu tout au long de ma formation.",
+    name: "Michel Johnson",
+    position: "Opérateur d'Excavatrice chez Smith Construction"
   },
   {
-    quote: "After completing the crane operation certification program, I received multiple job offers. The hands-on training approach at EMC really prepared me for real-world work situations.",
+    quote: "Après avoir terminé le programme de certification d'opération de grue, j'ai reçu plusieurs offres d'emploi. L'approche pratique chez EMC m'a vraiment préparé pour des situations de travail réelles.",
     name: "Sarah Williams",
-    position: "Crane Operator at BuildRight Inc."
+    position: "Opératrice de Grue chez BuildRight Inc."
   },
   {
-    quote: "The bulldozer training program exceeded my expectations. The instructors were patient and ensured I mastered all the necessary skills before graduation.",
+    quote: "Le programme de formation pour bulldozer a dépassé mes attentes. Les instructeurs étaient patients et ont veillé à ce que je maîtrise toutes les compétences nécessaires avant l'obtention du diplôme.",
     name: "David Rodriguez",
-    position: "Heavy Equipment Operator at Jones Earthworks"
+    position: "Opérateur d'Équipement Lourd chez Jones Earthworks"
   }
 ];
 
@@ -30,9 +30,9 @@ const TestimonialsSection = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-heading">What Our Graduates Say</h2>
+          <h2 className="section-heading">Ce Que Disent Nos Diplômés</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Hear success stories from students who have completed our training programs and advanced their careers.
+            Découvrez les témoignages d'étudiants qui ont complété nos programmes de formation et ont fait progresser leur carrière.
           </p>
         </div>
 

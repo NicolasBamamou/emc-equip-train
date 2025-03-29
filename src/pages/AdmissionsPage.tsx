@@ -20,28 +20,28 @@ import { useToast } from '@/hooks/use-toast';
 const steps = [
   {
     number: 1,
-    title: "Submit Application",
-    description: "Complete our online application form with your personal information and program of interest."
+    title: "Soumettre la Demande",
+    description: "Complétez notre formulaire de demande en ligne avec vos informations personnelles et le programme qui vous intéresse."
   },
   {
     number: 2,
-    title: "Entrance Assessment",
-    description: "Complete a basic skills assessment to ensure you meet program requirements."
+    title: "Évaluation d'Entrée",
+    description: "Complétez une évaluation des compétences de base pour vous assurer que vous répondez aux exigences du programme."
   },
   {
     number: 3,
-    title: "Financial Planning",
-    description: "Meet with our financial aid office to explore payment options and potential assistance."
+    title: "Planification Financière",
+    description: "Rencontrez notre bureau d'aide financière pour explorer les options de paiement et l'assistance potentielle."
   },
   {
     number: 4,
-    title: "Enrollment",
-    description: "Sign enrollment agreement and make initial payment to secure your spot."
+    title: "Inscription",
+    description: "Signez l'accord d'inscription et effectuez le paiement initial pour garantir votre place."
   },
   {
     number: 5,
-    title: "Begin Training",
-    description: "Start your journey to becoming a certified heavy equipment operator!"
+    title: "Commencer la Formation",
+    description: "Débutez votre parcours pour devenir un opérateur d'équipement lourd certifié !"
   }
 ];
 
@@ -50,10 +50,10 @@ const AdmissionsPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would submit the form data to a server
+    // Dans une vraie application, ceci soumettrait les données du formulaire à un serveur
     toast({
-      title: "Application submitted",
-      description: "We've received your application and will contact you soon.",
+      title: "Demande soumise",
+      description: "Nous avons reçu votre demande et vous contacterons bientôt.",
     });
   };
 
@@ -67,7 +67,7 @@ const AdmissionsPage = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Admissions</h1>
               <p className="text-lg md:text-xl">
-                Your journey to a rewarding career in heavy equipment operation starts here.
+                Votre parcours vers une carrière enrichissante dans l'opération d'équipement lourd commence ici.
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@ const AdmissionsPage = () => {
         {/* Admissions Process */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="section-heading text-center mb-12">Our Admissions Process</h2>
+            <h2 className="section-heading text-center mb-12">Notre Processus d'Admission</h2>
             <div className="max-w-5xl mx-auto">
               <div className="relative">
                 {/* Process steps */}
@@ -116,93 +116,93 @@ const AdmissionsPage = () => {
         {/* Application Form */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="section-heading text-center mb-12">Apply Now</h2>
+            <h2 className="section-heading text-center mb-12">S'inscrire Maintenant</h2>
             <div className="max-w-3xl mx-auto">
               <Card>
                 <CardHeader>
-                  <CardTitle>Application Form</CardTitle>
+                  <CardTitle>Formulaire de Demande</CardTitle>
                   <CardDescription>
-                    Please complete the form below to begin your application process.
+                    Veuillez remplir le formulaire ci-dessous pour commencer votre processus de demande.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">First Name</Label>
-                        <Input id="firstName" placeholder="Enter your first name" required />
+                        <Label htmlFor="firstName">Prénom</Label>
+                        <Input id="firstName" placeholder="Entrez votre prénom" required />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="lastName">Last Name</Label>
-                        <Input id="lastName" placeholder="Enter your last name" required />
+                        <Label htmlFor="lastName">Nom</Label>
+                        <Input id="lastName" placeholder="Entrez votre nom" required />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="Enter your email" required />
+                        <Input id="email" type="email" placeholder="Entrez votre email" required />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="phone">Phone</Label>
-                        <Input id="phone" placeholder="Enter your phone number" required />
+                        <Label htmlFor="phone">Téléphone</Label>
+                        <Input id="phone" placeholder="Entrez votre numéro de téléphone" required />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="address">Address</Label>
-                      <Input id="address" placeholder="Enter your address" />
+                      <Label htmlFor="address">Adresse</Label>
+                      <Input id="address" placeholder="Entrez votre adresse" />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="city">City</Label>
-                        <Input id="city" placeholder="City" />
+                        <Label htmlFor="city">Ville</Label>
+                        <Input id="city" placeholder="Ville" />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="state">State</Label>
-                        <Input id="state" placeholder="State" />
+                        <Label htmlFor="state">Département</Label>
+                        <Input id="state" placeholder="Département" />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="zipCode">Zip Code</Label>
-                        <Input id="zipCode" placeholder="Zip Code" />
+                        <Label htmlFor="zipCode">Code Postal</Label>
+                        <Input id="zipCode" placeholder="Code Postal" />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="program">Program of Interest</Label>
+                      <Label htmlFor="program">Programme d'Intérêt</Label>
                       <Select>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select a program" />
+                          <SelectValue placeholder="Sélectionnez un programme" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="excavator">Excavator Operator Certification</SelectItem>
-                          <SelectItem value="bulldozer">Bulldozer Training Program</SelectItem>
-                          <SelectItem value="crane">Crane Operation Certification</SelectItem>
-                          <SelectItem value="forklift">Forklift Certification</SelectItem>
-                          <SelectItem value="backhoe">Backhoe Operator Training</SelectItem>
+                          <SelectItem value="excavator">Certification d'Opérateur d'Excavatrice</SelectItem>
+                          <SelectItem value="bulldozer">Programme de Formation Bulldozer</SelectItem>
+                          <SelectItem value="crane">Certification d'Opérateur de Grue</SelectItem>
+                          <SelectItem value="forklift">Certification Chariot Élévateur</SelectItem>
+                          <SelectItem value="backhoe">Formation d'Opérateur de Pelle Rétrocaveuse</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="startDate">Preferred Start Date</Label>
+                      <Label htmlFor="startDate">Date de Début Préférée</Label>
                       <Select>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select a preferred start date" />
+                          <SelectValue placeholder="Sélectionnez une date de début préférée" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="asap">As Soon As Possible</SelectItem>
-                          <SelectItem value="next-month">Within Next Month</SelectItem>
-                          <SelectItem value="1-3months">1-3 Months</SelectItem>
-                          <SelectItem value="3-6months">3-6 Months</SelectItem>
+                          <SelectItem value="asap">Dès Que Possible</SelectItem>
+                          <SelectItem value="next-month">Dans le Mois Prochain</SelectItem>
+                          <SelectItem value="1-3months">1-3 Mois</SelectItem>
+                          <SelectItem value="3-6months">3-6 Mois</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="experience">Relevant Experience</Label>
-                      <Textarea id="experience" placeholder="Please describe any relevant experience you have" />
+                      <Label htmlFor="experience">Expérience Pertinente</Label>
+                      <Textarea id="experience" placeholder="Veuillez décrire toute expérience pertinente que vous avez" />
                     </div>
 
                     <div className="flex items-start space-x-2">
@@ -212,15 +212,15 @@ const AdmissionsPage = () => {
                           htmlFor="terms"
                           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         >
-                          I agree to the terms and conditions
+                          J'accepte les conditions générales
                         </label>
                         <p className="text-sm text-gray-500">
-                          By submitting this form, you agree to our Privacy Policy and allow us to contact you regarding your application.
+                          En soumettant ce formulaire, vous acceptez notre Politique de Confidentialité et nous autorisez à vous contacter concernant votre demande.
                         </p>
                       </div>
                     </div>
 
-                    <Button type="submit" className="w-full">Submit Application</Button>
+                    <Button type="submit" className="w-full">Soumettre la Demande</Button>
                   </form>
                 </CardContent>
               </Card>

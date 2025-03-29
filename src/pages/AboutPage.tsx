@@ -6,24 +6,24 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const instructors = [
   {
-    name: "John Smith",
-    position: "Lead Instructor - Excavator Operation",
-    experience: "15+ years",
-    bio: "John brings over 15 years of field experience in excavator operation across construction, mining, and infrastructure projects.",
+    name: "Jean Dupont",
+    position: "Instructeur Principal - Opération d'Excavatrice",
+    experience: "15+ ans",
+    bio: "Jean apporte plus de 15 ans d'expérience terrain dans l'opération d'excavatrice à travers des projets de construction, d'exploitation minière et d'infrastructure.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300&h=300"
   },
   {
-    name: "Maria Rodriguez",
-    position: "Senior Instructor - Crane Operation",
-    experience: "12+ years",
-    bio: "Maria specializes in tower and mobile crane operation with extensive experience in high-rise construction projects.",
+    name: "Marie Rodriguez",
+    position: "Instructrice Sénior - Opération de Grue",
+    experience: "12+ ans",
+    bio: "Marie est spécialisée dans l'opération de grues à tour et mobiles avec une vaste expérience dans les projets de construction de grande hauteur.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=300&h=300"
   },
   {
     name: "Robert Johnson",
-    position: "Instructor - Bulldozer & Grader Operation",
-    experience: "10+ years",
-    bio: "Robert has worked extensively in land development and road construction, mastering various earthmoving equipment.",
+    position: "Instructeur - Opération de Bulldozer et Niveleuse",
+    experience: "10+ ans",
+    bio: "Robert a travaillé intensivement dans le développement de terrains et la construction de routes, maîtrisant divers équipements de terrassement.",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300&h=300"
   }
 ];
@@ -37,9 +37,9 @@ const AboutPage = () => {
         <section className="bg-gray-900 text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">About EMC Training</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos d'EMC Formation</h1>
               <p className="text-lg md:text-xl">
-                Building careers and shaping the future of heavy equipment operation through excellence in training.
+                Construire des carrières et façonner l'avenir de l'opération d'équipement lourd grâce à l'excellence en formation.
               </p>
             </div>
           </div>
@@ -49,16 +49,16 @@ const AboutPage = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="section-heading text-center">Our Story</h2>
+              <h2 className="section-heading text-center">Notre Histoire</h2>
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <p className="mb-4 text-lg">
-                  Established in 2005, EMC Training began with a simple mission: to provide high-quality heavy equipment operator training that meets real industry needs. Our founder, Michael Thompson, noticed a gap between what was being taught in training programs and what employers actually needed from operators.
+                  Établie en 2005, EMC Formation a débuté avec une mission simple : fournir une formation d'opérateur d'équipement lourd de haute qualité qui répond aux besoins réels de l'industrie. Notre fondateur, Michel Thompson, a remarqué un écart entre ce qui était enseigné dans les programmes de formation et ce que les employeurs attendaient réellement des opérateurs.
                 </p>
                 <p className="mb-4 text-lg">
-                  Starting with just two pieces of equipment and a small training yard, EMC Training has grown into one of the region's premier heavy equipment training facilities. Today, we operate a 10-acre training ground with a fleet of modern equipment and classroom facilities designed to provide both theoretical knowledge and practical skills.
+                  Commençant avec seulement deux équipements et un petit terrain d'entraînement, EMC Formation est devenue l'une des principales installations de formation en équipement lourd de la région. Aujourd'hui, nous exploitons un terrain d'entraînement de 4 hectares avec une flotte d'équipements modernes et des salles de classe conçues pour fournir à la fois des connaissances théoriques et des compétences pratiques.
                 </p>
                 <p className="text-lg">
-                  Over the years, we've helped thousands of students launch successful careers in heavy equipment operation, maintaining our commitment to excellence, safety, and hands-on learning throughout our growth.
+                  Au fil des années, nous avons aidé des milliers d'étudiants à lancer des carrières réussies dans l'opération d'équipement lourd, maintenant notre engagement envers l'excellence, la sécurité et l'apprentissage pratique tout au long de notre croissance.
                 </p>
               </div>
             </div>
@@ -68,32 +68,32 @@ const AboutPage = () => {
         {/* Our Mission & Values */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="section-heading text-center mb-12">Our Mission & Values</h2>
+            <h2 className="section-heading text-center mb-12">Notre Mission & Nos Valeurs</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="text-2xl font-bold mb-4 text-primary">Our Mission</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-primary">Notre Mission</h3>
                   <p>
-                    To provide industry-leading heavy equipment operator training that emphasizes safety, practical skills, and career readiness, preparing our graduates to make immediate contributions to their employers and the industry.
+                    Fournir une formation d'opérateur d'équipement lourd de premier plan qui met l'accent sur la sécurité, les compétences pratiques et la préparation à la carrière, préparant nos diplômés à apporter des contributions immédiates à leurs employeurs et à l'industrie.
                   </p>
                 </CardContent>
               </Card>
               
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="text-2xl font-bold mb-4 text-primary">Our Values</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-primary">Nos Valeurs</h3>
                   <ul className="space-y-2">
                     <li>
-                      <span className="font-semibold">Safety First:</span> We embed safety consciousness in every aspect of our training.
+                      <span className="font-semibold">La Sécurité d'Abord:</span> Nous intégrons la conscience de la sécurité dans chaque aspect de notre formation.
                     </li>
                     <li>
-                      <span className="font-semibold">Hands-on Learning:</span> We believe that practical experience is essential to mastery.
+                      <span className="font-semibold">Apprentissage Pratique:</span> Nous croyons que l'expérience pratique est essentielle à la maîtrise.
                     </li>
                     <li>
-                      <span className="font-semibold">Industry Relevance:</span> Our curriculum evolves with industry needs and technological advances.
+                      <span className="font-semibold">Pertinence pour l'Industrie:</span> Notre programme évolue avec les besoins de l'industrie et les avancées technologiques.
                     </li>
                     <li>
-                      <span className="font-semibold">Student Success:</span> We measure our success by the career achievements of our graduates.
+                      <span className="font-semibold">Réussite des Étudiants:</span> Nous mesurons notre succès par les réalisations professionnelles de nos diplômés.
                     </li>
                   </ul>
                 </CardContent>
@@ -105,7 +105,7 @@ const AboutPage = () => {
         {/* Our Instructors */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="section-heading text-center mb-12">Meet Our Expert Instructors</h2>
+            <h2 className="section-heading text-center mb-12">Rencontrez Nos Instructeurs Experts</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {instructors.map((instructor, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -119,7 +119,7 @@ const AboutPage = () => {
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-1">{instructor.name}</h3>
                     <p className="text-primary font-medium mb-2">{instructor.position}</p>
-                    <p className="text-gray-600 mb-3">Experience: {instructor.experience}</p>
+                    <p className="text-gray-600 mb-3">Expérience: {instructor.experience}</p>
                     <p>{instructor.bio}</p>
                   </div>
                 </div>

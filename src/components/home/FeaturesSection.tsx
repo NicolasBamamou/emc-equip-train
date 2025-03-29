@@ -5,23 +5,23 @@ import { Award, Calendar, Users, Clock } from 'lucide-react';
 const features = [
   {
     icon: <Award className="h-10 w-10 text-primary" />,
-    title: "Industry-Recognized Certifications",
-    description: "Our programs lead to certifications that are recognized and respected throughout the heavy equipment industry."
+    title: "Certifications Reconnues par l'Industrie",
+    description: "Nos programmes mènent à des certifications qui sont reconnues et respectées dans toute l'industrie des équipements lourds."
   },
   {
     icon: <Calendar className="h-10 w-10 text-primary" />,
-    title: "Flexible Scheduling",
-    description: "Choose from day, evening, and weekend classes to fit training into your busy life."
+    title: "Horaires Flexibles",
+    description: "Choisissez parmi des cours de jour, du soir et de fin de semaine pour adapter la formation à votre vie bien remplie."
   },
   {
     icon: <Users className="h-10 w-10 text-primary" />,
-    title: "Expert Instructors",
-    description: "Learn from certified instructors with years of real-world experience in heavy equipment operation."
+    title: "Instructeurs Experts",
+    description: "Apprenez auprès d'instructeurs certifiés possédant des années d'expérience concrète dans l'opération d'équipements lourds."
   },
   {
     icon: <Clock className="h-10 w-10 text-primary" />,
-    title: "Fast-Track Programs",
-    description: "Get trained and certified in as little as 3-6 weeks, depending on the program."
+    title: "Programmes Accélérés",
+    description: "Soyez formé et certifié en aussi peu que 3 à 6 semaines, selon le programme."
   }
 ];
 
@@ -30,9 +30,9 @@ const FeaturesSection = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-heading">Why Choose EMC Training?</h2>
+          <h2 className="section-heading">Pourquoi Choisir EMC Formation ?</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We offer comprehensive training programs designed to prepare you for a successful career in heavy equipment operation.
+            Nous offrons des programmes de formation complets conçus pour vous préparer à une carrière réussie dans l'opération d'équipements lourds.
           </p>
         </div>
 

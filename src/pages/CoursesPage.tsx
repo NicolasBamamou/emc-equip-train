@@ -14,98 +14,98 @@ import {
 const courses = [
   {
     id: "excavator",
-    title: "Excavator Operator Certification",
-    duration: "4 Weeks",
-    level: "Beginner to Advanced",
-    price: "$2,995",
+    title: "Certification d'Opérateur d'Excavatrice",
+    duration: "4 Semaines",
+    level: "Débutant à Avancé",
+    price: "2 995 €",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80",
-    description: "Master the operation of hydraulic excavators in various construction and earthmoving contexts.",
+    description: "Maîtrisez l'opération d'excavateurs hydrauliques dans divers contextes de construction et de terrassement.",
     topics: [
-      "Excavator types and components",
-      "Pre-operation inspection and safety protocols",
-      "Basic operating techniques and controls",
-      "Trenching and grading operations",
-      "Loading techniques and material handling",
-      "Advanced maneuvers and precision digging",
-      "Maintenance basics and troubleshooting"
+      "Types et composants d'excavateurs",
+      "Inspection pré-opération et protocoles de sécurité",
+      "Techniques d'opération de base et contrôles",
+      "Opérations de creusement de tranchées et de nivellement",
+      "Techniques de chargement et manutention de matériaux",
+      "Manœuvres avancées et excavation de précision",
+      "Bases de maintenance et dépannage"
     ],
-    certification: "NCCER Heavy Equipment Operations - Excavator"
+    certification: "NCCER Opérations d'Équipement Lourd - Excavateur"
   },
   {
     id: "bulldozer",
-    title: "Bulldozer Training Program",
-    duration: "3 Weeks",
-    level: "Beginner to Intermediate",
-    price: "$2,495",
+    title: "Programme de Formation Bulldozer",
+    duration: "3 Semaines",
+    level: "Débutant à Intermédiaire",
+    price: "2 495 €",
     image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&q=80",
-    description: "Learn to operate bulldozers safely and effectively for land clearing, grading, and material handling operations.",
+    description: "Apprenez à utiliser les bulldozers de manière sûre et efficace pour le défrichage, le nivellement et les opérations de manutention de matériaux.",
     topics: [
-      "Bulldozer types and applications",
-      "Safety procedures and risk management",
-      "Basic operating techniques",
-      "Slot dozing and push loading",
-      "Slope work and finishing techniques",
-      "Grade checking and interpretation",
-      "Basic maintenance procedures"
+      "Types et applications de bulldozers",
+      "Procédures de sécurité et gestion des risques",
+      "Techniques d'opération de base",
+      "Refend et chargement par poussée",
+      "Travail en pente et techniques de finition",
+      "Vérification et interprétation de niveau",
+      "Procédures de maintenance de base"
     ],
-    certification: "NCCER Heavy Equipment Operations - Bulldozer"
+    certification: "NCCER Opérations d'Équipement Lourd - Bulldozer"
   },
   {
     id: "crane",
-    title: "Crane Operation Certification",
-    duration: "6 Weeks",
-    level: "Intermediate to Advanced",
-    price: "$3,995",
+    title: "Certification d'Opérateur de Grue",
+    duration: "6 Semaines",
+    level: "Intermédiaire à Avancé",
+    price: "3 995 €",
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80",
-    description: "Comprehensive training on mobile crane operation, safety protocols, and load management.",
+    description: "Formation complète sur l'opération de grues mobiles, les protocoles de sécurité et la gestion des charges.",
     topics: [
-      "Crane types and components",
-      "Load charts and capacity calculations",
-      "Site assessment and setup procedures",
-      "Rigging techniques and load securing",
-      "Signaling and communication",
-      "Critical lift planning",
-      "Emergency procedures and troubleshooting"
+      "Types et composants de grues",
+      "Tableaux de charge et calculs de capacité",
+      "Évaluation et procédures d'installation du site",
+      "Techniques de gréage et sécurisation des charges",
+      "Signalisation et communication",
+      "Planification de levage critique",
+      "Procédures d'urgence et dépannage"
     ],
-    certification: "NCCCO Mobile Crane Operator Certification"
+    certification: "Certification NCCCO d'Opérateur de Grue Mobile"
   },
   {
     id: "forklift",
-    title: "Forklift Certification",
-    duration: "1 Week",
-    level: "Beginner",
-    price: "$995",
+    title: "Certification Chariot Élévateur",
+    duration: "1 Semaine",
+    level: "Débutant",
+    price: "995 €",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80",
-    description: "Learn to safely operate forklifts in warehouse, construction, and industrial settings.",
+    description: "Apprenez à utiliser en toute sécurité les chariots élévateurs dans des environnements d'entrepôt, de construction et industriels.",
     topics: [
-      "Forklift types and applications",
-      "OSHA regulations and safety requirements",
-      "Pre-operation inspection procedures",
-      "Load handling and stability principles",
-      "Maneuvering in tight spaces",
-      "Stacking and unstacking procedures",
-      "Refueling/recharging procedures"
+      "Types et applications de chariots élévateurs",
+      "Réglementations OSHA et exigences de sécurité",
+      "Procédures d'inspection pré-opération",
+      "Principes de manutention des charges et de stabilité",
+      "Manœuvres dans des espaces restreints",
+      "Procédures d'empilage et de désempilage",
+      "Procédures de ravitaillement/recharge"
     ],
-    certification: "OSHA Compliant Forklift Operator Certification"
+    certification: "Certification d'Opérateur de Chariot Élévateur Conforme à l'OSHA"
   },
   {
     id: "backhoe",
-    title: "Backhoe Operator Training",
-    duration: "3 Weeks",
-    level: "Beginner to Intermediate",
-    price: "$2,495",
+    title: "Formation d'Opérateur de Pelle Rétrocaveuse",
+    duration: "3 Semaines",
+    level: "Débutant à Intermédiaire",
+    price: "2 495 €",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80",
-    description: "Master the operation of backhoe loaders for excavation, trenching, and material handling.",
+    description: "Maîtrisez l'opération de chargeuses-pelleteuses pour l'excavation, le creusement de tranchées et la manutention de matériaux.",
     topics: [
-      "Backhoe components and controls",
-      "Safety procedures and hazard awareness",
-      "Loader operation techniques",
-      "Excavator operation techniques",
-      "Trenching and backfilling procedures",
-      "Material handling and loading trucks",
-      "Basic maintenance and troubleshooting"
+      "Composants et commandes de la pelle rétrocaveuse",
+      "Procédures de sécurité et sensibilisation aux dangers",
+      "Techniques d'opération de chargeur",
+      "Techniques d'opération d'excavateur",
+      "Procédures de tranchée et de remblayage",
+      "Manutention des matériaux et chargement de camions",
+      "Maintenance de base et dépannage"
     ],
-    certification: "NCCER Heavy Equipment Operations - Backhoe"
+    certification: "NCCER Opérations d'Équipement Lourd - Pelle Rétrocaveuse"
   }
 ];
 
@@ -118,9 +118,9 @@ const CoursesPage = () => {
         <section className="bg-gray-900 text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Training Programs</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Nos Programmes de Formation</h1>
               <p className="text-lg md:text-xl">
-                Comprehensive heavy equipment training programs taught by industry experts using modern equipment.
+                Des programmes complets de formation d'équipement lourd enseignés par des experts de l'industrie utilisant des équipements modernes.
               </p>
             </div>
           </div>
@@ -130,9 +130,9 @@ const CoursesPage = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="mb-12">
-              <h2 className="section-heading text-center">Available Courses</h2>
+              <h2 className="section-heading text-center">Formations Disponibles</h2>
               <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto">
-                Select from our range of certification programs designed to prepare you for a successful career in heavy equipment operation.
+                Sélectionnez parmi notre gamme de programmes de certification conçus pour vous préparer à une carrière réussie dans l'opération d'équipement lourd.
               </p>
             </div>
 
@@ -154,19 +154,19 @@ const CoursesPage = () => {
                     <h3 className="text-2xl font-bold mb-2">{course.title}</h3>
                     <div className="flex flex-wrap gap-4 mb-4">
                       <span className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">
-                        Duration: {course.duration}
+                        Durée: {course.duration}
                       </span>
                       <span className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">
-                        Level: {course.level}
+                        Niveau: {course.level}
                       </span>
                       <span className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">
-                        Price: {course.price}
+                        Prix: {course.price}
                       </span>
                     </div>
                     <p className="text-gray-700 mb-4">{course.description}</p>
                     <Accordion type="single" collapsible className="mb-4">
                       <AccordionItem value="topics">
-                        <AccordionTrigger>What You'll Learn</AccordionTrigger>
+                        <AccordionTrigger>Ce Que Vous Apprendrez</AccordionTrigger>
                         <AccordionContent>
                           <ul className="list-disc pl-5 space-y-1">
                             {course.topics.map((topic, i) => (
@@ -184,10 +184,10 @@ const CoursesPage = () => {
                     </Accordion>
                     <div className="flex gap-4">
                       <Button asChild>
-                        <Link to="/admissions">Apply Now</Link>
+                        <Link to="/admissions">S'inscrire</Link>
                       </Button>
                       <Button variant="outline" asChild>
-                        <Link to="/contact">Request Info</Link>
+                        <Link to="/contact">Demander des Informations</Link>
                       </Button>
                     </div>
                   </div>

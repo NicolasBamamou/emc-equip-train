@@ -17,19 +17,19 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">EMC Training</h1>
+            <h1 className="text-2xl font-bold text-primary">EMC Formation</h1>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/" className="font-medium text-gray-700 hover:text-primary transition-colors">
-              Home
+              Accueil
             </Link>
             <Link to="/about" className="font-medium text-gray-700 hover:text-primary transition-colors">
-              About Us
+              À Propos
             </Link>
             <Link to="/courses" className="font-medium text-gray-700 hover:text-primary transition-colors">
-              Courses
+              Formations
             </Link>
             <Link to="/admissions" className="font-medium text-gray-700 hover:text-primary transition-colors">
               Admissions
@@ -41,7 +41,7 @@ const Header = () => {
               Contact
             </Link>
             <Button asChild className="ml-4">
-              <Link to="/admissions">Apply Now</Link>
+              <Link to="/admissions">S'inscrire</Link>
             </Button>
           </nav>
 
@@ -65,21 +65,21 @@ const Header = () => {
               className="block font-medium text-gray-700 hover:text-primary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Home
+              Accueil
             </Link>
             <Link 
               to="/about" 
               className="block font-medium text-gray-700 hover:text-primary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About Us
+              À Propos
             </Link>
             <Link 
               to="/courses" 
               className="block font-medium text-gray-700 hover:text-primary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Courses
+              Formations
             </Link>
             <Link 
               to="/admissions" 
@@ -103,7 +103,7 @@ const Header = () => {
               Contact
             </Link>
             <Button asChild className="w-full mt-2">
-              <Link to="/admissions" onClick={() => setMobileMenuOpen(false)}>Apply Now</Link>
+              <Link to="/admissions" onClick={() => setMobileMenuOpen(false)}>S'inscrire</Link>
             </Button>
           </nav>
         )}

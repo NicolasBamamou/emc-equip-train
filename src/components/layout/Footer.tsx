@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">EMC Training</h3>
+            <h3 className="text-xl font-bold mb-4">EMC Formation</h3>
             <p className="mb-4">
-              EMC Training is dedicated to providing high-quality heavy equipment operator training that transforms lives and ensures workplace safety and excellence.
+              EMC Formation est dédiée à fournir une formation d'opérateur d'équipement lourd de haute qualité qui transforme des vies et assure la sécurité et l'excellence sur le lieu de travail.
             </p>
             <div className="flex space-x-3">
               <a href="https://facebook.com" aria-label="Facebook" className="hover:text-blue-400 transition-colors">
@@ -32,11 +32,11 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4">Liens Rapides</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
-              <li><Link to="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link to="/courses" className="hover:text-blue-400 transition-colors">Courses</Link></li>
+              <li><Link to="/" className="hover:text-blue-400 transition-colors">Accueil</Link></li>
+              <li><Link to="/about" className="hover:text-blue-400 transition-colors">À Propos</Link></li>
+              <li><Link to="/courses" className="hover:text-blue-400 transition-colors">Formations</Link></li>
               <li><Link to="/admissions" className="hover:text-blue-400 transition-colors">Admissions</Link></li>
               <li><Link to="/blog" className="hover:text-blue-400 transition-colors">Blog</Link></li>
               <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
@@ -45,23 +45,23 @@ const Footer = () => {
 
           {/* Courses */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Our Courses</h3>
+            <h3 className="text-xl font-bold mb-4">Nos Formations</h3>
             <ul className="space-y-2">
-              <li><Link to="/courses#excavator" className="hover:text-blue-400 transition-colors">Excavator Operation</Link></li>
-              <li><Link to="/courses#bulldozer" className="hover:text-blue-400 transition-colors">Bulldozer Training</Link></li>
-              <li><Link to="/courses#crane" className="hover:text-blue-400 transition-colors">Crane Operation</Link></li>
-              <li><Link to="/courses#forklift" className="hover:text-blue-400 transition-colors">Forklift Certification</Link></li>
-              <li><Link to="/courses#backhoe" className="hover:text-blue-400 transition-colors">Backhoe Operation</Link></li>
+              <li><Link to="/courses#excavator" className="hover:text-blue-400 transition-colors">Opérateur d'Excavatrice</Link></li>
+              <li><Link to="/courses#bulldozer" className="hover:text-blue-400 transition-colors">Formation Bulldozer</Link></li>
+              <li><Link to="/courses#crane" className="hover:text-blue-400 transition-colors">Opérateur de Grue</Link></li>
+              <li><Link to="/courses#forklift" className="hover:text-blue-400 transition-colors">Certification Chariot Élévateur</Link></li>
+              <li><Link to="/courses#backhoe" className="hover:text-blue-400 transition-colors">Opérateur de Pelle Rétrocaveuse</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4">Contactez-Nous</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
-                <span>123 Training Avenue, Equipment City, EC 12345</span>
+                <span>123 Avenue de Formation, Ville d'Équipement, EC 12345</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 flex-shrink-0" />
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 flex-shrink-0" />
-                <span>info@emctraining.com</span>
+                <span>info@emcformation.com</span>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-6">
           <p className="text-center text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} EMC Training. All rights reserved.
+            &copy; {new Date().getFullYear()} EMC Formation. Tous droits réservés.
           </p>
         </div>
       </div>

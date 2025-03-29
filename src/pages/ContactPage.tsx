@@ -17,8 +17,8 @@ const ContactPage = () => {
     e.preventDefault();
     // In a real application, this would submit the form data to a server
     toast({
-      title: "Message sent",
-      description: "We've received your message and will get back to you soon.",
+      title: "Message envoyé",
+      description: "Nous avons reçu votre message et vous répondrons bientôt.",
     });
   };
 
@@ -30,9 +30,9 @@ const ContactPage = () => {
         <section className="bg-gray-900 text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Contactez-Nous</h1>
               <p className="text-lg md:text-xl">
-                Have questions? We're here to help. Reach out to our team for more information about our training programs.
+                Vous avez des questions ? Nous sommes là pour vous aider. Contactez notre équipe pour plus d'informations sur nos programmes de formation.
               </p>
             </div>
           </div>
@@ -47,7 +47,7 @@ const ContactPage = () => {
                   <div className="p-3 rounded-full bg-primary/10 mb-4">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className="mb-2">Phone</CardTitle>
+                  <CardTitle className="mb-2">Téléphone</CardTitle>
                   <p>(123) 456-7890</p>
                 </CardContent>
               </Card>
@@ -58,7 +58,7 @@ const ContactPage = () => {
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="mb-2">Email</CardTitle>
-                  <p>info@emctraining.com</p>
+                  <p>info@emcformation.com</p>
                 </CardContent>
               </Card>
 
@@ -67,8 +67,8 @@ const ContactPage = () => {
                   <div className="p-3 rounded-full bg-primary/10 mb-4">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className="mb-2">Location</CardTitle>
-                  <p>123 Training Avenue<br />Equipment City, EC 12345</p>
+                  <CardTitle className="mb-2">Adresse</CardTitle>
+                  <p>123 Avenue de Formation<br />Ville d'Équipement, EC 12345</p>
                 </CardContent>
               </Card>
 
@@ -77,8 +77,8 @@ const ContactPage = () => {
                   <div className="p-3 rounded-full bg-primary/10 mb-4">
                     <Clock className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className="mb-2">Hours</CardTitle>
-                  <p>Monday-Friday: 8AM-6PM<br />Saturday: 8AM-2PM</p>
+                  <CardTitle className="mb-2">Horaires</CardTitle>
+                  <p>Lundi-Vendredi: 8h-18h<br />Samedi: 8h-14h</p>
                 </CardContent>
               </Card>
             </div>
@@ -92,32 +92,32 @@ const ContactPage = () => {
               {/* Contact Form */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Send Us a Message</CardTitle>
+                  <CardTitle>Envoyez-Nous un Message</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Name</Label>
-                        <Input id="name" placeholder="Your name" required />
+                        <Label htmlFor="name">Nom</Label>
+                        <Input id="name" placeholder="Votre nom" required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="Your email" required />
+                        <Input id="email" type="email" placeholder="Votre email" required />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="subject">Subject</Label>
-                      <Input id="subject" placeholder="Message subject" required />
+                      <Label htmlFor="subject">Sujet</Label>
+                      <Input id="subject" placeholder="Sujet du message" required />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="message">Message</Label>
-                      <Textarea id="message" placeholder="Your message" rows={6} required />
+                      <Textarea id="message" placeholder="Votre message" rows={6} required />
                     </div>
 
-                    <Button type="submit">Send Message</Button>
+                    <Button type="submit">Envoyer Message</Button>
                   </form>
                 </CardContent>
               </Card>
@@ -125,7 +125,7 @@ const ContactPage = () => {
               {/* Google Map */}
               <div className="h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
                 <iframe 
-                  title="EMC Training Location"
+                  title="EMC Formation Location"
                   className="w-full h-full border-0"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1623185945115!5m2!1sen!2sca" 
                   allowFullScreen={true}

@@ -13,23 +13,23 @@ import {
 
 const courses = [
   {
-    title: "Excavator Operator",
-    description: "Master the operation of excavators with our comprehensive training program.",
-    duration: "4 weeks",
+    title: "Opérateur d'Excavatrice",
+    description: "Maîtrisez l'opération d'excavatrices avec notre programme de formation complet.",
+    duration: "4 semaines",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80",
     link: "/courses#excavator"
   },
   {
-    title: "Bulldozer Training",
-    description: "Learn to operate bulldozers safely and efficiently in various work environments.",
-    duration: "3 weeks",
+    title: "Formation Bulldozer",
+    description: "Apprenez à utiliser les bulldozers de manière sûre et efficace dans divers environnements de travail.",
+    duration: "3 semaines",
     image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&q=80",
     link: "/courses#bulldozer"
   },
   {
-    title: "Crane Operation",
-    description: "Comprehensive training on crane operation safety and techniques.",
-    duration: "6 weeks",
+    title: "Opérateur de Grue",
+    description: "Formation complète sur la sécurité et les techniques d'opération de grues.",
+    duration: "6 semaines",
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80",
     link: "/courses#crane"
   }
@@ -40,9 +40,9 @@ const CoursesSection = () => {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-heading">Featured Courses</h2>
+          <h2 className="section-heading">Formations Vedettes</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our most popular heavy equipment training programs designed to launch your career.
+            Explorez nos programmes de formation d'équipement lourd les plus populaires conçus pour lancer votre carrière.
           </p>
         </div>
 
@@ -58,14 +58,14 @@ const CoursesSection = () => {
               </div>
               <CardHeader>
                 <CardTitle>{course.title}</CardTitle>
-                <CardDescription>Duration: {course.duration}</CardDescription>
+                <CardDescription>Durée: {course.duration}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p>{course.description}</p>
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full">
-                  <Link to={course.link}>Learn More</Link>
+                  <Link to={course.link}>En Savoir Plus</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -74,7 +74,7 @@ const CoursesSection = () => {
 
         <div className="text-center mt-10">
           <Button asChild variant="outline" size="lg">
-            <Link to="/courses">View All Courses</Link>
+            <Link to="/courses">Voir Toutes les Formations</Link>
           </Button>
         </div>
       </div>
