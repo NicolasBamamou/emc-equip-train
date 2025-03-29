@@ -15,7 +15,7 @@ const Footer = () => {
               EMC Formation est dédiée à fournir une formation d'opérateur d'équipement lourd de haute qualité qui transforme des vies et assure la sécurité et l'excellence sur le lieu de travail.
             </p>
             <div className="flex space-x-3">
-              <a href="https://facebook.com" aria-label="Facebook" className="hover:text-blue-400 transition-colors">
+              <a href="https://www.facebook.com/share/1DccwFtXpe/" aria-label="Facebook" className="hover:text-blue-400 transition-colors">
                 <Facebook size={20} />
               </a>
               <a href="https://twitter.com" aria-label="Twitter" className="hover:text-blue-400 transition-colors">
@@ -61,15 +61,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
-                <span>123 Avenue de Formation, Ville d'Équipement, EC 12345</span>
+                <span>Boké Vile Zone minière, Baralande N0.14, ECM 12345</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 flex-shrink-0" />
-                <span>(123) 456-7890</span>
+                <span>(+224) 626-250-624</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 flex-shrink-0" />
-                <span>info@emcformation.com</span>
+                <span>espertiseminingconsulting@gmail.com</span>
               </li>
             </ul>
           </div>
