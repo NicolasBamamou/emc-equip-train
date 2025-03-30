@@ -32,37 +32,37 @@ const AboutPage = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section with Animated Background Images */}
-        <section className="relative py-20">
-          <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Hero Section with Fading Images */}
+        <section className="relative min-h-[300px] flex items-center">
+          <div className="absolute inset-0 z-0">
             <div className="hero-bg-overlay" />
-            <div className="absolute inset-0 flex">
-              <div className="w-1/3 h-full overflow-hidden">
+            <div className="absolute inset-0">
+              <div className="absolute inset-0">
                 <img
                   src="/emc-equip-train/images/Excavator.png"
                   alt=""
-                  className="hero-image animate-zoom-1"
+                  className="w-full h-full object-cover animate-fade-1"
                 />
               </div>
-              <div className="w-1/3 h-full overflow-hidden">
+              <div className="absolute inset-0">
                 <img
                   src="/emc-equip-train/images/Loader.png"
                   alt=""
-                  className="hero-image animate-zoom-2"
+                  className="w-full h-full object-cover animate-fade-2"
                 />
               </div>
-              <div className="w-1/3 h-full overflow-hidden">
+              <div className="absolute inset-0">
                 <img
                   src="/emc-equip-train/images/Dozer.png"
                   alt=""
-                  className="hero-image animate-zoom-3"
+                  className="w-full h-full object-cover animate-fade-3"
                 />
               </div>
             </div>
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos de Experise Mining Consulting (EMC) </h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos de Experise Mining Consulting (EMC)</h1>
               <p className="text-lg md:text-xl text-gray-200">
                 Leader dans la formation d'opérateurs d'équipements lourds en Guinée
               </p>

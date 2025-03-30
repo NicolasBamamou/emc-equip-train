@@ -4,21 +4,28 @@ import { Button } from '@/components/ui/button';
 const HeroSection = () => {
   return (
     <div className="relative bg-gray-900 text-white min-h-[600px] flex items-center">
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0">
         <div className="hero-bg-overlay" />
-        <div className="absolute inset-0 flex">
-          <div className="w-1/2 h-full overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0">
             <img
               src="/emc-equip-train/images/Excavator.png"
               alt=""
-              className="hero-image animate-slide-left"
+              className="w-full h-full object-cover animate-fade-1"
             />
           </div>
-          <div className="w-1/2 h-full overflow-hidden">
+          <div className="absolute inset-0">
             <img
               src="/emc-equip-train/images/Loader.png"
               alt=""
-              className="hero-image animate-slide-right"
+              className="w-full h-full object-cover animate-fade-2"
+            />
+          </div>
+          <div className="absolute inset-0">
+            <img
+              src="/emc-equip-train/images/Dozer.png"
+              alt=""
+              className="w-full h-full object-cover animate-fade-3"
             />
           </div>
         </div>
