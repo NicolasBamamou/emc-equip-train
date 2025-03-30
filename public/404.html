@@ -5,9 +5,10 @@
     <title>EMC Formation</title>
     <script>
       (function() {
-        const path = window.location.pathname.slice(1);
-        localStorage.setItem('path', path);
-        window.location.href = '/emc-equip-train/';
+        const segments = window.location.pathname.split('/');
+        const repo = 'emc-equip-train';
+        const path = segments.length > 2 ? segments.slice(2).join('/') : '';
+        window.location.replace(`/${repo}/?path=${path}`);
       })();
     </script>
   </head>
