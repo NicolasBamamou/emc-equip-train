@@ -13,9 +13,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    sourcemap: true,
     rollupOptions: {
       output: {
-        assetFileNames: 'assets/[name].[ext]'
+        manualChunks: undefined
       }
     }
   },

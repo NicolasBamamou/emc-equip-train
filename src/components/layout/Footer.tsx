@@ -48,9 +48,10 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/courses#excavator" className="hover:text-blue-400 transition-colors">Opérateur d'Excavatrice</Link></li>
               <li><Link to="/courses#bulldozer" className="hover:text-blue-400 transition-colors">Formation Bulldozer</Link></li>
-              <li><Link to="/courses#crane" className="hover:text-blue-400 transition-colors">Opérateur de Grue</Link></li>
-              <li><Link to="/courses#forklift" className="hover:text-blue-400 transition-colors">Certification Chariot Élévateur</Link></li>
+              <li><Link to="/courses#Chargeuses" className="hover:text-blue-400 transition-colors">Certification Opérateurs de Chargeuses</Link></li>
               <li><Link to="/courses#backhoe" className="hover:text-blue-400 transition-colors">Opérateur de Pelle Rétrocaveuse</Link></li>
+              <li><Link to="/courses#camion" className="hover:text-blue-400 transition-colors">Opérateur de camion minier</Link></li>
+              <li><Link to="/courses#crane" className="hover:text-blue-400 transition-colors">Certification d'Opérateur de Grue</Link></li>
             </ul>
           </div>
 
