@@ -15,10 +15,10 @@ const courses = [
   {
     id: "excavator",
     title: "Certification d'Opérateur d'Excavatrice",
-    duration: "4 Semaines",
+    duration: "12 Semaines",
     level: "Débutant à Avancé",
-    price: "2 995 €",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80",
+    price: "6.500.000FG",
+    image: "public/images/Excavator.png",
     description: "Maîtrisez l'opération d'excavateurs hydrauliques dans divers contextes de construction et de terrassement.",
     topics: [
       "Types et composants d'excavateurs",
@@ -36,8 +36,8 @@ const courses = [
     title: "Programme de Formation Bulldozer",
     duration: "3 Semaines",
     level: "Débutant à Intermédiaire",
-    price: "2 495 €",
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&q=80",
+    price: "5.500.000FG",
+    image: "public/images/Dozer.png",
     description: "Apprenez à utiliser les bulldozers de manière sûre et efficace pour le défrichage, le nivellement et les opérations de manutention de matériaux.",
     topics: [
       "Types et applications de bulldozers",
@@ -51,12 +51,69 @@ const courses = [
     certification: "NCCER Opérations d'Équipement Lourd - Bulldozer"
   },
   {
+    id: "Chargeuses",
+    title: "Certification Opérateurs de Chargeuses",
+    duration: "5 Semaine",
+    level: "Débutant",
+    price: "5.500.000FG",
+    image: "public/images/Loader.png",
+    description: "Seulement 12 semeaines pour doter nos stagiaires des compétences essentielles nécessaires à l'exploitation efficace et sécurisée des chargeuses dans l'industrie minière.",
+    topics: [
+      "Maîtrise de la chargeuse : Conduite, manœuvres et productivité",
+      "Sécurité en milieu minier : Protocoles, prévention des risques et EPI",
+      "Entretien de base : Inspection, maintenance et détection des pannes",
+      "Efficacité opérationnelle : Chargement, transport et déchargement optimisés",
+      "Lecture de plans et signalisation : Communication et respect des consignes",
+      "Gestion des terrains difficiles : Adaptation aux conditions minières extrêmes",
+      "Réglementation minière : Normes, législation et bonnes pratiques",
+    ],
+    certification: "Certificat d'opérateur de pelle et chargeur hydraulique"
+  },
+  {
+    id: "backhoe",
+    title: "Formation d'Opérateur de Pelle Rétrocaveuse",
+    duration: "3 Semaines",
+    level: "Débutant à Intermédiaire",
+    price: "6.500.000FG",
+    image: "public/images/Backhoe-2.png",
+    description: "Maîtrisez l'opération de chargeuses-pelleteuses pour l'excavation, le creusement de tranchées et la manutention de matériaux.",
+    topics: [
+      "Composants et commandes de la pelle rétrocaveuse",
+      "Procédures de sécurité et sensibilisation aux dangers",
+      "Techniques d'opération de chargeur",
+      "Techniques d'opération d'excavateur",
+      "Procédures de tranchée et de remblayage",
+      "Manutention des matériaux et chargement de camions",
+      "Maintenance de base et dépannage"
+    ],
+    certification: "NCCER Opérations d'Équipement Lourd - Pelle Rétrocaveuse"
+  },
+  {
+    id: "camion",
+    title: "Certification d'Opérateur de camion minier",
+    duration: "4 Semaine",
+    level: "Débutant à Avancé",
+    price: "2.500.000FG",
+    image: "public/images/Rock-Truck.png",
+    description: "Notre formation spécialisée en camion minier vous prépare à conduire et opérer ces véhicules puissants dans les environnements les plus exigeants.",
+    topics: [
+      "Conduite et manœuvres : Maîtrise du camion articulé en terrain difficile",
+      "Sécurité et prévention : Respect des protocoles et gestion des risques",
+      "Chargement et déchargement : Optimisation des cycles de travail",
+      "Entretien et diagnostic : Inspection quotidienne et détection des pannes",
+      "Navigation et communication : Lecture des plans et signalisation en site minier",
+      "Gestion du carburant et productivité : Techniques pour une utilisation efficace de l'engin",
+      "Réglementation minière : Conformité aux normes de sécurité et d'exploitation",
+    ],
+    certification: "Certificat d'opérateur de camion minier"
+  },
+  {
     id: "crane",
     title: "Certification d'Opérateur de Grue",
     duration: "6 Semaines",
     level: "Intermédiaire à Avancé",
-    price: "3 995 €",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80",
+    price: "5.500.000FG",
+    image: "public/images/crane.webp",
     description: "Formation complète sur l'opération de grues mobiles, les protocoles de sécurité et la gestion des charges.",
     topics: [
       "Types et composants de grues",
@@ -69,44 +126,7 @@ const courses = [
     ],
     certification: "Certification NCCCO d'Opérateur de Grue Mobile"
   },
-  {
-    id: "forklift",
-    title: "Certification Chariot Élévateur",
-    duration: "1 Semaine",
-    level: "Débutant",
-    price: "995 €",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80",
-    description: "Apprenez à utiliser en toute sécurité les chariots élévateurs dans des environnements d'entrepôt, de construction et industriels.",
-    topics: [
-      "Types et applications de chariots élévateurs",
-      "Réglementations OSHA et exigences de sécurité",
-      "Procédures d'inspection pré-opération",
-      "Principes de manutention des charges et de stabilité",
-      "Manœuvres dans des espaces restreints",
-      "Procédures d'empilage et de désempilage",
-      "Procédures de ravitaillement/recharge"
-    ],
-    certification: "Certification d'Opérateur de Chariot Élévateur Conforme à l'OSHA"
-  },
-  {
-    id: "backhoe",
-    title: "Formation d'Opérateur de Pelle Rétrocaveuse",
-    duration: "3 Semaines",
-    level: "Débutant à Intermédiaire",
-    price: "2 495 €",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80",
-    description: "Maîtrisez l'opération de chargeuses-pelleteuses pour l'excavation, le creusement de tranchées et la manutention de matériaux.",
-    topics: [
-      "Composants et commandes de la pelle rétrocaveuse",
-      "Procédures de sécurité et sensibilisation aux dangers",
-      "Techniques d'opération de chargeur",
-      "Techniques d'opération d'excavateur",
-      "Procédures de tranchée et de remblayage",
-      "Manutention des matériaux et chargement de camions",
-      "Maintenance de base et dépannage"
-    ],
-    certification: "NCCER Opérations d'Équipement Lourd - Pelle Rétrocaveuse"
-  }
+
 ];
 
 const CoursesPage = () => {

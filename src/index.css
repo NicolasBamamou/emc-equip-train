@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -94,10 +93,44 @@
   }
 }
 
+@keyframes slide-left {
+  0% { transform: translateX(0) scale(1.1); }
+  50% { transform: translateX(-5%) scale(1.15); }
+  100% { transform: translateX(0) scale(1.1); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(0) scale(1.1); }
+  50% { transform: translateX(5%) scale(1.15); }
+  100% { transform: translateX(0) scale(1.1); }
+}
+
+.animate-slide-left {
+  animation: slide-left 20s infinite ease-in-out;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.animate-slide-right {
+  animation: slide-right 20s infinite ease-in-out;
+  transform-origin: center;
+  will-change: transform;
+}
+
 .hero {
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.hero-bg-overlay {
+  @apply absolute inset-0 bg-gradient-to-r from-gray-900/95 to-gray-900/90;
+  backdrop-filter: blur(2px);
+}
+
+.hero-image {
+  @apply w-full h-full object-cover object-center;
+  filter: brightness(0.7) saturate(1.2);
 }
 
 .section-heading {

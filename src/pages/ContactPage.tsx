@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -48,7 +47,7 @@ const ContactPage = () => {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="mb-2">Téléphone</CardTitle>
-                  <p>(123) 456-7890</p>
+                  <p>(+224) 626-250-624</p>
                 </CardContent>
               </Card>
 
@@ -58,7 +57,7 @@ const ContactPage = () => {
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="mb-2">Email</CardTitle>
-                  <p>info@emcformation.com</p>
+                  <p>espertiseminingconsulting@gmail.com</p>
                 </CardContent>
               </Card>
 
@@ -68,7 +67,7 @@ const ContactPage = () => {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="mb-2">Adresse</CardTitle>
-                  <p>123 Avenue de Formation<br />Ville d'Équipement, EC 12345</p>
+                  <p>Boké Vile Zone minière,<br /> Baralande N0.14, ECM 12345</p>
                 </CardContent>
               </Card>
 
@@ -127,7 +126,7 @@ const ContactPage = () => {
                 <iframe 
                   title="EMC Formation Location"
                   className="w-full h-full border-0"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1623185945115!5m2!1sen!2sca" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31037.17039866381!2d-14.310768!3d10.940105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1cd78e0b831ce7%3A0x5513c5a8517c9f13!2sBok%C3%A9%2C%20Guinea!5e0!3m2!1sen!2s!4v1710612151234!5m2!1sen!2s"
                   allowFullScreen={true}
                   loading="lazy"
                 ></iframe>

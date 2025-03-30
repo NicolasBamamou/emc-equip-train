@@ -15,23 +15,23 @@ const courses = [
   {
     title: "Opérateur d'Excavatrice",
     description: "Maîtrisez l'opération d'excavatrices avec notre programme de formation complet.",
-    duration: "4 semaines",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80",
+    duration: "12 semaines",
+    image: "public/images/Excavator.png",
     link: "/courses#excavator"
   },
   {
     title: "Formation Bulldozer",
     description: "Apprenez à utiliser les bulldozers de manière sûre et efficace dans divers environnements de travail.",
     duration: "3 semaines",
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&q=80",
+    image: "public/images/Dozer.png",
     link: "/courses#bulldozer"
   },
   {
     title: "Opérateur de Grue",
-    description: "Formation complète sur la sécurité et les techniques d'opération de grues.",
+    description: "Formation complète sur la sécurité et les techniques d'opération de Pelle Rétrocaveuse.",
     duration: "6 semaines",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80",
-    link: "/courses#crane"
+    image: "public/images/Backhoe-2.png",
+    link: "/courses#backhoe"
   }
 ];
 
