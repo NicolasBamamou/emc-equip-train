@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -61,13 +60,39 @@ const AdmissionsPage = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="bg-gray-900 text-white py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
+        {/* Hero Section with Fading Images */}
+        <section className="relative min-h-[300px] flex items-center">
+          <div className="absolute inset-0 z-0">
+            <div className="hero-bg-overlay" />
+            <div className="absolute inset-0">
+              <div className="absolute inset-0">
+                <img
+                  src="/emc-equip-train/images/working.jpg"
+                  alt=""
+                  className="w-full h-full object-cover animate-fade-1"
+                />
+              </div>
+              <div className="absolute inset-0">
+                <img
+                  src="/emc-equip-train/images/minig.jpg"
+                  alt=""
+                  className="w-full h-full object-cover animate-fade-2"
+                />
+              </div>
+              <div className="absolute inset-0">
+                <img
+                  src="/emc-equip-train/images/truck working.jpg"
+                  alt=""
+                  className="w-full h-full object-cover animate-fade-3"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto text-center text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Admissions</h1>
               <p className="text-lg md:text-xl">
-                Votre parcours vers une carrière enrichissante dans l'opération d'équipement lourd commence ici.
+                Commencez votre carrière dans l'opération d'équipements lourds avec EMC Formation
               </p>
             </div>
           </div>

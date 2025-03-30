@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -18,7 +17,7 @@ const courses = [
     duration: "12 Semaines",
     level: "Débutant à Avancé",
     price: "6.500.000FG",
-    image: "public/images/Excavator.png",
+    image: "./images/Excavator.png",
     description: "Maîtrisez l'opération d'excavateurs hydrauliques dans divers contextes de construction et de terrassement.",
     topics: [
       "Types et composants d'excavateurs",
@@ -37,7 +36,7 @@ const courses = [
     duration: "3 Semaines",
     level: "Débutant à Intermédiaire",
     price: "5.500.000FG",
-    image: "public/images/Dozer.png",
+    image: "./images/Dozer.png",
     description: "Apprenez à utiliser les bulldozers de manière sûre et efficace pour le défrichage, le nivellement et les opérations de manutention de matériaux.",
     topics: [
       "Types et applications de bulldozers",
@@ -56,7 +55,7 @@ const courses = [
     duration: "5 Semaine",
     level: "Débutant",
     price: "5.500.000FG",
-    image: "public/images/Loader.png",
+    image: "./images/Loader.png",
     description: "Seulement 12 semeaines pour doter nos stagiaires des compétences essentielles nécessaires à l'exploitation efficace et sécurisée des chargeuses dans l'industrie minière.",
     topics: [
       "Maîtrise de la chargeuse : Conduite, manœuvres et productivité",
@@ -75,7 +74,7 @@ const courses = [
     duration: "3 Semaines",
     level: "Débutant à Intermédiaire",
     price: "6.500.000FG",
-    image: "public/images/Backhoe-2.png",
+    image: "./images/Backhoe-2.png",
     description: "Maîtrisez l'opération de chargeuses-pelleteuses pour l'excavation, le creusement de tranchées et la manutention de matériaux.",
     topics: [
       "Composants et commandes de la pelle rétrocaveuse",
@@ -94,7 +93,7 @@ const courses = [
     duration: "4 Semaine",
     level: "Débutant à Avancé",
     price: "2.500.000FG",
-    image: "public/images/Rock-Truck.png",
+    image: "./images/Rock-Truck.png",
     description: "Notre formation spécialisée en camion minier vous prépare à conduire et opérer ces véhicules puissants dans les environnements les plus exigeants.",
     topics: [
       "Conduite et manœuvres : Maîtrise du camion articulé en terrain difficile",
@@ -113,7 +112,7 @@ const courses = [
     duration: "6 Semaines",
     level: "Intermédiaire à Avancé",
     price: "5.500.000FG",
-    image: "public/images/crane.webp",
+    image: "./images/crane.webp",
     description: "Formation complète sur l'opération de grues mobiles, les protocoles de sécurité et la gestion des charges.",
     topics: [
       "Types et composants de grues",
@@ -134,13 +133,39 @@ const CoursesPage = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="bg-gray-900 text-white py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Nos Programmes de Formation</h1>
+        {/* Hero Section with Fading Images */}
+        <section className="relative min-h-[300px] flex items-center">
+          <div className="absolute inset-0 z-0">
+            <div className="hero-bg-overlay" />
+            <div className="absolute inset-0">
+              <div className="absolute inset-0">
+                <img
+                  src="/emc-equip-train/images/good operator.jpg"
+                  alt=""
+                  className="w-full h-full object-cover animate-fade-1"
+                />
+              </div>
+              <div className="absolute inset-0">
+                <img
+                  src="/emc-equip-train/images/Loader operating.jpg"
+                  alt=""
+                  className="w-full h-full object-cover animate-fade-2"
+                />
+              </div>
+              <div className="absolute inset-0">
+                <img
+                  src="/emc-equip-train/images/Team and loader.jpg"
+                  alt=""
+                  className="w-full h-full object-cover animate-fade-3"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto text-center text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Nos Formations</h1>
               <p className="text-lg md:text-xl">
-                Des programmes complets de formation d'équipement lourd enseignés par des experts de l'industrie utilisant des équipements modernes.
+                Découvrez nos programmes de formation professionnelle en opération d'équipements lourds
               </p>
             </div>
           </div>

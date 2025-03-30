@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">EMC Formation</h3>
+            <h3 className="text-xl font-bold mb-4">Experise Mining Consulting (EMC) </h3>
             <p className="mb-4">
-              EMC Formation est dédiée à fournir une formation d'opérateur d'équipement lourd de haute qualité qui transforme des vies et assure la sécurité et l'excellence sur le lieu de travail.
+              EMC  est dédiée à fournir une formation d'opérateur d'équipement lourd de haute qualité qui transforme des vies et assure la sécurité et l'excellence sur le lieu de travail.
             </p>
             <div className="flex space-x-3">
               <a href="https://www.facebook.com/share/1DccwFtXpe/" aria-label="Facebook" className="hover:text-blue-400 transition-colors">
@@ -33,12 +33,12 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Liens Rapides</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="hover:text-blue-400 transition-colors">Accueil</Link></li>
-              <li><Link to="/about" className="hover:text-blue-400 transition-colors">À Propos</Link></li>
-              <li><Link to="/courses" className="hover:text-blue-400 transition-colors">Formations</Link></li>
-              <li><Link to="/admissions" className="hover:text-blue-400 transition-colors">Admissions</Link></li>
-              <li><Link to="/blog" className="hover:text-blue-400 transition-colors">Blog</Link></li>
-              <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+              <li><Link to="" className="hover:text-blue-400 transition-colors">Accueil</Link></li>
+              <li><Link to="about" className="hover:text-blue-400 transition-colors">À Propos</Link></li>
+              <li><Link to="courses" className="hover:text-blue-400 transition-colors">Formations</Link></li>
+              <li><Link to="admissions" className="hover:text-blue-400 transition-colors">Admissions</Link></li>
+              <li><Link to="blog" className="hover:text-blue-400 transition-colors">Blog</Link></li>
+              <li><Link to="contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-6">
           <p className="text-center text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} EMC Formation. Tous droits réservés.
+            &copy; {new Date().getFullYear()} EMC . Tous droits réservés.
           </p>
         </div>
       </div>

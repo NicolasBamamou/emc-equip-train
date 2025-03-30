@@ -15,7 +15,7 @@ const blogPosts = [
     date: "15 juin 2023",
     author: "Michel Thompson",
     readTime: "8 min de lecture",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80",
+    image: "./images/good operator.jpg",
     category: "Tendances de l'Industrie"
   },
   {
@@ -25,7 +25,7 @@ const blogPosts = [
     date: "22 mai 2023",
     author: "Sarah Williams",
     readTime: "6 min de lecture",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80",
+    image: "./images/minig.jpg",
     category: "Sécurité"
   },
   {
@@ -35,7 +35,7 @@ const blogPosts = [
     date: "10 avril 2023",
     author: "Robert Johnson",
     readTime: "10 min de lecture",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80",
+    image: "./images/expert.jpg",
     category: "Histoires de Réussite"
   },
   {
@@ -45,7 +45,7 @@ const blogPosts = [
     date: "5 mars 2023",
     author: "Maria Rodriguez",
     readTime: "7 min de lecture",
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&q=80",
+    image: "./images/smiling.jpg",
     category: "Éducation"
   },
   {
@@ -55,7 +55,7 @@ const blogPosts = [
     date: "18 février 2023",
     author: "David Wilson",
     readTime: "9 min de lecture",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80",
+    image: "./images/durabity.jpg",
     category: "Durabilité"
   },
   {
@@ -65,7 +65,7 @@ const blogPosts = [
     date: "30 janvier 2023",
     author: "Jennifer Martinez",
     readTime: "8 min de lecture",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80",
+    image: "./images/women.jpg",
     category: "Projecteur sur l'Industrie"
   }
 ];
@@ -79,7 +79,7 @@ const BlogPage = () => {
         <section className="bg-gray-900 text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog EMC Formation</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog Epertise Mining Consulting</h1>
               <p className="text-lg md:text-xl">
                 Aperçus de l'industrie, histoires de réussite et les dernières nouveautés en matière d'opération d'équipement lourd.
               </p>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -6,25 +5,25 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const instructors = [
   {
-    name: "Jean Dupont",
-    position: "Instructeur Principal - Opération d'Excavatrice",
+    name: "Lucien Haba",
+    position: "PDG de EMC",
     experience: "15+ ans",
-    bio: "Jean apporte plus de 15 ans d'expérience terrain dans l'opération d'excavatrice à travers des projets de construction, d'exploitation minière et d'infrastructure.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300&h=300"
+    bio: "M. Haba apporte plus de 15 ans d'expérience terrain dans l'opération d'excavatrice à travers des projets de construction, d'exploitation minière et d'infrastructure.",
+    image: "/emc-equip-train/images/CEO.jpg"
   },
   {
-    name: "Marie Rodriguez",
+    name: "Mariam Touré",
     position: "Instructrice Sénior - Opération de Grue",
     experience: "12+ ans",
-    bio: "Marie est spécialisée dans l'opération de grues à tour et mobiles avec une vaste expérience dans les projets de construction de grande hauteur.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=300&h=300"
+    bio: "Mariam est spécialisée dans l'opération de grues à tour et mobiles avec une vaste expérience dans les projets de mine.",
+    image: "/emc-equip-train/images/Secretary.jpg"
   },
   {
-    name: "Robert Johnson",
+    name: "Robert Camara",
     position: "Instructeur - Opération de Bulldozer et Niveleuse",
     experience: "10+ ans",
     bio: "Robert a travaillé intensivement dans le développement de terrains et la construction de routes, maîtrisant divers équipements de terrassement.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300&h=300"
+    image:"/emc-equip-train/images/truck operatoo.jpg"
   }
 ];
 
@@ -33,13 +32,39 @@ const AboutPage = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="bg-gray-900 text-white py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos d'EMC Formation</h1>
-              <p className="text-lg md:text-xl">
-                Construire des carrières et façonner l'avenir de l'opération d'équipement lourd grâce à l'excellence en formation.
+        {/* Hero Section with Animated Background Images */}
+        <section className="relative py-20">
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <div className="hero-bg-overlay" />
+            <div className="absolute inset-0 flex">
+              <div className="w-1/3 h-full overflow-hidden">
+                <img
+                  src="/emc-equip-train/images/Excavator.png"
+                  alt=""
+                  className="hero-image animate-zoom-1"
+                />
+              </div>
+              <div className="w-1/3 h-full overflow-hidden">
+                <img
+                  src="/emc-equip-train/images/Loader.png"
+                  alt=""
+                  className="hero-image animate-zoom-2"
+                />
+              </div>
+              <div className="w-1/3 h-full overflow-hidden">
+                <img
+                  src="/emc-equip-train/images/Dozer.png"
+                  alt=""
+                  className="hero-image animate-zoom-3"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto text-center text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos de Experise Mining Consulting (EMC) </h1>
+              <p className="text-lg md:text-xl text-gray-200">
+                Leader dans la formation d'opérateurs d'équipements lourds en Guinée
               </p>
             </div>
           </div>
@@ -52,10 +77,10 @@ const AboutPage = () => {
               <h2 className="section-heading text-center">Notre Histoire</h2>
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <p className="mb-4 text-lg">
-                  Établie en 2005, EMC Formation a débuté avec une mission simple : fournir une formation d'opérateur d'équipement lourd de haute qualité qui répond aux besoins réels de l'industrie. Notre fondateur, Michel Thompson, a remarqué un écart entre ce qui était enseigné dans les programmes de formation et ce que les employeurs attendaient réellement des opérateurs.
+                  Établie en 2005, EMC a débuté avec une mission simple : fournir une formation d'opérateur d'équipement lourd de haute qualité qui répond aux besoins réels de l'industrie. Notre fondateur, Lucien Haba, a remarqué un écart entre ce qui était enseigné dans les programmes de formation et ce que les employeurs attendaient réellement des opérateurs.
                 </p>
                 <p className="mb-4 text-lg">
-                  Commençant avec seulement deux équipements et un petit terrain d'entraînement, EMC Formation est devenue l'une des principales installations de formation en équipement lourd de la région. Aujourd'hui, nous exploitons un terrain d'entraînement de 4 hectares avec une flotte d'équipements modernes et des salles de classe conçues pour fournir à la fois des connaissances théoriques et des compétences pratiques.
+                  Commençant avec seulement deux équipements et un petit terrain d'entraînement, EMC est devenue l'une des principales installations de formation en équipement lourd de la région. Aujourd'hui, nous exploitons un terrain d'entraînement de 4 hectares avec une flotte d'équipements modernes et des salles de classe conçues pour fournir à la fois des connaissances théoriques et des compétences pratiques.
                 </p>
                 <p className="text-lg">
                   Au fil des années, nous avons aidé des milliers d'étudiants à lancer des carrières réussies dans l'opération d'équipement lourd, maintenant notre engagement envers l'excellence, la sécurité et l'apprentissage pratique tout au long de notre croissance.
