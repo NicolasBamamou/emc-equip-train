@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Link } from 'react-router-dom';
@@ -9,131 +9,17 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
-const courses = [
-  {
-    id: "excavator",
-    title: "Certification d'Opérateur d'Excavatrice",
-    duration: "12 Semaines",
-    level: "Débutant à Avancé",
-    price: "6.500.000FG",
-    image: "./images/Excavator.png",
-    description: "Maîtrisez l'opération d'excavateurs hydrauliques dans divers contextes de construction et de terrassement.",
-    topics: [
-      "Types et composants d'excavateurs",
-      "Inspection pré-opération et protocoles de sécurité",
-      "Techniques d'opération de base et contrôles",
-      "Opérations de creusement de tranchées et de nivellement",
-      "Techniques de chargement et manutention de matériaux",
-      "Manœuvres avancées et excavation de précision",
-      "Bases de maintenance et dépannage"
-    ],
-    certification: "NCCER Opérations d'Équipement Lourd - Excavateur"
-  },
-  {
-    id: "bulldozer",
-    title: "Programme de Formation Bulldozer",
-    duration: "3 Semaines",
-    level: "Débutant à Intermédiaire",
-    price: "5.500.000FG",
-    image: "./images/Dozer.png",
-    description: "Apprenez à utiliser les bulldozers de manière sûre et efficace pour le défrichage, le nivellement et les opérations de manutention de matériaux.",
-    topics: [
-      "Types et applications de bulldozers",
-      "Procédures de sécurité et gestion des risques",
-      "Techniques d'opération de base",
-      "Refend et chargement par poussée",
-      "Travail en pente et techniques de finition",
-      "Vérification et interprétation de niveau",
-      "Procédures de maintenance de base"
-    ],
-    certification: "NCCER Opérations d'Équipement Lourd - Bulldozer"
-  },
-  {
-    id: "Chargeuses",
-    title: "Certification Opérateurs de Chargeuses",
-    duration: "5 Semaine",
-    level: "Débutant",
-    price: "5.500.000FG",
-    image: "./images/Loader.png",
-    description: "Seulement 12 semeaines pour doter nos stagiaires des compétences essentielles nécessaires à l'exploitation efficace et sécurisée des chargeuses dans l'industrie minière.",
-    topics: [
-      "Maîtrise de la chargeuse : Conduite, manœuvres et productivité",
-      "Sécurité en milieu minier : Protocoles, prévention des risques et EPI",
-      "Entretien de base : Inspection, maintenance et détection des pannes",
-      "Efficacité opérationnelle : Chargement, transport et déchargement optimisés",
-      "Lecture de plans et signalisation : Communication et respect des consignes",
-      "Gestion des terrains difficiles : Adaptation aux conditions minières extrêmes",
-      "Réglementation minière : Normes, législation et bonnes pratiques",
-    ],
-    certification: "Certificat d'opérateur de pelle et chargeur hydraulique"
-  },
-  {
-    id: "backhoe",
-    title: "Formation d'Opérateur de Pelle Rétrocaveuse",
-    duration: "3 Semaines",
-    level: "Débutant à Intermédiaire",
-    price: "6.500.000FG",
-    image: "./images/Backhoe-2.png",
-    description: "Maîtrisez l'opération de chargeuses-pelleteuses pour l'excavation, le creusement de tranchées et la manutention de matériaux.",
-    topics: [
-      "Composants et commandes de la pelle rétrocaveuse",
-      "Procédures de sécurité et sensibilisation aux dangers",
-      "Techniques d'opération de chargeur",
-      "Techniques d'opération d'excavateur",
-      "Procédures de tranchée et de remblayage",
-      "Manutention des matériaux et chargement de camions",
-      "Maintenance de base et dépannage"
-    ],
-    certification: "NCCER Opérations d'Équipement Lourd - Pelle Rétrocaveuse"
-  },
-  {
-    id: "camion",
-    title: "Certification d'Opérateur de camion minier",
-    duration: "4 Semaine",
-    level: "Débutant à Avancé",
-    price: "2.500.000FG",
-    image: "./images/Rock-Truck.png",
-    description: "Notre formation spécialisée en camion minier vous prépare à conduire et opérer ces véhicules puissants dans les environnements les plus exigeants.",
-    topics: [
-      "Conduite et manœuvres : Maîtrise du camion articulé en terrain difficile",
-      "Sécurité et prévention : Respect des protocoles et gestion des risques",
-      "Chargement et déchargement : Optimisation des cycles de travail",
-      "Entretien et diagnostic : Inspection quotidienne et détection des pannes",
-      "Navigation et communication : Lecture des plans et signalisation en site minier",
-      "Gestion du carburant et productivité : Techniques pour une utilisation efficace de l'engin",
-      "Réglementation minière : Conformité aux normes de sécurité et d'exploitation",
-    ],
-    certification: "Certificat d'opérateur de camion minier"
-  },
-  {
-    id: "crane",
-    title: "Certification d'Opérateur de Grue",
-    duration: "6 Semaines",
-    level: "Intermédiaire à Avancé",
-    price: "5.500.000FG",
-    image: "./images/crane.webp",
-    description: "Formation complète sur l'opération de grues mobiles, les protocoles de sécurité et la gestion des charges.",
-    topics: [
-      "Types et composants de grues",
-      "Tableaux de charge et calculs de capacité",
-      "Évaluation et procédures d'installation du site",
-      "Techniques de gréage et sécurisation des charges",
-      "Signalisation et communication",
-      "Planification de levage critique",
-      "Procédures d'urgence et dépannage"
-    ],
-    certification: "Certification NCCCO d'Opérateur de Grue Mobile"
-  },
-
-];
+import specializations from '../data/specializations';
+import SpecializationDetail from '../components/SpecializationDetail';
 
 const CoursesPage = () => {
+  const [selectedSpec, setSelectedSpec] = useState<string | null>(null);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section with Fading Images */}
+        {/* Section Héro */}
         <section className="relative min-h-[300px] flex items-center">
           <div className="absolute inset-0 z-0">
             <div className="hero-bg-overlay" />
@@ -165,80 +51,79 @@ const CoursesPage = () => {
             <div className="max-w-3xl mx-auto text-center text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Nos Formations</h1>
               <p className="text-lg md:text-xl">
-                Découvrez nos programmes de formation professionnelle en opération d'équipements lourds
+                Explorez nos spécialisations en formation professionnelle pour l'opération d'équipements lourds et la sécurité minière. Sélectionnez une spécialisation pour découvrir les cours proposés.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Course Listings */}
+        {/* Spécialisations ou Détail */}
         <section className="py-16">
           <div className="container mx-auto px-4">
+            {/* Si aucune spécialisation sélectionnée, afficher la grille */}
+            {!selectedSpec && (
+              <div>
             <div className="mb-12">
-              <h2 className="section-heading text-center">Formations Disponibles</h2>
-              <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto">
-                Sélectionnez parmi notre gamme de programmes de certification conçus pour vous préparer à une carrière réussie dans l'opération d'équipement lourd.
+                  <h2 className="section-heading text-center text-3xl md:text-4xl font-extrabold mb-4 text-primary drop-shadow-sm">Découvrez Nos Spécialisations</h2>
+                  <p className="text-center text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed bg-blue-50 rounded-xl px-6 py-4 shadow-sm">
+                    Explorez un éventail complet de spécialisations conçues pour répondre à tous les besoins du secteur minier moderne : opération d'équipements lourds, sécurité, mécanique, électricité, ingénierie, gestion, compétences humaines et culture digitale. Sélectionnez une spécialisation pour découvrir les parcours, modules et certifications proposés.
               </p>
             </div>
-
-            <div className="space-y-12">
-              {courses.map((course, index) => (
-                <div 
-                  key={index} 
-                  id={course.id}
-                  className="bg-white rounded-lg shadow-md overflow-hidden grid md:grid-cols-3 scroll-mt-24"
-                >
-                  <div className="h-64 md:h-full overflow-hidden">
-                    <img 
-                      src={course.image} 
-                      alt={course.title} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="md:col-span-2 p-6">
-                    <h3 className="text-2xl font-bold mb-2">{course.title}</h3>
-                    <div className="flex flex-wrap gap-4 mb-4">
-                      <span className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">
-                        Durée: {course.duration}
-                      </span>
-                      <span className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">
-                        Niveau: {course.level}
-                      </span>
-                      <span className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">
-                        Prix: {course.price}
-                      </span>
+                <div className="grid md:grid-cols-2 gap-8">
+                  {specializations.map((spec) => (
+                    <div key={spec.id} className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow">
+                      <img src={spec.image} alt={spec.title} className="w-40 h-40 object-cover rounded-full mb-4 border-4 border-blue-100" />
+                      <h3 className="text-2xl font-bold mb-2 text-primary">{spec.title}</h3>
+                      <p className="text-gray-700 mb-2 font-medium">{spec.introduction}</p>
+                      <div className="mb-2">
+                        <span className="font-semibold">Cours phares :</span>
+                        <ul className="list-disc pl-5 text-left text-gray-600">
+                          {spec.coreCourses.map((course, i) => (
+                            <li key={i}>{course}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="mb-2">
+                        <span className="font-semibold">Certifications visées :</span>
+                        <ul className="list-disc pl-5 text-left text-gray-600">
+                          {spec.certifications.map((cert, i) => (
+                            <li key={i}>{cert}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="flex items-center justify-center mb-4">
+                        <span className="font-semibold mr-2">Note :</span>
+                        <span className="text-yellow-500 text-lg">{'★'.repeat(Math.floor(spec.rating))}{spec.rating % 1 >= 0.5 ? '½' : ''}</span>
+                        <span className="ml-2 text-gray-600">({spec.rating.toFixed(1)})</span>
+                      </div>
+                      <button
+                        className="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+                        onClick={() => setSelectedSpec(spec.id)}
+                      >
+                        Voir les cours
+                      </button>
                     </div>
-                    <p className="text-gray-700 mb-4">{course.description}</p>
-                    <Accordion type="single" collapsible className="mb-4">
-                      <AccordionItem value="topics">
-                        <AccordionTrigger>Ce Que Vous Apprendrez</AccordionTrigger>
-                        <AccordionContent>
-                          <ul className="list-disc pl-5 space-y-1">
-                            {course.topics.map((topic, i) => (
-                              <li key={i}>{topic}</li>
-                            ))}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="certification">
-                        <AccordionTrigger>Certification</AccordionTrigger>
-                        <AccordionContent>
-                          <p>{course.certification}</p>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                    <div className="flex gap-4">
-                      <Button asChild>
-                        <Link to="/admissions">S'inscrire</Link>
-                      </Button>
-                      <Button variant="outline" asChild>
-                        <Link to="/contact">Demander des Informations</Link>
-                      </Button>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+            )}
+
+            {/* Si une spécialisation est sélectionnée, afficher ses cours */}
+            {selectedSpec && (
+              <div>
+                <button
+                  className="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-full font-semibold"
+                  onClick={() => setSelectedSpec(null)}
+                >
+                  ← Retour aux spécialisations
+                </button>
+                {specializations.map((spec) =>
+                  spec.id === selectedSpec ? (
+                    <SpecializationDetail key={spec.id} spec={spec} />
+                  ) : null
+                )}
+              </div>
+            )}
           </div>
         </section>
       </main>
