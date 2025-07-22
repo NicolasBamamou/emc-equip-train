@@ -757,6 +757,280 @@ const specializations = [
         "Certification Logiciels de Planification Minière (Surpac, Datamine, etc.)"
       ],
       rating: 4.9,
+      courses: [
+        {
+          id: "intro-genie-minier",
+          title: "Introduction au génie minier",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "2.000.000FG",
+          image: "./images/minig.jpg",
+          description: "Découvrez les fondements du génie minier, les principes de base et les applications dans l'industrie extractive.",
+          topics: [
+            "Histoire et évolution de l'industrie minière",
+            "Rôle du génie minier dans l'économie",
+            "Cycle de vie d'une mine",
+            "Principes de développement durable en mines"
+          ],
+          certification: "Attestation d'Introduction au Génie Minier"
+        },
+        {
+          id: "methodes-exploitation",
+          title: "Méthodes d'exploitation minière (surface & souterraine)",
+          duration: "4 Semaines",
+          level: "Débutant à Intermédiaire",
+          price: "2.500.000FG",
+          image: "./images/Excavator.png",
+          description: "Apprenez les différentes méthodes d'extraction à ciel ouvert et souterraine, leurs applications et critères de sélection.",
+          topics: [
+            "Exploitation à ciel ouvert : fosse, carrière, découverture",
+            "Méthodes souterraines : chambres et piliers, longue taille",
+            "Critères de choix des méthodes d'exploitation",
+            "Avantages et inconvénients de chaque méthode"
+          ],
+          certification: "Certificat de Méthodes d'Exploitation Minière"
+        },
+        {
+          id: "geologie-mecanique",
+          title: "Bases de géologie et mécanique des roches",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "2.200.000FG",
+          image: "./images/working.jpg",
+          description: "Comprenez les propriétés géologiques et mécaniques des roches essentielles pour la planification minière.",
+          topics: [
+            "Classification des roches et minéraux",
+            "Propriétés mécaniques des roches",
+            "Stabilité des massifs rocheux",
+            "Essais géotechniques de base"
+          ],
+          certification: "Attestation de Géologie et Mécanique des Roches"
+        },
+        {
+          id: "terminologie-operations",
+          title: "Terminologie et opérations minières",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.500.000FG",
+          image: "./images/team.jpg",
+          description: "Maîtrisez le vocabulaire technique et les opérations de base du secteur minier.",
+          topics: [
+            "Terminologie technique minière",
+            "Opérations unitaires : forage, minage, chargement, transport",
+            "Organisation d'un site minier",
+            "Flux de matières et processus"
+          ],
+          certification: "Certificat de Terminologie Minière"
+        },
+        {
+          id: "securite-environnement",
+          title: "Sécurité minière et considérations environnementales",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "2.000.000FG",
+          image: "./images/expert.jpg",
+          description: "Intégrez les aspects sécuritaires et environnementaux dans la planification et les opérations minières.",
+          topics: [
+            "Réglementation minière et sécurité",
+            "Impact environnemental des mines",
+            "Gestion des résidus miniers",
+            "Plans de fermeture et réhabilitation"
+          ],
+          certification: "Certificat de Sécurité et Environnement Minier"
+        },
+        {
+          id: "topographie-cartographie",
+          title: "Topographie et cartographie minière",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.300.000FG",
+          image: "./images/Grader.png",
+          description: "Apprenez les techniques de levé topographique et de cartographie spécifiques aux mines.",
+          topics: [
+            "Instruments de mesure topographique",
+            "Levés topographiques en mine",
+            "Cartographie numérique et SIG",
+            "Calculs de volumes et cubatures"
+          ],
+          certification: "Certificat de Topographie Minière"
+        },
+        {
+          id: "conception-planification",
+          title: "Conception de mines et planification de l'aménagement",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "3.000.000FG",
+          image: "./images/Dozer.png",
+          description: "Maîtrisez les principes de conception et de planification des mines pour optimiser l'extraction.",
+          topics: [
+            "Principes de conception de fosses",
+            "Optimisation des pentes et gradins",
+            "Planification des accès et infrastructures",
+            "Séquençage d'exploitation"
+          ],
+          certification: "Certificat de Conception de Mines"
+        },
+        {
+          id: "forage-minage",
+          title: "Techniques de forage et de minage",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.500.000FG",
+          image: "./images/Rock-Truck.png",
+          description: "Apprenez les techniques de forage et de minage pour l'abattage efficace des roches.",
+          topics: [
+            "Types de forages et équipements",
+            "Explosifs et techniques de minage",
+            "Calculs de charge et plans de tir",
+            "Sécurité dans les opérations de minage"
+          ],
+          certification: "Certificat de Forage et Minage"
+        },
+        {
+          id: "manutention-transport",
+          title: "Systèmes de manutention et de transport des matériaux",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.400.000FG",
+          image: "./images/Loader.png",
+          description: "Optimisez les systèmes de transport et de manutention des matériaux extraits.",
+          topics: [
+            "Systèmes de transport : camions, convoyeurs",
+            "Optimisation des cycles de transport",
+            "Gestion des stocks et stockage",
+            "Maintenance des équipements de transport"
+          ],
+          certification: "Certificat de Manutention et Transport"
+        },
+        {
+          id: "economie-faisabilite",
+          title: "Économie minière et études de faisabilité",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "3.200.000FG",
+          image: "./images/CEO.jpg",
+          description: "Analysez la viabilité économique des projets miniers et réalisez des études de faisabilité.",
+          topics: [
+            "Évaluation des réserves et ressources",
+            "Calculs de coûts d'exploitation",
+            "Analyse de rentabilité (VAN, TRI)",
+            "Études de faisabilité technico-économiques"
+          ],
+          certification: "Certificat d'Économie Minière"
+        },
+        {
+          id: "selection-equipements",
+          title: "Sélection et optimisation des équipements miniers",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.800.000FG",
+          image: "./images/crane.webp",
+          description: "Choisissez et optimisez les équipements adaptés aux opérations minières spécifiques.",
+          topics: [
+            "Critères de sélection des équipements",
+            "Dimensionnement de la flotte",
+            "Optimisation des performances",
+            "Coûts d'exploitation et maintenance"
+          ],
+          certification: "Certificat de Sélection d'Équipements"
+        },
+        {
+          id: "logiciels-planification",
+          title: "Formation aux logiciels de planification minière (Surpac, Datamine, Micromine, MineSched)",
+          duration: "6 Semaines",
+          level: "Avancé",
+          price: "4.500.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Maîtrisez les logiciels professionnels de planification et de modélisation minière.",
+          topics: [
+            "Introduction aux logiciels miniers",
+            "Modélisation 3D avec Surpac/Datamine",
+            "Planification avec MineSched",
+            "Optimisation et simulation"
+          ],
+          certification: "Certification Logiciels de Planification Minière"
+        },
+        {
+          id: "mines-ciel-ouvert",
+          title: "Conception et optimisation de mines à ciel ouvert",
+          duration: "5 Semaines",
+          level: "Avancé",
+          price: "3.800.000FG",
+          image: "./images/Excavator.png",
+          description: "Spécialisez-vous dans la conception avancée et l'optimisation des mines à ciel ouvert.",
+          topics: [
+            "Optimisation des contours de fosse",
+            "Planification de production avancée",
+            "Gestion des pentes et stabilité",
+            "Planification long terme"
+          ],
+          certification: "Certificat de Conception de Mines à Ciel Ouvert"
+        },
+        {
+          id: "mines-souterraines",
+          title: "Conception de mines souterraines et planification de la ventilation",
+          duration: "5 Semaines",
+          level: "Avancé",
+          price: "4.000.000FG",
+          image: "./images/working.jpg",
+          description: "Apprenez la conception des mines souterraines et les systèmes de ventilation associés.",
+          topics: [
+            "Méthodes d'exploitation souterraine",
+            "Conception des galeries et puits",
+            "Systèmes de ventilation",
+            "Sécurité en mines souterraines"
+          ],
+          certification: "Certificat de Mines Souterraines"
+        },
+        {
+          id: "stabilite-pentes",
+          title: "Stabilité des pentes et systèmes de soutènement",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.500.000FG",
+          image: "./images/durabity.jpg",
+          description: "Maîtrisez l'analyse de stabilité des pentes et les techniques de soutènement en mines.",
+          topics: [
+            "Analyse de stabilité des pentes",
+            "Techniques de soutènement",
+            "Surveillance géotechnique",
+            "Gestion des risques géotechniques"
+          ],
+          certification: "Certificat de Stabilité des Pentes"
+        },
+        {
+          id: "gestion-operations",
+          title: "Gestion des opérations minières",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.600.000FG",
+          image: "./images/Secretary.jpg",
+          description: "Développez vos compétences en gestion et supervision des opérations minières quotidiennes.",
+          topics: [
+            "Organisation des opérations",
+            "Gestion des équipes et planning",
+            "Contrôle qualité et production",
+            "Indicateurs de performance (KPI)"
+          ],
+          certification: "Certificat de Gestion d'Opérations Minières"
+        },
+        {
+          id: "fermeture-rehabilitation",
+          title: "Planification de la fermeture et de la réhabilitation des mines",
+          duration: "3 Semaines",
+          level: "Avancé",
+          price: "3.000.000FG",
+          image: "./images/work.jpg",
+          description: "Apprenez à planifier la fermeture responsable et la réhabilitation des sites miniers.",
+          topics: [
+            "Réglementation de fermeture de mines",
+            "Techniques de réhabilitation",
+            "Gestion des eaux et des résidus",
+            "Suivi post-fermeture"
+          ],
+          certification: "Certificat de Fermeture et Réhabilitation"
+        }
+      ],
       subcategories: [
         {
           id: 'foundational',
@@ -811,6 +1085,249 @@ const specializations = [
         "Certification Automatisation & PLC Industriel"
       ],
       rating: 4.8,
+      courses: [
+        {
+          id: "securite-electrique-base",
+          title: "Sécurité électrique et pratiques en milieu de travail",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.200.000FG",
+          image: "./images/expert.jpg",
+          description: "Apprenez les fondamentaux de la sécurité électrique et les bonnes pratiques pour travailler en toute sécurité avec l'électricité en milieu minier.",
+          topics: [
+            "Principes de base de la sécurité électrique",
+            "Équipements de protection individuelle électriques",
+            "Procédures de coupure et de consignation",
+            "Premiers secours en cas d'accident électrique"
+          ],
+          certification: "Certificat de Sécurité Électrique"
+        },
+        {
+          id: "circuits-dc-ac",
+          title: "Circuits DC/AC et mesures de base",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "1.800.000FG",
+          image: "./images/working.jpg",
+          description: "Maîtrisez les bases des circuits électriques DC/AC et apprenez à effectuer des mesures fondamentales avec les instruments appropriés.",
+          topics: [
+            "Loi d'Ohm et calculs électriques de base",
+            "Utilisation du multimètre et autres instruments",
+            "Analyse de circuits simples DC et AC",
+            "Mesures de tension, courant et résistance"
+          ],
+          certification: "Attestation Circuits DC/AC"
+        },
+        {
+          id: "techniques-cablage",
+          title: "Techniques de câblage et normes de câblage",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.500.000FG",
+          image: "./images/Loader.png",
+          description: "Apprenez les techniques professionnelles de câblage et les normes à respecter pour des installations électriques sûres et conformes.",
+          topics: [
+            "Types de câbles et leurs applications",
+            "Normes de couleur et codes électriques",
+            "Techniques de raccordement et sertissage",
+            "Sécurité et bonnes pratiques de câblage"
+          ],
+          certification: "Certificat de Câblage Électrique"
+        },
+        {
+          id: "lecture-schemas",
+          title: "Lecture de schémas électriques et symboles",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.400.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Développez vos compétences en lecture et interprétation des schémas électriques et maîtrisez la symbolisation normalisée.",
+          topics: [
+            "Symboles électriques normalisés",
+            "Lecture de plans électriques industriels",
+            "Schémas de puissance et de commande",
+            "Exercices pratiques d'interprétation"
+          ],
+          certification: "Attestation Lecture de Schémas"
+        },
+        {
+          id: "moteurs-generateurs",
+          title: "Principes de base des moteurs et générateurs",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "2.000.000FG",
+          image: "./images/crane.webp",
+          description: "Découvrez les principes fondamentaux de fonctionnement des moteurs électriques et générateurs utilisés dans l'industrie minière.",
+          topics: [
+            "Principes de fonctionnement des moteurs électriques",
+            "Types de générateurs et leurs applications",
+            "Maintenance de base des machines électriques",
+            "Applications spécifiques en milieu minier"
+          ],
+          certification: "Certificat Moteurs & Générateurs"
+        },
+        {
+          id: "moteurs-vfd",
+          title: "Moteurs électriques et variateurs de fréquence (VFD)",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "2.800.000FG",
+          image: "./images/Excavator.png",
+          description: "Approfondissez vos connaissances sur les moteurs électriques et maîtrisez l'utilisation des variateurs de fréquence pour l'optimisation énergétique.",
+          topics: [
+            "Types de moteurs électriques industriels",
+            "Principe de fonctionnement des VFD",
+            "Programmation et paramétrage des variateurs",
+            "Applications et avantages économiques"
+          ],
+          certification: "Certificat VFD et Moteurs Électriques"
+        },
+        {
+          id: "capteurs-actionneurs",
+          title: "Capteurs industriels et actionneurs",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.200.000FG",
+          image: "./images/Dozer.png",
+          description: "Explorez le monde des capteurs industriels et actionneurs, éléments essentiels des systèmes automatisés modernes.",
+          topics: [
+            "Types de capteurs : température, pression, position",
+            "Actionneurs pneumatiques, hydrauliques et électriques",
+            "Intégration capteurs-actionneurs en automatisme",
+            "Diagnostic et maintenance préventive"
+          ],
+          certification: "Certificat Capteurs & Actionneurs"
+        },
+        {
+          id: "programmation-plc",
+          title: "Programmation PLC et systèmes de contrôle (Siemens, Allen-Bradley)",
+          duration: "6 Semaines",
+          level: "Intermédiaire",
+          price: "4.200.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Maîtrisez la programmation des automates programmables (PLC) avec les plateformes Siemens et Allen-Bradley, piliers de l'automatisation industrielle.",
+          topics: [
+            "Introduction aux PLC et leur architecture",
+            "Langages de programmation (Ladder, FBD, ST)",
+            "Programmation Siemens TIA Portal",
+            "Programmation Allen-Bradley Studio 5000",
+            "Développement d'applications industrielles"
+          ],
+          certification: "Certification PLC Siemens/Allen-Bradley"
+        },
+        {
+          id: "systemes-electriques-mines",
+          title: "Systèmes électriques dans les mines (transformateurs, TGBT, appareillage)",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "3.000.000FG",
+          image: "./images/minig.jpg",
+          description: "Spécialisez-vous dans les systèmes électriques spécifiques aux environnements miniers : transformateurs, tableaux électriques et appareillage de puissance.",
+          topics: [
+            "Transformateurs de puissance en mines",
+            "Tableaux généraux basse tension (TGBT)",
+            "Appareillage de protection et de commande",
+            "Distribution électrique en site minier"
+          ],
+          certification: "Certificat Systèmes Électriques Miniers"
+        },
+        {
+          id: "batteries-electronique-puissance",
+          title: "Systèmes de batteries et électronique de puissance pour engins électriques",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.600.000FG",
+          image: "./images/Loader.png",
+          description: "Explorez les technologies de batteries et d'électronique de puissance pour les engins miniers électriques et hybrides.",
+          topics: [
+            "Technologies de batteries : Li-ion, LiFePO4",
+            "Systèmes de gestion de batterie (BMS)",
+            "Électronique de puissance et onduleurs",
+            "Sécurité et maintenance des systèmes batteries"
+          ],
+          certification: "Certificat Batteries & Électronique de Puissance"
+        },
+        {
+          id: "systemes-mechatroniques",
+          title: "Systèmes mécatroniques sur équipements miniers mobiles et fixes",
+          duration: "5 Semaines",
+          level: "Avancé",
+          price: "3.800.000FG",
+          image: "./images/Rock-Truck.png",
+          description: "Maîtrisez l'intégration des systèmes mécatroniques dans les équipements miniers pour une automatisation avancée et une maintenance prédictive.",
+          topics: [
+            "Intégration mécanique-électronique-informatique",
+            "Systèmes automatisés sur engins mobiles",
+            "Capteurs avancés et IoT industriel",
+            "Maintenance prédictive et diagnostic automatique"
+          ],
+          certification: "Certificat Mécatronique Minière"
+        },
+        {
+          id: "automatisation-scada",
+          title: "Automatisation et systèmes SCADA pour applications minières",
+          duration: "5 Semaines",
+          level: "Avancé",
+          price: "4.000.000FG",
+          image: "./images/team.jpg",
+          description: "Développez vos compétences en automatisation industrielle et maîtrisez les systèmes SCADA pour la supervision des opérations minières.",
+          topics: [
+            "Architecture des systèmes SCADA",
+            "Développement d'interfaces homme-machine (IHM)",
+            "Contrôle à distance et télésurveillance",
+            "Applications SCADA spécifiques aux mines"
+          ],
+          certification: "Certificat SCADA et Automatisation Minière"
+        },
+        {
+          id: "diagnostic-electrique",
+          title: "Diagnostic électrique et recherche de pannes",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.200.000FG",
+          image: "./images/working.jpg",
+          description: "Développez une expertise en diagnostic électrique et apprenez les méthodes systématiques de recherche et résolution de pannes.",
+          topics: [
+            "Méthodologie de diagnostic électrique",
+            "Outils de diagnostic avancés",
+            "Analyse des défaillances électriques",
+            "Études de cas pratiques en environnement minier"
+          ],
+          certification: "Certificat Diagnostic Électrique Avancé"
+        },
+        {
+          id: "protocoles-communication",
+          title: "Protocoles de communication industrielle (Modbus, CANbus, Profibus)",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.400.000FG",
+          image: "./images/Secretary.jpg",
+          description: "Maîtrisez les protocoles de communication industrielle essentiels pour l'interconnexion des systèmes automatisés en environnement minier.",
+          topics: [
+            "Protocole Modbus RTU et TCP/IP",
+            "CANbus pour équipements mobiles",
+            "Profibus pour automatisation industrielle",
+            "Configuration et dépannage des réseaux"
+          ],
+          certification: "Certificat Protocoles Communication Industrielle"
+        },
+        {
+          id: "equipements-haute-tension",
+          title: "Exploitation et maintenance des équipements haute tension",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.600.000FG",
+          image: "./images/expert.jpg",
+          description: "Spécialisez-vous dans l'exploitation et la maintenance sécurisée des équipements haute tension utilisés dans l'industrie minière.",
+          topics: [
+            "Sécurité haute tension et habilitations",
+            "Maintenance préventive des équipements HT",
+            "Procédures d'intervention en toute sécurité",
+            "Diagnostic et dépannage haute tension"
+          ],
+          certification: "Certificat Haute Tension Minier"
+        }
+      ],
       subcategories: [
         {
           id: 'foundational',
@@ -863,6 +1380,264 @@ const specializations = [
         "Certification FMS/CMMS/ERP Industriel"
       ],
       rating: 4.7,
+      courses: [
+        {
+          id: "gestion-flotte-operations",
+          title: "Gestion de flotte dans les opérations minières",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "2.800.000FG",
+          image: "./images/Rock-Truck.png",
+          description: "Maîtrisez la gestion optimale des flottes d'équipements miniers pour maximiser la productivité et minimiser les coûts opérationnels.",
+          topics: [
+            "Principes de gestion de flotte minière",
+            "Planification et allocation des équipements",
+            "Optimisation des cycles opérationnels",
+            "Gestion des ressources et planning opérationnel"
+          ],
+          certification: "Certificat de Gestion de Flotte Minière"
+        },
+        {
+          id: "optimisation-carburant",
+          title: "Suivi et optimisation de la consommation de carburant",
+          duration: "2 Semaines",
+          level: "Intermédiaire",
+          price: "1.800.000FG",
+          image: "./images/Loader.png",
+          description: "Apprenez à surveiller, analyser et optimiser la consommation de carburant des équipements miniers pour réduire les coûts énergétiques.",
+          topics: [
+            "Méthodes de suivi de consommation",
+            "Analyse des données de carburant",
+            "Techniques d'optimisation énergétique",
+            "Indicateurs de performance énergétique"
+          ],
+          certification: "Attestation Optimisation Énergétique"
+        },
+        {
+          id: "gestion-pneus",
+          title: "Gestion du cycle de vie des pneus pour engins lourds",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.200.000FG",
+          image: "./images/Excavator.png",
+          description: "Optimisez la gestion des pneus d'engins lourds, de l'achat à la mise au rebut, pour maximiser leur durée de vie et réduire les coûts.",
+          topics: [
+            "Sélection et spécifications des pneus",
+            "Suivi de l'usure et maintenance préventive",
+            "Rotation et gestion des stocks",
+            "Analyse des coûts et optimisation"
+          ],
+          certification: "Certificat de Gestion des Pneus"
+        },
+        {
+          id: "planification-itineraires",
+          title: "Planification des itinéraires et horaires en mines à ciel ouvert",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.400.000FG",
+          image: "./images/Grader.png",
+          description: "Maîtrisez la planification stratégique des itinéraires et la gestion des horaires pour optimiser les flux de production en mine à ciel ouvert.",
+          topics: [
+            "Conception d'itinéraires optimaux",
+            "Planification des horaires de production",
+            "Gestion du trafic minier",
+            "Optimisation des temps de cycle"
+          ],
+          certification: "Certificat de Planification Opérationnelle"
+        },
+        {
+          id: "planification-maintenance",
+          title: "Planification de la maintenance et réduction des arrêts",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "3.000.000FG",
+          image: "./images/working.jpg",
+          description: "Développez des stratégies de maintenance préventive et prédictive pour minimiser les arrêts non planifiés et maximiser la disponibilité des équipements.",
+          topics: [
+            "Stratégies de maintenance préventive",
+            "Maintenance prédictive et conditionnelle",
+            "Planification des arrêts programmés",
+            "Optimisation de la disponibilité"
+          ],
+          certification: "Certificat de Planification Maintenance"
+        },
+        {
+          id: "fondamentaux-fms",
+          title: "Fondamentaux des systèmes de gestion de flotte (FMS)",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "3.200.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Découvrez les systèmes FMS et leur rôle central dans la gestion moderne des opérations minières automatisées.",
+          topics: [
+            "Architecture des systèmes FMS",
+            "Configuration et paramétrage",
+            "Surveillance en temps réel",
+            "Génération de rapports et analytics"
+          ],
+          certification: "Certificat FMS Opérateur"
+        },
+        {
+          id: "cmms-mines",
+          title: "CMMS (GMAO) pour les mines",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.600.000FG",
+          image: "./images/Secretary.jpg",
+          description: "Maîtrisez l'utilisation des systèmes CMMS/GMAO spécifiquement adaptés aux besoins de maintenance dans l'industrie minière.",
+          topics: [
+            "Principes des systèmes CMMS",
+            "Gestion des ordres de travail",
+            "Planification de la maintenance",
+            "Gestion des stocks et pièces détachées"
+          ],
+          certification: "Certificat CMMS Minier"
+        },
+        {
+          id: "erp-minier",
+          title: "Introduction à l'ERP minier (SAP, Oracle, etc.)",
+          duration: "5 Semaines",
+          level: "Avancé",
+          price: "4.000.000FG",
+          image: "./images/CEO.jpg",
+          description: "Explorez les systèmes ERP adaptés à l'industrie minière et leur intégration dans la gestion globale des opérations.",
+          topics: [
+            "Modules ERP spécifiques aux mines",
+            "Intégration des processus métier",
+            "Gestion financière et comptabilité minière",
+            "Reporting et business intelligence"
+          ],
+          certification: "Certificat ERP Minier"
+        },
+        {
+          id: "integration-systemes",
+          title: "Intégration FMS, CMMS, ERP & outils de planification minière",
+          duration: "5 Semaines",
+          level: "Avancé",
+          price: "4.200.000FG",
+          image: "./images/team.jpg",
+          description: "Apprenez à intégrer les différents systèmes informatiques miniers pour créer un écosystème numérique cohérent et performant.",
+          topics: [
+            "Architecture d'intégration des systèmes",
+            "Flux de données inter-systèmes",
+            "APIs et interfaces de communication",
+            "Gestion de la cohérence des données"
+          ],
+          certification: "Certificat d'Intégration Systèmes Miniers"
+        },
+        {
+          id: "telematique-iot",
+          title: "Télématique, IoT et données temps réel en logistique minière",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.500.000FG",
+          image: "./images/Loader operating.jpg",
+          description: "Explorez les technologies IoT et de télématique pour le suivi en temps réel des opérations et l'optimisation logistique.",
+          topics: [
+            "Technologies IoT en environnement minier",
+            "Capteurs et transmission de données",
+            "Analyse de données en temps réel",
+            "Applications en logistique minière"
+          ],
+          certification: "Certificat IoT et Télématique Minière"
+        },
+        {
+          id: "analytique-miniere",
+          title: "Analytique minière et systèmes d'aide à la décision",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.600.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Maîtrisez les outils d'analyse de données et les systèmes d'aide à la décision pour optimiser les performances minières.",
+          topics: [
+            "Business Intelligence pour les mines",
+            "Tableaux de bord et visualisation",
+            "Analyse prédictive et machine learning",
+            "Systèmes d'aide à la décision opérationnelle"
+          ],
+          certification: "Certificat Analytique Minière"
+        },
+        {
+          id: "leadership-operations",
+          title: "Leadership et supervision des opérations minières",
+          duration: "3 Semaines",
+          level: "Avancé",
+          price: "2.800.000FG",
+          image: "./images/trainer.jpg",
+          description: "Développez vos compétences de leadership pour superviser efficacement les équipes et les opérations minières complexes.",
+          topics: [
+            "Styles de leadership en environnement minier",
+            "Gestion d'équipes multiculturelles",
+            "Communication et motivation",
+            "Résolution de conflits et prise de décision"
+          ],
+          certification: "Certificat de Leadership Minier"
+        },
+        {
+          id: "lean-mining",
+          title: "Lean Mining et amélioration continue",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.200.000FG",
+          image: "./images/good operator.jpg",
+          description: "Appliquez les principes du Lean Management aux opérations minières pour éliminer les gaspillages et améliorer l'efficacité.",
+          topics: [
+            "Principes du Lean appliqués aux mines",
+            "Identification et élimination des gaspillages",
+            "Amélioration continue (Kaizen)",
+            "Outils Lean : 5S, VSM, SMED"
+          ],
+          certification: "Certificat Lean Mining"
+        },
+        {
+          id: "kpis-tableaux-bord",
+          title: "KPIs miniers et tableaux de bord opérationnels",
+          duration: "3 Semaines",
+          level: "Avancé",
+          price: "2.600.000FG",
+          image: "./images/Secretary.jpg",
+          description: "Maîtrisez la définition, le suivi et l'analyse des indicateurs de performance clés pour le pilotage des opérations minières.",
+          topics: [
+            "Définition des KPIs pertinents",
+            "Conception de tableaux de bord",
+            "Analyse de performance et benchmarking",
+            "Communication des résultats"
+          ],
+          certification: "Certificat KPIs et Tableaux de Bord"
+        },
+        {
+          id: "gestion-changement",
+          title: "Gestion du changement dans les organisations minières",
+          duration: "3 Semaines",
+          level: "Avancé",
+          price: "2.700.000FG",
+          image: "./images/smiling.jpg",
+          description: "Apprenez à accompagner et gérer les transformations organisationnelles dans l'industrie minière en constante évolution.",
+          topics: [
+            "Théories du changement organisationnel",
+            "Résistance au changement et solutions",
+            "Communication du changement",
+            "Accompagnement des équipes"
+          ],
+          certification: "Certificat de Gestion du Changement"
+        },
+        {
+          id: "formation-personnel",
+          title: "Formation du personnel et développement des talents",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.000.000FG",
+          image: "./images/Team and loader.jpg",
+          description: "Développez vos compétences en formation et en développement des talents pour créer des équipes performantes et évolutives.",
+          topics: [
+            "Conception de programmes de formation",
+            "Évaluation des compétences",
+            "Plans de développement individuels",
+            "Gestion des talents et succession"
+          ],
+          certification: "Certificat de Développement des Talents"
+        }
+      ],
       subcategories: [
         {
           id: 'logistics',
@@ -916,6 +1691,328 @@ const specializations = [
         "Certification Culture Digitale Professionnelle"
       ],
       rating: 4.9,
+      courses: [
+        {
+          id: "communication-professionnelle",
+          title: "Communication professionnelle (orale & écrite)",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "1.500.000FG",
+          image: "./images/smiling.jpg",
+          description: "Développez vos compétences en communication professionnelle pour exceller dans vos interactions quotidiennes en environnement minier.",
+          topics: [
+            "Techniques de communication orale efficace",
+            "Rédaction professionnelle et correspondance",
+            "Présentation en public et réunions",
+            "Communication interculturelle en milieu minier"
+          ],
+          certification: "Certificat de Communication Professionnelle"
+        },
+        {
+          id: "anglais-technique-mine",
+          title: "Anglais technique pour la mine",
+          duration: "6 Semaines",
+          level: "Débutant à Intermédiaire",
+          price: "2.400.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Maîtrisez le vocabulaire technique anglais spécifique à l'industrie minière pour communiquer efficacement dans un contexte international.",
+          topics: [
+            "Vocabulaire technique minier en anglais",
+            "Communication opérationnelle sur site",
+            "Lecture de documents techniques en anglais",
+            "Interaction avec les équipes internationales"
+          ],
+          certification: "Certificat d'Anglais Technique Minier"
+        },
+        {
+          id: "redaction-rapports",
+          title: "Rédaction de rapports et documentation",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.200.000FG",
+          image: "./images/Secretary.jpg",
+          description: "Apprenez à rédiger des rapports professionnels clairs et structurés, essentiels pour la documentation des opérations minières.",
+          topics: [
+            "Structure et méthodologie de rapport",
+            "Rédaction d'incidents et d'observations",
+            "Documentation technique et procédures",
+            "Synthèse et présentation de données"
+          ],
+          certification: "Attestation de Rédaction Professionnelle"
+        },
+        {
+          id: "communication-interpersonnelle",
+          title: "Communication interpersonnelle au travail",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.300.000FG",
+          image: "./images/team.jpg",
+          description: "Renforcez vos compétences relationnelles pour créer un environnement de travail harmonieux et productif.",
+          topics: [
+            "Écoute active et empathie",
+            "Communication assertive et bienveillante",
+            "Gestion des émotions en situation professionnelle",
+            "Construction de relations de travail positives"
+          ],
+          certification: "Certificat de Communication Interpersonnelle"
+        },
+        {
+          id: "resolution-conflits",
+          title: "Résolution de conflits et culture du feedback",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "1.800.000FG",
+          image: "./images/trainer.jpg",
+          description: "Développez vos compétences en résolution de conflits et apprenez à donner et recevoir des feedbacks constructifs.",
+          topics: [
+            "Identification et analyse des conflits",
+            "Techniques de médiation et négociation",
+            "Feedback constructif et bienveillant",
+            "Prévention des conflits en équipe"
+          ],
+          certification: "Certificat de Résolution de Conflits"
+        },
+        {
+          id: "culture-informatique-base",
+          title: "Culture informatique de base (email, fichiers, Excel, PDF)",
+          duration: "4 Semaines",
+          level: "Débutant",
+          price: "2.000.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Acquérez les compétences informatiques essentielles pour évoluer dans l'environnement numérique moderne du secteur minier.",
+          topics: [
+            "Gestion des emails et communication numérique",
+            "Organisation et gestion de fichiers",
+            "Bases d'Excel pour la saisie de données",
+            "Création et manipulation de documents PDF"
+          ],
+          certification: "Certificat de Culture Informatique"
+        },
+        {
+          id: "outils-digitaux-mine",
+          title: "Outils digitaux pour la mine (tablettes FMS, ERP, applis sécurité)",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "2.500.000FG",
+          image: "./images/Loader operating.jpg",
+          description: "Maîtrisez les outils numériques spécifiques utilisés dans les opérations minières modernes pour améliorer l'efficacité opérationnelle.",
+          topics: [
+            "Utilisation des tablettes FMS sur le terrain",
+            "Navigation dans les systèmes ERP miniers",
+            "Applications de sécurité et reporting",
+            "Maintenance numérique et check-lists digitales"
+          ],
+          certification: "Certificat d'Outils Digitaux Miniers"
+        },
+        {
+          id: "saisie-donnees-rapports",
+          title: "Saisie de données, formulaires numériques et rapports miniers",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "1.600.000FG",
+          image: "./images/working.jpg",
+          description: "Apprenez à saisir efficacement les données opérationnelles et à générer des rapports numériques précis et exploitables.",
+          topics: [
+            "Saisie de données précise et efficace",
+            "Utilisation de formulaires numériques",
+            "Génération de rapports automatisés",
+            "Contrôle qualité des données saisies"
+          ],
+          certification: "Attestation de Saisie de Données"
+        },
+        {
+          id: "microsoft-office",
+          title: "Introduction à Microsoft Office / Google Workspace",
+          duration: "4 Semaines",
+          level: "Débutant",
+          price: "2.200.000FG",
+          image: "./images/CEO.jpg",
+          description: "Maîtrisez les suites bureautiques essentielles pour la productivité professionnelle dans le secteur minier.",
+          topics: [
+            "Word : documents et rapports professionnels",
+            "Excel : tableaux et calculs de base",
+            "PowerPoint : présentations efficaces",
+            "Collaboration et partage de documents"
+          ],
+          certification: "Certificat Suites Bureautiques"
+        },
+        {
+          id: "cybersecurite-etiquette",
+          title: "Bases de cybersécurité & étiquette digitale",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.400.000FG",
+          image: "./images/expert.jpg",
+          description: "Développez une culture de cybersécurité et apprenez les bonnes pratiques digitales pour protéger les données sensibles de l'entreprise.",
+          topics: [
+            "Principes de base de la cybersécurité",
+            "Protection des mots de passe et données",
+            "Étiquette professionnelle numérique",
+            "Prévention des risques cyber en entreprise"
+          ],
+          certification: "Attestation de Cybersécurité"
+        },
+        {
+          id: "ethique-responsabilite",
+          title: "Éthique et responsabilité au travail",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.300.000FG",
+          image: "./images/smiling.jpg",
+          description: "Développez une conscience professionnelle forte et intégrez les valeurs éthiques essentielles pour une carrière réussie dans le secteur minier.",
+          topics: [
+            "Valeurs et éthique professionnelle",
+            "Responsabilité individuelle et collective",
+            "Intégrité et honnêteté au travail",
+            "Respect de l'environnement et des communautés"
+          ],
+          certification: "Certificat d'Éthique Professionnelle"
+        },
+        {
+          id: "travail-equipe-terrain",
+          title: "Travail d'équipe et collaboration sur le terrain",
+          duration: "3 Semaines",
+          level: "Débutant",
+          price: "1.700.000FG",
+          image: "./images/Team and loader.jpg",
+          description: "Renforcez vos compétences de travail en équipe pour une collaboration efficace dans l'environnement exigeant des opérations minières.",
+          topics: [
+            "Dynamiques d'équipe en milieu minier",
+            "Collaboration efficace sur le terrain",
+            "Soutien mutuel et entraide",
+            "Gestion de la diversité culturelle"
+          ],
+          certification: "Certificat de Travail d'Équipe"
+        },
+        {
+          id: "gestion-temps-shifts",
+          title: "Gestion du temps et planification des shifts",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.200.000FG",
+          image: "./images/good operator.jpg",
+          description: "Optimisez votre gestion du temps et adaptez-vous efficacement aux contraintes horaires spécifiques du travail minier.",
+          topics: [
+            "Techniques de gestion du temps",
+            "Adaptation aux horaires de shifts",
+            "Priorisation des tâches",
+            "Équilibre vie professionnelle/personnelle"
+          ],
+          certification: "Attestation de Gestion du Temps"
+        },
+        {
+          id: "comportement-intelligence-emotionnelle",
+          title: "Comportement professionnel et intelligence émotionnelle",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "1.800.000FG",
+          image: "./images/women.jpg",
+          description: "Développez votre intelligence émotionnelle et adoptez des comportements professionnels adaptés aux défis du secteur minier.",
+          topics: [
+            "Conscience de soi et autorégulation",
+            "Empathie et compétences sociales",
+            "Gestion du stress et des émotions",
+            "Comportement professionnel exemplaire"
+          ],
+          certification: "Certificat d'Intelligence Émotionnelle"
+        },
+        {
+          id: "adaptabilite-apprentissage",
+          title: "Adaptabilité et apprentissage en situation de travail",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.400.000FG",
+          image: "./images/durabity.jpg",
+          description: "Développez votre capacité d'adaptation et d'apprentissage continu pour évoluer dans un secteur en constante transformation.",
+          topics: [
+            "Développement de la flexibilité mentale",
+            "Apprentissage continu et curiosité",
+            "Adaptation aux changements technologiques",
+            "Résilience et gestion du changement"
+          ],
+          certification: "Attestation d'Adaptabilité"
+        },
+        {
+          id: "bases-leadership-superviseurs",
+          title: "Bases du leadership pour superviseurs",
+          duration: "4 Semaines",
+          level: "Intermédiaire",
+          price: "2.600.000FG",
+          image: "./images/trainer.jpg",
+          description: "Développez vos compétences de leadership pour accéder à des postes de supervision et encadrer efficacement vos équipes.",
+          topics: [
+            "Styles de leadership et adaptation",
+            "Motivation et engagement des équipes",
+            "Délégation et responsabilisation",
+            "Communication de leader"
+          ],
+          certification: "Certificat de Leadership de Base"
+        },
+        {
+          id: "initiative-resolution-problemes",
+          title: "Prise d'initiative et résolution de problèmes",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "1.900.000FG",
+          image: "./images/truck operatoo.jpg",
+          description: "Développez votre capacité à prendre des initiatives et à résoudre efficacement les problèmes rencontrés en situation professionnelle.",
+          topics: [
+            "Développement de l'esprit d'initiative",
+            "Méthodologie de résolution de problèmes",
+            "Créativité et innovation",
+            "Prise de décision autonome"
+          ],
+          certification: "Certificat de Résolution de Problèmes"
+        },
+        {
+          id: "orientation-client",
+          title: "Orientation client (pour fournisseurs/logistique)",
+          duration: "2 Semaines",
+          level: "Intermédiaire",
+          price: "1.500.000FG",
+          image: "./images/Secretary.jpg",
+          description: "Développez une approche orientée client pour exceller dans les services de support, logistique et relations fournisseurs.",
+          topics: [
+            "Compréhension des besoins clients",
+            "Service client de qualité",
+            "Gestion des réclamations",
+            "Amélioration continue du service"
+          ],
+          certification: "Certificat d'Orientation Client"
+        },
+        {
+          id: "evolution-carriere",
+          title: "Évolution de carrière et auto-motivation",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "1.800.000FG",
+          image: "./images/CEO.jpg",
+          description: "Planifiez votre évolution professionnelle et développez les compétences d'auto-motivation nécessaires pour atteindre vos objectifs de carrière.",
+          topics: [
+            "Planification de carrière stratégique",
+            "Auto-évaluation et développement personnel",
+            "Réseautage professionnel",
+            "Motivation intrinsèque et persévérance"
+          ],
+          certification: "Certificat de Développement de Carrière"
+        },
+        {
+          id: "sante-mentale-travail-isole",
+          title: "Sensibilisation à la santé mentale en travail isolé",
+          duration: "2 Semaines",
+          level: "Débutant",
+          price: "1.300.000FG",
+          image: "./images/work.jpg",
+          description: "Développez une conscience de la santé mentale et apprenez à gérer les défis psychologiques du travail en environnement minier isolé.",
+          topics: [
+            "Reconnaissance des signes de détresse",
+            "Stratégies de gestion du stress",
+            "Maintien du bien-être mental",
+            "Ressources d'aide et de soutien"
+          ],
+          certification: "Attestation de Santé Mentale au Travail"
+        }
+      ],
       subcategories: [
         {
           id: 'communication',
