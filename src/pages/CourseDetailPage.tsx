@@ -6,9 +6,143 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Clock, Users, Award, CheckCircle } from 'lucide-react';
 import specializations from '../data/specializations';
 
+// Import individual course pages
+import IntroSecuritePage from './courses/IntroSecuritePage';
+import ISO45001Page from './courses/ISO45001Page';
+import IntroDieselPage from './courses/IntroDieselPage';
+import EPIPage from './courses/EPIPage';
+import HazardIdPage from './courses/HazardIdPage';
+import EmergencyPage from './courses/EmergencyPage';
+import OutilsBasePage from './courses/OutilsBasePage';
+import SystemesMoteurPage from './courses/SystemesMoteurPage';
+import ErgonomiePage from './courses/ErgonomiePage';
+import IncendiePage from './courses/IncendiePage';
+import EvaluationRisquesPage from './courses/EvaluationRisquesPage';
+import LectureManuelsPage from './courses/LectureManuelsPage';
+import ComposantsMoteurPage from './courses/ComposantsMoteurPage';
+import IntroGenieMinerPage from './courses/IntroGenieMinerPage';
+import UtilisationEnginsLourdsPage from './courses/UtilisationEnginsLourdsPage';
+import SecuriteEnvironnementalePage from './courses/SecuriteEnvironnementalePage';
+import FormationInductionPage from './courses/FormationInductionPage';
+import SystemesAlimPage from './courses/SystemesAlimPage';
+import SecuriteElectriqueBasePage from './courses/SecuriteElectriqueBasePage';
+import CommunicationProfessionnellePage from './courses/CommunicationProfessionnellePage';
+import LeadershipOperationsPage from './courses/LeadershipOperationsPage';
+import MaintenancePreventivePage from './courses/MaintenancePreventivePage';
+import SoudurePage from './courses/SoudurePage';
+import SecuriteMinierePage from './courses/SecuriteMinierePage';
+import TeamworkPage from './courses/TeamworkPage';
+import ElectriqueIndustriellePage from './courses/ElectriqueIndustriellePage';
+import AutomatisationPage from './courses/AutomatisationPage';
+// Heavy Equipment Course Pages
+import OperationExcavatorPage from './courses/OperationExcavatorPage';
+import OperationBulldozerPage from './courses/OperationBulldozerPage';
+import OperationChargeusePage from './courses/OperationChargeusePage';
+import OperationCamionPage from './courses/OperationCamionPage';
+// Mining Operations Management Course Pages
+import GestionLogistiquePage from './courses/GestionLogistiquePage';
+import GestionPerformancePage from './courses/GestionPerformancePage';
+import GestionTempsPage from './courses/GestionTempsPage';
+import PlanificationMinierePage from './courses/PlanificationMinierePage';
+import ControleQualitePage from './courses/ControleQualitePage';
+import ResolutionProblemetPage from './courses/ResolutionProblemetPage';
+// Additional unmapped custom pages
+import LubrificationPage from './courses/LubrificationPage';
+import TransmissionAutomatiquePage from './courses/TransmissionAutomatiquePage';
+import SystemesElectriquesPage from './courses/SystemesElectriquesPage';
+import SystemeRefroidissementPage from './courses/SystemeRefroidissementPage';
+import RapportIncidentPage from './courses/RapportIncidentPage';
+import MethodesExtractionPage from './courses/MethodesExtractionPage';
+import ForageMiniePage from './courses/ForageMiniePage';
+import GeologieAppliquePage from './courses/GeologieAppliquePage';
+import LeadershipPage from './courses/LeadershipPage';
+import CommunicationEfficacePage from './courses/CommunicationEfficacePage';
+import ElectroniqueIndustriellePage from './courses/ElectroniqueIndustriellePage';
+
 const CourseDetailPage = () => {
   const { courseId } = useParams<{ courseId: string }>();
   
+  // Route to individual course pages for custom styling
+  const customPages: { [key: string]: React.ComponentType } = {
+    'intro-securite': IntroSecuritePage,
+    'iso-45001': ISO45001Page,
+    'intro-diesel': IntroDieselPage,
+    'epi': EPIPage,
+    'hazard-id': HazardIdPage,
+    'emergency': EmergencyPage,
+    'outils-base': OutilsBasePage,
+    'systemes-moteur': SystemesMoteurPage,
+    'ergonomie': ErgonomiePage,
+    'incendie': IncendiePage,
+    'evaluation-risques': EvaluationRisquesPage,
+    'lecture-manuels': LectureManuelsPage,
+    'composants-moteur': ComposantsMoteurPage,
+    'intro-genie-minier': IntroGenieMinerPage,
+    'utilisation-engins-lourds': UtilisationEnginsLourdsPage,
+    'securite-environnementale': SecuriteEnvironnementalePage,
+    'formation-induction': FormationInductionPage,
+    'systemes-alim': SystemesAlimPage,
+    'securite-electrique-base': SecuriteElectriqueBasePage,
+    'communication-professionnelle': CommunicationProfessionnellePage,
+    'leadership-operations': LeadershipOperationsPage,
+    'maintenance-prev': MaintenancePreventivePage,
+    'soudure': SoudurePage,
+    'welding': SoudurePage, // English alternative
+    'securite-avancee': SecuriteMinierePage,
+    'securite-miniere': SecuriteMinierePage, // Alternative mapping
+    'travail-equipe-terrain': TeamworkPage,
+    'teamwork': TeamworkPage, // English alternative
+    'team-work': TeamworkPage, // Alternative mapping
+    'electrique': ElectriqueIndustriellePage,
+    'electrical': ElectriqueIndustriellePage, // English alternative
+    'electrique-industrielle': ElectriqueIndustriellePage, // Full name
+    'automatisation-scada': AutomatisationPage,
+    'scada': AutomatisationPage, // Short version
+    'automation': AutomatisationPage, // English alternative
+    // Additional course ID mappings for variations
+    'securite-electrique': SecuriteElectriqueBasePage, // Alternative mapping
+    // Heavy Equipment Operation Pages
+    'excavator': OperationExcavatorPage,
+    'bulldozer': OperationBulldozerPage, 
+    'Chargeuses': OperationChargeusePage, // Note: Capital C as in data
+    'chargeuses': OperationChargeusePage, // Alternative lowercase
+    'camion': OperationCamionPage,
+    // Mining Operations Management Pages
+    'gestion-flotte-operations': GestionLogistiquePage,
+    'kpis-tableaux-bord': GestionPerformancePage,
+    'planification-itineraires': GestionTempsPage,
+    'planification-maintenance': PlanificationMinierePage,
+    'lean-mining': ControleQualitePage,
+    // Soft Skills & Digital Culture Pages
+    'gestion-temps-shifts': GestionTempsPage, // Time management for shift work
+    'initiative-resolution-problemes': ResolutionProblemetPage, // Problem-solving initiative
+    'bases-leadership-superviseurs': LeadershipOperationsPage, // Leadership basics for supervisors
+    'communication-interpersonnelle': CommunicationEfficacePage, // Interpersonal communication
+    // Diesel Mechanics Pages
+    'lubrification': LubrificationPage, // Lubrification and cooling systems
+    'transmission': TransmissionAutomatiquePage, // Transmission systems
+    // Electrical & Mechatronics Pages
+    'circuits-dc-ac': SystemesElectriquesPage, // DC/AC circuits and basic measurements
+    'systemes-electriques': SystemesElectriquesPage, // Electrical systems
+    'batteries-electronique-puissance': ElectroniqueIndustriellePage, // Industrial electronics/power electronics
+    // Mining Engineering Pages
+    'methodes-exploitation': MethodesExtractionPage, // Mining exploitation methods
+    'forage-minage': ForageMiniePage, // Drilling and blasting techniques
+    'geologie-mecanique': GeologieAppliquePage, // Geology and rock mechanics
+    // Safety Pages
+    'rapport-incident': RapportIncidentPage, // Incident reporting
+  };
+
+  // If there's a custom page for this course, render it
+  if (courseId && customPages[courseId]) {
+    console.log('CourseDetailPage - Found custom page for:', courseId);
+    const CustomPage = customPages[courseId];
+    return <CustomPage />;
+  }
+  
+  console.log('CourseDetailPage - No custom page found, falling back to generic template');
+  
+  // Otherwise, fall back to the generic template
   // Find the course across all specializations
   let foundCourse = null;
   let foundSpecialization = null;
