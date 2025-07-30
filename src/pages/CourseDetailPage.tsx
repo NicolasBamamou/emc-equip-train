@@ -77,6 +77,18 @@ import CatKomatsuPage from './courses/CatKomatsuPage';
 import CamionsMiniersPage from './courses/CamionsMiniersPage';
 import GestionFlottePage from './courses/GestionFlottePage';
 import TractionElectriquePage from './courses/TractionElectriquePage';
+// Electrical & Mechatronics Specialization Course Pages
+import TechniquesCablagePage from './courses/TechniquesCablagePage';
+import LectureSchemasPage from './courses/LectureSchemasPage';
+import MoteursGenerateursPage from './courses/MoteursGenerateursPage';
+import MoteursVfdPage from './courses/MoteursVfdPage';
+import CapteursActionneursPage from './courses/CapteursActionneursPage';
+import ProgrammationPlcPage from './courses/ProgrammationPlcPage';
+import SystemesElectriquesMinesPage from './courses/SystemesElectriquesMinesPage';
+import SystemesMecatroniquesPage from './courses/SystemesMecatroniquesPage';
+import DiagnosticElectriquePage from './courses/DiagnosticElectriquePage';
+import ProtocolesCommunicationPage from './courses/ProtocolesCommunicationPage';
+import EquipementsHauteTensionPage from './courses/EquipementsHauteTensionPage';
 
 const CourseDetailPage = () => {
   const { courseId } = useParams<{ courseId: string }>();
@@ -169,6 +181,18 @@ const CourseDetailPage = () => {
     'camions-miniers': CamionsMiniersPage, // Mining truck maintenance (Belaz, Howo, Shacman)
     'gestion-flotte': GestionFlottePage, // Fleet management and maintenance
     'traction-electrique': TractionElectriquePage, // Electric traction systems on modern equipment
+    // Electrical & Mechatronics Specialization Course Pages  
+    'techniques-cablage': TechniquesCablagePage, // Wiring techniques and safety protocols
+    'lecture-schemas': LectureSchemasPage, // Reading electrical schematics and blueprints
+    'moteurs-generateurs': MoteursGenerateursPage, // Motors and generators in mining equipment
+    'moteurs-vfd': MoteursVfdPage, // VFD systems and motor control
+    'capteurs-actionneurs': CapteursActionneursPage, // Sensors and actuators in mining automation
+    'programmation-plc': ProgrammationPlcPage, // PLC programming for mining equipment
+    'systemes-electriques-mines': SystemesElectriquesMinesPage, // Electrical systems in mining operations
+    'systemes-mecatroniques': SystemesMecatroniquesPage, // Mechatronic systems and advanced automation
+    'diagnostic-electrique': DiagnosticElectriquePage, // Electrical diagnostics and troubleshooting
+    'protocoles-communication': ProtocolesCommunicationPage, // Industrial communication protocols
+    'equipements-haute-tension': EquipementsHauteTensionPage, // High voltage equipment operation and maintenance
   };
 
   // If there's a custom page for this course, render it
