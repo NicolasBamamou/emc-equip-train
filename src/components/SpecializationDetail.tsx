@@ -56,6 +56,23 @@ const getModuleLabel = (spec: Specialization, courseIdOrTitle: string) => {
   return null;
 };
 
+// Helper function to find the actual course ID from the title
+const findCourseIdByTitle = (spec: Specialization, courseTitle: string): string | null => {
+  if (!spec.courses) return null;
+  
+  // First try exact title match
+  const exactMatch = spec.courses.find(course => course.title === courseTitle);
+  if (exactMatch) return exactMatch.id;
+  
+  // If no exact match, try normalized title match
+  const normalizedTitle = courseTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const normalizedMatch = spec.courses.find(course => 
+    course.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === normalizedTitle
+  );
+  
+  return normalizedMatch ? normalizedMatch.id : null;
+};
+
 const SpecializationDetail = ({ spec }: { spec: Specialization }) => {
   const [showAll, setShowAll] = useState(false);
   const isDiesel = spec.id === 'diesel-mechanics';
@@ -74,16 +91,19 @@ const SpecializationDetail = ({ spec }: { spec: Specialization }) => {
             <div key={idx} className="bg-white rounded-xl shadow-md p-6 flex flex-col">
               <h3 className="text-xl font-bold mb-4 text-primary text-center">{module.title}</h3>
               <ul className="space-y-2">
-                {module.courses.map((course, i) => (
-                  <li key={i}>
-                    <a
-                      href={`#${course.id || course.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                      className="text-blue-700 hover:underline font-medium transition-colors"
-                    >
-                      {course.label || course.title}
-                    </a>
-                  </li>
-                ))}
+                {module.courses.map((course, i) => {
+                  const courseId = course.id || findCourseIdByTitle(spec, course.title);
+                  return (
+                    <li key={i}>
+                      <Link
+                        to={courseId ? `/course/${courseId}` : '#'}
+                        className={`font-medium transition-colors ${courseId ? 'text-blue-700 hover:underline' : 'text-gray-400 cursor-not-allowed'}`}
+                      >
+                        {course.label || course.title}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -153,13 +173,11 @@ const SpecializationDetail = ({ spec }: { spec: Specialization }) => {
                     <Button variant="outline" asChild>
                       <Link to="/contact">Demander des Informations</Link>
                     </Button>
-                    <a
-                      href={`#${course.id || course.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                      className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold hover:bg-blue-200 transition-colors border border-blue-300 ml-auto"
-                      style={{ minWidth: '120px', textAlign: 'center' }}
-                    >
-                      En savoir plus
-                    </a>
+                    <Button variant="outline" asChild>
+                      <Link to={`/course/${course.id || course.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
+                        En savoir plus
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               </div>

@@ -249,11 +249,11 @@ const specializations = [
           id: 'foundational',
           title: 'Cours Fondamentaux',
           courses: [
-            { title: 'Introduction à la Sécurité Minière' },
-            { title: 'Formation sur les Équipements de Protection Individuelle (EPI)' },
-            { title: 'Identification des Dangers sur le Lieu de Travail' },
+            { title: 'Introduction à la Sécurité Minière', id: 'intro-securite' },
+            { title: 'Formation sur les Équipements de Protection Individuelle (EPI)', id: 'epi' },
+            { title: 'Identification des Dangers sur le Lieu de Travail', id: 'hazard-id' },
             { title: 'Procédures d’Urgence et Premiers Secours' },
-            { title: 'Manutention Manuelle et Ergonomie' },
+            { title: 'Manutention Manuelle et Ergonomie', id: 'ergonomie' },
             { title: 'Sécurité Incendie de Base et Plans d’Évacuation' },
           ]
         },
