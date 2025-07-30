@@ -58,6 +58,13 @@ import GeologieAppliquePage from './courses/GeologieAppliquePage';
 import LeadershipPage from './courses/LeadershipPage';
 import CommunicationEfficacePage from './courses/CommunicationEfficacePage';
 import ElectroniqueIndustriellePage from './courses/ElectroniqueIndustriellePage';
+// Safety Specialization Course Pages
+import ProtocolesElectromecaniquePage from './courses/ProtocolesElectromecaniquePage';
+import ReglementationMinierePage from './courses/ReglementationMinierePage';
+import GestionSuperviseurPage from './courses/GestionSuperviseurPage';
+import HazmatPage from './courses/HazmatPage';
+import ReponseUrgenceAvanceePage from './courses/ReponseUrgenceAvanceePage';
+import HygieneIndustriellePage from './courses/HygieneIndustriellePage';
 
 const CourseDetailPage = () => {
   const { courseId } = useParams<{ courseId: string }>();
@@ -131,6 +138,13 @@ const CourseDetailPage = () => {
     'geologie-mecanique': GeologieAppliquePage, // Geology and rock mechanics
     // Safety Pages
     'rapport-incident': RapportIncidentPage, // Incident reporting
+    // Safety & Mining Regulation Specialization Pages
+    'protocoles-electromecanique': ProtocolesElectromecaniquePage, // Electrical & mechanical safety protocols
+    'reglementation-miniere': ReglementationMinierePage, // Mining regulations and compliance
+    'gestion-superviseurs': GestionSuperviseurPage, // Health & safety management for supervisors
+    'hazmat': HazmatPage, // Hazardous materials management
+    'reponse-urgence-avancee': ReponseUrgenceAvanceePage, // Advanced emergency response & crisis management
+    'hygiene-industrielle': HygieneIndustriellePage, // Industrial hygiene and occupational health
   };
 
   // If there's a custom page for this course, render it

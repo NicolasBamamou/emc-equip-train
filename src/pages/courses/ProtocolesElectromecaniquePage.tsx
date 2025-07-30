@@ -1,0 +1,234 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Header from '../../components/layout/Header';
+import Footer from '../../components/layout/Footer';
+import { Button } from '@/components/ui/button';
+import { ArrowLeft, Zap, Shield, AlertTriangle, CheckCircle, PlayCircle, Award, Users, Clock, BookOpen, Target, Lightbulb } from 'lucide-react';
+import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
+
+const ProtocolesElectromecaniquePage = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <Header />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative container mx-auto px-4 py-20">
+          <Link to="/courses" className="inline-flex items-center text-blue-200 hover:text-white mb-8 transition-colors">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Retour aux formations
+          </Link>
+          
+          <div className="max-w-4xl">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
+                <Zap className="w-8 h-8" />
+              </div>
+              <Badge className="bg-blue-500/20 text-blue-100 border-blue-300/30 px-4 py-2 text-lg font-semibold">
+                Sécurité Avancée
+              </Badge>
+            </div>
+            
+            <h1 className="text-5xl font-bold mb-6">
+              Protocoles de Sécurité 
+              <span className="bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
+                {" "}Électrique & Mécanique
+              </span>
+            </h1>
+            
+            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+              Maîtrisez les protocoles de sécurité critiques pour les interventions électriques et mécaniques en environnement minier. 
+              Formation avancée sur les procédures LOTO, la consignation et la remise en service sécurisée.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <div className="flex items-center bg-white/10 rounded-full px-6 py-3 backdrop-blur-sm">
+                <Clock className="w-5 h-5 mr-2 text-blue-200" />
+                <span className="font-semibold">3 Semaines</span>
+              </div>
+              <div className="flex items-center bg-white/10 rounded-full px-6 py-3 backdrop-blur-sm">
+                <Users className="w-5 h-5 mr-2 text-blue-200" />
+                <span className="font-semibold">Intermédiaire</span>
+              </div>
+              <div className="flex items-center bg-white/10 rounded-full px-6 py-3 backdrop-blur-sm">
+                <Award className="w-5 h-5 mr-2 text-blue-200" />
+                <span className="font-semibold">2.200.000FG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main className="flex-1 bg-gradient-to-br from-gray-50 to-blue-50/30">
+        <div className="container mx-auto px-4 py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-3 gap-12 mb-16">
+              
+              {/* Course Overview */}
+              <div className="lg:col-span-2">
+                <Card className="border-none shadow-2xl overflow-hidden bg-gradient-to-br from-white to-blue-50/50">
+                  <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-t-lg">
+                    <div className="flex items-center gap-3">
+                      <BookOpen className="w-8 h-8" />
+                      <div>
+                        <h2 className="text-2xl font-bold">Vue d'ensemble du cours</h2>
+                        <p className="text-blue-100">Formation spécialisée en sécurité électromécanique</p>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-8">
+                    <div className="space-y-6">
+                      <p className="text-gray-700 text-lg leading-relaxed">
+                        Cette formation avancée vous prépare à intervenir en toute sécurité sur les équipements électriques et mécaniques. 
+                        Apprenez les protocoles de consignation (LOTO), les procédures de sécurité lors des interventions et les bonnes pratiques 
+                        de remise en service.
+                      </p>
+                      
+                      <div className="grid md:grid-cols-2 gap-6">
+                        {[
+                          { icon: Shield, title: "Consignation LOTO", desc: "Procédures de verrouillage/étiquetage", color: "text-blue-600" },
+                          { icon: AlertTriangle, title: "Sécurité Mécanique", desc: "Interventions sécurisées sur machines", color: "text-indigo-600" },
+                          { icon: Zap, title: "Sécurité Électrique", desc: "Manipulation d'équipements électriques", color: "text-purple-600" },
+                          { icon: CheckCircle, title: "Remise en Service", desc: "Protocoles de redémarrage sécurisé", color: "text-green-600" }
+                        ].map((item, index) => (
+                          <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100">
+                            <div className={`w-3 h-3 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full`}></div>
+                            <div>
+                              <p className="font-semibold text-gray-800">{item.title}</p>
+                              <p className="text-sm text-gray-600">{item.desc}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+                
+                {/* Curriculum */}
+                <Card className="border-none shadow-2xl mt-8 overflow-hidden bg-gradient-to-br from-white to-indigo-50/50">
+                  <CardHeader className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+                    <div className="flex items-center gap-3">
+                      <Target className="w-8 h-8" />
+                      <div>
+                        <h3 className="text-2xl font-bold">Programme de formation</h3>
+                        <p className="text-indigo-100">Modules détaillés du cours</p>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-8">
+                    <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6">
+                      <div className="space-y-6">
+                        {[
+                          { week: "Semaine 1", topic: "Consignation électrique (LOTO)", details: "Principes, procédures et équipements" },
+                          { week: "Semaine 2", topic: "Sécurité lors des interventions mécaniques", details: "Isolation, verrouillage et protection" },
+                          { week: "Semaine 3", topic: "Utilisation des équipements de test", details: "VAT, multimètres et testeurs spécialisés" },
+                          { week: "Bonus", topic: "Procédures de remise en service", details: "Vérifications et redémarrage sécurisé" }
+                        ].map((module, index) => (
+                          <div key={index} className="flex items-start gap-4">
+                            <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold">
+                              {index + 1}
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center gap-3 mb-2">
+                                <h4 className="font-bold text-gray-800">{module.week}</h4>
+                                <Badge className="bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 border-indigo-300">
+                                  {module.topic}
+                                </Badge>
+                              </div>
+                              <p className="text-gray-600">{module.details}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Sidebar */}
+              <div className="space-y-8">
+                <Card className="border-indigo-200 shadow-xl bg-gradient-to-br from-indigo-50 to-purple-50">
+                  <CardHeader className="bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
+                    <div className="flex items-center gap-3">
+                      <Award className="w-8 h-8" />
+                      <div>
+                        <h3 className="text-xl font-bold">Certification</h3>
+                        <div className="text-4xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                          Professional
+                        </div>
+                        <p className="text-indigo-100">Sécurité Électromécanique</p>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-green-600" />
+                        <span className="text-sm text-gray-700">Certificat reconnu internationalement</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-green-600" />
+                        <span className="text-sm text-gray-700">Validation des compétences LOTO</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-green-600" />
+                        <span className="text-sm text-gray-700">Formation pratique sur équipements</span>
+                      </div>
+                    </div>
+                    <Separator className="bg-gradient-to-r from-indigo-200 to-purple-200 my-4" />
+                    <div className="text-center">
+                      <p className="text-sm text-gray-600 mb-4">
+                        Validez vos compétences en sécurité électromécanique
+                      </p>
+                      <Button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200">
+                        <PlayCircle className="w-4 h-4 mr-2" />
+                        Commencer maintenant
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-blue-200 shadow-xl bg-gradient-to-br from-blue-50 to-indigo-50">
+                  <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+                    <div className="flex items-center gap-3">
+                      <Lightbulb className="w-6 h-6" />
+                      <h3 className="text-lg font-bold">Pourquoi cette formation ?</h3>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <ul className="space-y-3 text-sm text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <span>Réduisez les risques d'accidents électriques et mécaniques</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <span>Maîtrisez les protocoles de consignation internationaux</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <span>Intervenez en sécurité sur tout type d'équipement</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <span>Respectez les normes de sécurité minières</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default ProtocolesElectromecaniquePage;
