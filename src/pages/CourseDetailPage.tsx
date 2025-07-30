@@ -89,110 +89,158 @@ import SystemesMecatroniquesPage from './courses/SystemesMecatroniquesPage';
 import DiagnosticElectriquePage from './courses/DiagnosticElectriquePage';
 import ProtocolesCommunicationPage from './courses/ProtocolesCommunicationPage';
 import EquipementsHauteTensionPage from './courses/EquipementsHauteTensionPage';
+// Mining Engineering Specialization Course Pages
+import TerminologieOperationsPage from './courses/TerminologieOperationsPage';
+import SecuriteEnvironnementPage from './courses/SecuriteEnvironnementPage';
+import TopographieCartographiePage from './courses/TopographieCartographiePage';
+import ConceptionPlanificationPage from './courses/ConceptionPlanificationPage';
+import ManutentionTransportPage from './courses/ManutentionTransportPage';
+import EconomieFaisabilitePage from './courses/EconomieFaisabilitePage';
+import SelectionEquipementsPage from './courses/SelectionEquipementsPage';
+import LogicielsPlanificationPage from './courses/LogicielsPlanificationPage';
+import StabilitePentesPage from './courses/StabilitePentesPage';
+import GestionOperationsPage from './courses/GestionOperationsPage';
 
 const CourseDetailPage = () => {
   const { courseId } = useParams<{ courseId: string }>();
   
   // Route to individual course pages for custom styling
   const customPages: { [key: string]: React.ComponentType } = {
-    'intro-securite': IntroSecuritePage,
-    'iso-45001': ISO45001Page,
-    'intro-diesel': IntroDieselPage,
-    'epi': EPIPage,
-    'hazard-id': HazardIdPage,
-    'emergency': EmergencyPage,
-    'outils-base': OutilsBasePage,
-    'systemes-moteur': SystemesMoteurPage,
-    'ergonomie': ErgonomiePage,
-    'incendie': IncendiePage,
-    'evaluation-risques': EvaluationRisquesPage,
-    'lecture-manuels': LectureManuelsPage,
-    'composants-moteur': ComposantsMoteurPage,
-    'intro-genie-minier': IntroGenieMinerPage,
-    'utilisation-engins-lourds': UtilisationEnginsLourdsPage,
-    'securite-environnementale': SecuriteEnvironnementalePage,
-    'formation-induction': FormationInductionPage,
-    'systemes-alim': SystemesAlimPage,
-    'securite-electrique-base': SecuriteElectriqueBasePage,
-    'communication-professionnelle': CommunicationProfessionnellePage,
-    'leadership-operations': LeadershipOperationsPage,
-    'maintenance-prev': MaintenancePreventivePage,
-    'soudure': SoudurePage,
-    'welding': SoudurePage, // English alternative
+    // ===== HEAVY EQUIPMENT OPERATION SPECIALIZATION =====
+    'excavator': OperationExcavatorPage, // Certification d'Opérateur d'Excavatrice
+    'bulldozer': OperationBulldozerPage, // Programme de Formation Bulldozer
+    'Chargeuses': OperationChargeusePage, // Certification Opérateurs de Chargeuses (Note: Capital C as in data)
+    'chargeuses': OperationChargeusePage, // Alternative lowercase
+    'camion': OperationCamionPage, // Certification d'Opérateur de camion minier
+
+    // ===== MINING SAFETY & REGULATION SPECIALIZATION =====
+    // Basic Safety Courses
+    'intro-securite': IntroSecuritePage, // Introduction à la Sécurité Minière
+    'epi': EPIPage, // Formation sur les Équipements de Protection Individuelle (EPI)
+    'hazard-id': HazardIdPage, // Identification des Dangers sur le Lieu de Travail
+    'emergency': EmergencyPage, // Procédures d'Urgence et Premiers Secours
+    'ergonomie': ErgonomiePage, // Manutention Manuelle et Ergonomie
+    'incendie': IncendiePage, // Sécurité Incendie de Base et Plans d'Évacuation
+
+    // Intermediate Safety Courses
+    'evaluation-risques': EvaluationRisquesPage, // Évaluation des Risques et Mesures de Contrôle
+    'utilisation-engins-lourds': UtilisationEnginsLourdsPage, // Utilisation Sécurisée des Engins Lourds
+    'securite-environnementale': SecuriteEnvironnementalePage, // Sécurité Environnementale et Gestion des Déchets
+    'formation-induction': FormationInductionPage, // Formation d'Induction sur Site Minier
+    'rapport-incident': RapportIncidentPage, // Rapport d'Incident et Analyse des Causes
+    'protocoles-electromecanique': ProtocolesElectromecaniquePage, // Protocoles de Sécurité Électrique et Mécanique
+
+    // Advanced Safety Courses
+    'iso-45001': ISO45001Page, // ISO 45001 Systèmes de Gestion Santé & Sécurité
+    'reglementation-miniere': ReglementationMinierePage, // Réglementation Minière et Conformité
+    'gestion-superviseurs': GestionSuperviseurPage, // Gestion Santé & Sécurité pour les Superviseurs
+    'hazmat': HazmatPage, // Gestion des Matières Dangereuses (HAZMAT)
+    'reponse-urgence-avancee': ReponseUrgenceAvanceePage, // Gestion Avancée des Urgences et Crise
+    'hygiene-industrielle': HygieneIndustriellePage, // Hygiène Industrielle et Santé Professionnelle
+
+    // Alternative Safety Mappings
     'securite-avancee': SecuriteMinierePage,
-    'securite-miniere': SecuriteMinierePage, // Alternative mapping
-    'travail-equipe-terrain': TeamworkPage,
-    'teamwork': TeamworkPage, // English alternative
-    'team-work': TeamworkPage, // Alternative mapping
-    'electrique': ElectriqueIndustriellePage,
+    'securite-miniere': SecuriteMinierePage,
+    'securite-electrique': SecuriteElectriqueBasePage,
+    'securite-electrique-base': SecuriteElectriqueBasePage,
+
+    // ===== DIESEL MECHANICS SPECIALIZATION =====
+    // Foundational Diesel Courses
+    'intro-diesel': IntroDieselPage, // Introduction à la mécanique diesel et engins lourds
+    'outils-base': OutilsBasePage, // Outils de base et sécurité d'atelier
+    'lecture-manuels': LectureManuelsPage, // Lecture et interprétation de manuels techniques
+    'securite-atelier': SecuriteAtelierPage, // Sécurité d'atelier et sécurité
+
+    // Intermediate Diesel Courses
+    'systemes-moteur': SystemesMoteurPage, // Systèmes moteur et principes de combustion
+    'composants-moteur': ComposantsMoteurPage, // Composants moteur et assemblages
+    'systemes-alim': SystemesAlimPage, // Systèmes d'alimentation et injection
+    'lubrification': LubrificationPage, // Systèmes de lubrification et refroidissement
+    'hydraulique': HydrauliquePage, // Systèmes hydrauliques pour équipements lourds
+    'transmission': TransmissionAutomatiquePage, // Systèmes de transmission
+    'freinage': FreinagePage, // Freinage, suspension et direction
+
+    // Advanced Diesel Courses
+    'canbus': CanbusPage, // Systèmes CAN Bus et diagnostic ECU
+    'diagnostic-tools': DiagnosticToolsPage, // Outils de diagnostic (CAT ET, Cummins INSITE, Bosch KTS)
+    'emissions': EmissionsPage, // Émissions moteur et conformité environnementale
+    'depannage': DepannagePage, // Techniques de dépannage et résolution de pannes
+    'cat-komatsu': CatKomatsuPage, // Maintenance CAT, Komatsu ou Volvo
+    'camions-miniers': CamionsMiniersPage, // Maintenance camions miniers (Belaz, Howo, Shacman)
+    'gestion-flotte': GestionFlottePage, // Gestion de flotte et maintenance
+    'traction-electrique': TractionElectriquePage, // Systèmes de traction électrique sur équipements modernes
+
+    // ===== ELECTRICAL & MECHATRONICS SPECIALIZATION =====
+    // Foundational Electrical Courses
+    'circuits-dc-ac': SystemesElectriquesPage, // Circuits DC/AC et mesures de base
+    'systemes-electriques': SystemesElectriquesPage, // Systèmes électriques
+    'techniques-cablage': TechniquesCablagePage, // Techniques de câblage et protocoles de sécurité
+    'lecture-schemas': LectureSchemasPage, // Lecture de schémas électriques et plans
+
+    // Intermediate Electrical Courses
+    'electrique': ElectriqueIndustriellePage, // Électrique industrielle
     'electrical': ElectriqueIndustriellePage, // English alternative
     'electrique-industrielle': ElectriqueIndustriellePage, // Full name
-    'automatisation-scada': AutomatisationPage,
+    'batteries-electronique-puissance': ElectroniqueIndustriellePage, // Électronique industrielle/électronique de puissance
+    'moteurs-generateurs': MoteursGenerateursPage, // Moteurs et générateurs dans équipements miniers
+    'moteurs-vfd': MoteursVfdPage, // Systèmes VFD et commande moteur
+    'capteurs-actionneurs': CapteursActionneursPage, // Capteurs et actionneurs dans l'automatisation minière
+
+    // Advanced Electrical Courses
+    'programmation-plc': ProgrammationPlcPage, // Programmation PLC pour équipements miniers
+    'systemes-electriques-mines': SystemesElectriquesMinesPage, // Systèmes électriques dans opérations minières
+    'systemes-mecatroniques': SystemesMecatroniquesPage, // Systèmes mécatroniques et automatisation avancée
+    'diagnostic-electrique': DiagnosticElectriquePage, // Diagnostic électrique et dépannage
+    'protocoles-communication': ProtocolesCommunicationPage, // Protocoles de communication industrielle
+    'equipements-haute-tension': EquipementsHauteTensionPage, // Fonctionnement et maintenance d'équipements haute tension
+    'automatisation-scada': AutomatisationPage, // Automatisation et SCADA
     'scada': AutomatisationPage, // Short version
     'automation': AutomatisationPage, // English alternative
-    // Additional course ID mappings for variations
-    'securite-electrique': SecuriteElectriqueBasePage, // Alternative mapping
-    // Heavy Equipment Operation Pages
-    'excavator': OperationExcavatorPage,
-    'bulldozer': OperationBulldozerPage, 
-    'Chargeuses': OperationChargeusePage, // Note: Capital C as in data
-    'chargeuses': OperationChargeusePage, // Alternative lowercase
-    'camion': OperationCamionPage,
-    // Mining Operations Management Pages
-    'gestion-flotte-operations': GestionLogistiquePage,
-    'kpis-tableaux-bord': GestionPerformancePage,
-    'planification-itineraires': GestionTempsPage,
-    'planification-maintenance': PlanificationMinierePage,
-    'lean-mining': ControleQualitePage,
-    // Soft Skills & Digital Culture Pages
-    'gestion-temps-shifts': GestionTempsPage, // Time management for shift work
-    'initiative-resolution-problemes': ResolutionProblemetPage, // Problem-solving initiative
-    'bases-leadership-superviseurs': LeadershipOperationsPage, // Leadership basics for supervisors
-    'communication-interpersonnelle': CommunicationEfficacePage, // Interpersonal communication
-    // Diesel Mechanics Pages
-    'lubrification': LubrificationPage, // Lubrification and cooling systems
-    'transmission': TransmissionAutomatiquePage, // Transmission systems
-    // Electrical & Mechatronics Pages
-    'circuits-dc-ac': SystemesElectriquesPage, // DC/AC circuits and basic measurements
-    'systemes-electriques': SystemesElectriquesPage, // Electrical systems
-    'batteries-electronique-puissance': ElectroniqueIndustriellePage, // Industrial electronics/power electronics
-    // Mining Engineering Pages
-    'methodes-exploitation': MethodesExtractionPage, // Mining exploitation methods
-    'forage-minage': ForageMiniePage, // Drilling and blasting techniques
-    'geologie-mecanique': GeologieAppliquePage, // Geology and rock mechanics
-    // Safety Pages
-    'rapport-incident': RapportIncidentPage, // Incident reporting
-    // Safety & Mining Regulation Specialization Pages
-    'protocoles-electromecanique': ProtocolesElectromecaniquePage, // Electrical & mechanical safety protocols
-    'reglementation-miniere': ReglementationMinierePage, // Mining regulations and compliance
-    'gestion-superviseurs': GestionSuperviseurPage, // Health & safety management for supervisors
-    'hazmat': HazmatPage, // Hazardous materials management
-    'reponse-urgence-avancee': ReponseUrgenceAvanceePage, // Advanced emergency response & crisis management
-    'hygiene-industrielle': HygieneIndustriellePage, // Industrial hygiene and occupational health
-    // Diesel Specialization Course Pages
-    'securite-atelier': SecuriteAtelierPage, // Workshop safety and security
-    'hydraulique': HydrauliquePage, // Hydraulic systems for heavy equipment
-    'freinage': FreinagePage, // Braking, suspension and steering systems
-    'canbus': CanbusPage, // CAN Bus systems and ECU diagnostics
-    'diagnostic-tools': DiagnosticToolsPage, // Diagnostic tools (CAT ET, Cummins INSITE, Bosch KTS)
-    'emissions': EmissionsPage, // Engine emissions and environmental compliance
-    'depannage': DepannagePage, // Troubleshooting and fault-finding techniques
-    'cat-komatsu': CatKomatsuPage, // CAT, Komatsu or Volvo maintenance
-    'camions-miniers': CamionsMiniersPage, // Mining truck maintenance (Belaz, Howo, Shacman)
-    'gestion-flotte': GestionFlottePage, // Fleet management and maintenance
-    'traction-electrique': TractionElectriquePage, // Electric traction systems on modern equipment
-    // Electrical & Mechatronics Specialization Course Pages  
-    'techniques-cablage': TechniquesCablagePage, // Wiring techniques and safety protocols
-    'lecture-schemas': LectureSchemasPage, // Reading electrical schematics and blueprints
-    'moteurs-generateurs': MoteursGenerateursPage, // Motors and generators in mining equipment
-    'moteurs-vfd': MoteursVfdPage, // VFD systems and motor control
-    'capteurs-actionneurs': CapteursActionneursPage, // Sensors and actuators in mining automation
-    'programmation-plc': ProgrammationPlcPage, // PLC programming for mining equipment
-    'systemes-electriques-mines': SystemesElectriquesMinesPage, // Electrical systems in mining operations
-    'systemes-mecatroniques': SystemesMecatroniquesPage, // Mechatronic systems and advanced automation
-    'diagnostic-electrique': DiagnosticElectriquePage, // Electrical diagnostics and troubleshooting
-    'protocoles-communication': ProtocolesCommunicationPage, // Industrial communication protocols
-    'equipements-haute-tension': EquipementsHauteTensionPage, // High voltage equipment operation and maintenance
+
+    // ===== MINING ENGINEERING & MINE PLANNING SPECIALIZATION =====
+    // Foundational Mining Engineering Courses
+    'intro-genie-minier': IntroGenieMinerPage, // Introduction au génie minier
+    'terminologie-operations': TerminologieOperationsPage, // Terminologie minière et opérations
+    'securite-environnement': SecuriteEnvironnementPage, // Sécurité minière et considérations environnementales
+    'topographie-cartographie': TopographieCartographiePage, // Topographie et cartographie minière
+    'geologie-mecanique': GeologieAppliquePage, // Géologie et mécanique des roches
+
+    // Intermediate Mining Engineering Courses
+    'conception-planification': ConceptionPlanificationPage, // Conception de mines et planification de l'aménagement
+    'manutention-transport': ManutentionTransportPage, // Systèmes de manutention et de transport
+    'economie-faisabilite': EconomieFaisabilitePage, // Économie minière et études de faisabilité
+    'methodes-exploitation': MethodesExtractionPage, // Méthodes d'exploitation minière
+    'forage-minage': ForageMiniePage, // Techniques de forage et minage
+    'selection-equipements': SelectionEquipementsPage, // Sélection et optimisation d'équipements
+
+    // Advanced Mining Engineering Courses
+    'logiciels-planification': LogicielsPlanificationPage, // Logiciels de planification minière (Surpac, Datamine, etc.)
+    'mines-ciel-ouvert': ConceptionPlanificationPage, // Conception et optimisation de mines à ciel ouvert (uses same template)
+    'mines-souterraines': ConceptionPlanificationPage, // Conception de mines souterraines (uses same template)
+    'stabilite-pentes': StabilitePentesPage, // Stabilité des pentes et systèmes de soutènement
+    'gestion-operations': GestionOperationsPage, // Gestion des opérations minières
+    'fermeture-rehabilitation': SecuriteEnvironnementPage, // Fermeture de mines et réhabilitation (uses same template)
+
+    // ===== MINING OPERATIONS MANAGEMENT =====
+    'gestion-flotte-operations': GestionLogistiquePage, // Gestion de flotte et opérations
+    'kpis-tableaux-bord': GestionPerformancePage, // KPIs et tableaux de bord
+    'planification-itineraires': GestionTempsPage, // Planification d'itinéraires
+    'planification-maintenance': PlanificationMinierePage, // Planification de maintenance
+    'lean-mining': ControleQualitePage, // Lean mining
+
+    // ===== SOFT SKILLS & DIGITAL CULTURE =====
+    'communication-professionnelle': CommunicationProfessionnellePage, // Communication professionnelle
+    'communication-interpersonnelle': CommunicationEfficacePage, // Communication interpersonnelle
+    'leadership-operations': LeadershipOperationsPage, // Leadership et opérations
+    'bases-leadership-superviseurs': LeadershipOperationsPage, // Bases du leadership pour superviseurs
+    'maintenance-prev': MaintenancePreventivePage, // Maintenance préventive
+    'soudure': SoudurePage, // Soudure
+    'welding': SoudurePage, // English alternative
+    'travail-equipe-terrain': TeamworkPage, // Travail d'équipe sur le terrain
+    'teamwork': TeamworkPage, // English alternative
+    'team-work': TeamworkPage, // Alternative mapping
+    'gestion-temps-shifts': GestionTempsPage, // Gestion du temps pour le travail par équipes
+    'initiative-resolution-problemes': ResolutionProblemetPage, // Initiative et résolution de problèmes
   };
 
   // If there's a custom page for this course, render it
