@@ -65,6 +65,18 @@ import GestionSuperviseurPage from './courses/GestionSuperviseurPage';
 import HazmatPage from './courses/HazmatPage';
 import ReponseUrgenceAvanceePage from './courses/ReponseUrgenceAvanceePage';
 import HygieneIndustriellePage from './courses/HygieneIndustriellePage';
+// Diesel Specialization Course Pages
+import SecuriteAtelierPage from './courses/SecuriteAtelierPage';
+import HydrauliquePage from './courses/HydrauliquePage';
+import FreinagePage from './courses/FreinagePage';
+import CanbusPage from './courses/CanbusPage';
+import DiagnosticToolsPage from './courses/DiagnosticToolsPage';
+import EmissionsPage from './courses/EmissionsPage';
+import DepannagePage from './courses/DepannagePage';
+import CatKomatsuPage from './courses/CatKomatsuPage';
+import CamionsMiniersPage from './courses/CamionsMiniersPage';
+import GestionFlottePage from './courses/GestionFlottePage';
+import TractionElectriquePage from './courses/TractionElectriquePage';
 
 const CourseDetailPage = () => {
   const { courseId } = useParams<{ courseId: string }>();
@@ -145,6 +157,18 @@ const CourseDetailPage = () => {
     'hazmat': HazmatPage, // Hazardous materials management
     'reponse-urgence-avancee': ReponseUrgenceAvanceePage, // Advanced emergency response & crisis management
     'hygiene-industrielle': HygieneIndustriellePage, // Industrial hygiene and occupational health
+    // Diesel Specialization Course Pages
+    'securite-atelier': SecuriteAtelierPage, // Workshop safety and security
+    'hydraulique': HydrauliquePage, // Hydraulic systems for heavy equipment
+    'freinage': FreinagePage, // Braking, suspension and steering systems
+    'canbus': CanbusPage, // CAN Bus systems and ECU diagnostics
+    'diagnostic-tools': DiagnosticToolsPage, // Diagnostic tools (CAT ET, Cummins INSITE, Bosch KTS)
+    'emissions': EmissionsPage, // Engine emissions and environmental compliance
+    'depannage': DepannagePage, // Troubleshooting and fault-finding techniques
+    'cat-komatsu': CatKomatsuPage, // CAT, Komatsu or Volvo maintenance
+    'camions-miniers': CamionsMiniersPage, // Mining truck maintenance (Belaz, Howo, Shacman)
+    'gestion-flotte': GestionFlottePage, // Fleet management and maintenance
+    'traction-electrique': TractionElectriquePage, // Electric traction systems on modern equipment
   };
 
   // If there's a custom page for this course, render it
