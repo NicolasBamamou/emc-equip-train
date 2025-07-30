@@ -242,6 +242,200 @@ const specializations = [
           ],
           certification: "Certificat de Sécurité Incendie"
         },
+        // Intermediate courses
+        {
+          id: "evaluation-risques",
+          title: "Évaluation des Risques et Mesures de Contrôle",
+          duration: "2 Semaines",
+          level: "Intermédiaire",
+          price: "2.000.000FG",
+          image: "./images/expert.jpg",
+          description: "Apprenez les méthodes d'identification, d'évaluation et de contrôle des risques sur les sites miniers.",
+          topics: [
+            "Méthodologies d'évaluation des risques",
+            "Identification des dangers critiques",
+            "Mise en place de mesures de contrôle",
+            "Surveillance et révision des évaluations"
+          ],
+          certification: "Certificat d'Évaluation des Risques"
+        },
+        {
+          id: "utilisation-engins-lourds",
+          title: "Utilisation Sécurisée des Engins Lourds",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.500.000FG",
+          image: "./images/Loader operating.jpg",
+          description: "Maîtrisez l'utilisation sécurisée des équipements lourds utilisés dans l'industrie minière.",
+          topics: [
+            "Inspection pré-opérationnelle des équipements",
+            "Techniques de conduite sécurisée",
+            "Maintenance préventive de base",
+            "Procédures d'urgence spécifiques aux engins"
+          ],
+          certification: "Certificat d'Opérateur d'Engins Lourds"
+        },
+        {
+          id: "securite-environnementale",
+          title: "Sécurité Environnementale et Gestion des Déchets",
+          duration: "2 Semaines",
+          level: "Intermédiaire",
+          price: "1.800.000FG",
+          image: "./images/work.jpg",
+          description: "Approfondissez vos connaissances en protection environnementale et gestion responsable des déchets miniers.",
+          topics: [
+            "Réglementations environnementales minières",
+            "Classification et traitement des déchets",
+            "Prévention de la pollution",
+            "Audit environnemental de base"
+          ],
+          certification: "Certificat de Sécurité Environnementale"
+        },
+        {
+          id: "formation-induction",
+          title: "Formation d'Induction sur Site Minier",
+          duration: "1 Semaine",
+          level: "Intermédiaire",
+          price: "1.500.000FG",
+          image: "./images/teaminfo.jpg",
+          description: "Formation complète d'accueil et d'intégration pour nouveaux employés sur site minier.",
+          topics: [
+            "Présentation du site et des installations",
+            "Règles de sécurité spécifiques au site",
+            "Procédures opérationnelles standards",
+            "Culture de sécurité de l'entreprise"
+          ],
+          certification: "Certificat d'Induction Minière"
+        },
+        {
+          id: "rapport-incident",
+          title: "Rapport d'Incident et Analyse des Causes",
+          duration: "2 Semaines",
+          level: "Intermédiaire",
+          price: "1.800.000FG",
+          image: "./images/Secretary.jpg",
+          description: "Développez vos compétences en investigation d'incidents et analyse des causes racines.",
+          topics: [
+            "Méthodologies d'investigation",
+            "Techniques d'interview de témoins",
+            "Analyse des causes racines",
+            "Rédaction de rapports d'incident"
+          ],
+          certification: "Certificat d'Investigateur d'Incidents"
+        },
+        {
+          id: "protocoles-electromecanique",
+          title: "Protocoles de Sécurité Électrique et Mécanique",
+          duration: "3 Semaines",
+          level: "Intermédiaire",
+          price: "2.200.000FG",
+          image: "./images/working.jpg",
+          description: "Maîtrisez les protocoles de sécurité pour les interventions électriques et mécaniques.",
+          topics: [
+            "Consignation électrique (LOTO)",
+            "Sécurité lors des interventions mécaniques",
+            "Utilisation des équipements de test",
+            "Procédures de remise en service"
+          ],
+          certification: "Certificat de Sécurité Électromécanique"
+        },
+        // Advanced courses
+        {
+          id: "iso-45001",
+          title: "ISO 45001 Systèmes de Gestion Santé & Sécurité",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.500.000FG",
+          image: "./images/expert.jpg",
+          description: "Maîtrisez la mise en place et la gestion d'un système de management de la santé et sécurité selon la norme ISO 45001.",
+          topics: [
+            "Exigences de la norme ISO 45001",
+            "Mise en place d'un SMSST",
+            "Audit interne et amélioration continue",
+            "Certification et maintien du système"
+          ],
+          certification: "Certificat ISO 45001 Lead Auditor"
+        },
+        {
+          id: "reglementation-miniere",
+          title: "Réglementation Minière et Conformité (locale + internationale)",
+          duration: "3 Semaines",
+          level: "Avancé",
+          price: "3.000.000FG",
+          image: "./images/CEO.jpg",
+          description: "Approfondissez vos connaissances des réglementations minières locales et internationales pour assurer la conformité.",
+          topics: [
+            "Code minier guinéen",
+            "Réglementations internationales (IFC, OHSAS)",
+            "Procédures de conformité",
+            "Audit réglementaire et reporting"
+          ],
+          certification: "Certificat de Conformité Réglementaire Minière"
+        },
+        {
+          id: "gestion-superviseurs",
+          title: "Gestion Santé & Sécurité pour les Superviseurs",
+          duration: "3 Semaines",
+          level: "Avancé",
+          price: "2.800.000FG",
+          image: "./images/trainer.jpg",
+          description: "Développez vos compétences de supervision en santé et sécurité pour encadrer efficacement vos équipes.",
+          topics: [
+            "Leadership en sécurité",
+            "Communication des consignes de sécurité",
+            "Gestion des comportements à risque",
+            "Animation des réunions sécurité"
+          ],
+          certification: "Certificat de Supervision Sécurité"
+        },
+        {
+          id: "hazmat",
+          title: "Gestion des Matières Dangereuses (HAZMAT)",
+          duration: "2 Semaines",
+          level: "Avancé",
+          price: "2.500.000FG",
+          image: "./images/working.jpg",
+          description: "Apprenez la gestion sécurisée des matières dangereuses dans l'environnement minier.",
+          topics: [
+            "Classification des matières dangereuses",
+            "Procédures de manipulation sécurisée",
+            "Stockage et transport réglementaire",
+            "Plans d'intervention d'urgence"
+          ],
+          certification: "Certificat HAZMAT Minier"
+        },
+        {
+          id: "reponse-urgence-avancee",
+          title: "Réponse d'Urgence Avancée & Gestion de Crise",
+          duration: "3 Semaines",
+          level: "Avancé",
+          price: "3.200.000FG",
+          image: "./images/expert.jpg",
+          description: "Maîtrisez la gestion des situations d'urgence complexes et la coordination des interventions de crise.",
+          topics: [
+            "Planification de la réponse d'urgence",
+            "Coordination des équipes d'intervention",
+            "Communication de crise",
+            "Retour d'expérience et amélioration"
+          ],
+          certification: "Certificat de Gestionnaire de Crise"
+        },
+        {
+          id: "hygiene-industrielle",
+          title: "Hygiène Industrielle et Santé au Travail",
+          duration: "4 Semaines",
+          level: "Avancé",
+          price: "3.800.000FG",
+          image: "./images/smiling.jpg",
+          description: "Approfondissez vos connaissances en hygiène industrielle pour préserver la santé des travailleurs miniers.",
+          topics: [
+            "Évaluation des expositions professionnelles",
+            "Contrôle des agents chimiques et physiques",
+            "Surveillance médicale du travail",
+            "Programmes de santé au travail"
+          ],
+          certification: "Certificat d'Hygiène Industrielle Minière"
+        },
         // Intermediate and advanced courses (add more as needed, using similar structure)
       ],
       subcategories: [
@@ -261,9 +455,9 @@ const specializations = [
           id: 'intermediate',
           title: 'Cours Intermédiaires',
           courses: [
-            { title: 'Évaluation des Risques et Mesures de Contrôle' },
-            { title: 'Utilisation Sécurisée des Engins Lourds' },
-            { title: 'Sécurité Environnementale et Gestion des Déchets' },
+            { title: 'Évaluation des Risques et Mesures de Contrôle', id: 'evaluation-risques' },
+            { title: 'Utilisation Sécurisée des Engins Lourds', id: 'utilisation-engins-lourds' },
+            { title: 'Sécurité Environnementale et Gestion des Déchets', id: 'securite-environnementale' },
             { title: 'Formation d’Induction sur Site Minier' },
             { title: 'Rapport d’Incident et Analyse des Causes' },
             { title: 'Protocoles de Sécurité Électrique et Mécanique' },
@@ -273,12 +467,12 @@ const specializations = [
           id: 'advanced',
           title: 'Cours Avancés',
           courses: [
-            { title: 'ISO 45001 Systèmes de Gestion Santé & Sécurité' },
-            { title: 'Réglementation Minière et Conformité (locale + internationale)' },
-            { title: 'Gestion Santé & Sécurité pour les Superviseurs' },
-            { title: 'Gestion des Matières Dangereuses (HAZMAT)' },
+            { title: 'ISO 45001 Systèmes de Gestion Santé & Sécurité', id: 'iso-45001' },
+            { title: 'Réglementation Minière et Conformité (locale + internationale)', id: 'reglementation-miniere' },
+            { title: 'Gestion Santé & Sécurité pour les Superviseurs', id: 'gestion-superviseurs' },
+            { title: 'Gestion des Matières Dangereuses (HAZMAT)', id: 'hazmat' },
             { title: 'Réponse d’Urgence Avancée & Gestion de Crise' },
-            { title: 'Hygiène Industrielle et Santé au Travail' },
+            { title: 'Hygiène Industrielle et Santé au Travail', id: 'hygiene-industrielle' },
           ]
         },
       ]
