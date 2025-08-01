@@ -100,6 +100,17 @@ import SelectionEquipementsPage from './courses/SelectionEquipementsPage';
 import LogicielsPlanificationPage from './courses/LogicielsPlanificationPage';
 import StabilitePentesPage from './courses/StabilitePentesPage';
 import GestionOperationsPage from './courses/GestionOperationsPage';
+// Mining Operations Management & Systems Course Pages  
+import OptimisationCarburantPage from './courses/OptimisationCarburantPage';
+import GestionPneusPage from './courses/GestionPneusPage';
+import FondamentauxFmsPage from './courses/FondamentauxFmsPage';
+import CmmsMiniesPage from './courses/CmmsMiniesPage';
+import ErpMinierPage from './courses/ErpMinierPage';
+import IntegrationSystemesPage from './courses/IntegrationSystemesPage';
+import TelematiqueIotPage from './courses/TelematiqueIotPage';
+import AnalytiqueMinierePage from './courses/AnalytiqueMinierePage';
+import GestionChangementPage from './courses/GestionChangementPage';
+import FormationPersonnelPage from './courses/FormationPersonnelPage';
 
 const CourseDetailPage = () => {
   const { courseId } = useParams<{ courseId: string }>();
@@ -221,8 +232,18 @@ const CourseDetailPage = () => {
     'gestion-operations': GestionOperationsPage, // Gestion des opérations minières
     'fermeture-rehabilitation': SecuriteEnvironnementPage, // Fermeture de mines et réhabilitation (uses same template)
 
-    // ===== MINING OPERATIONS MANAGEMENT =====
+    // ===== MINING OPERATIONS MANAGEMENT & SYSTEMS =====
     'gestion-flotte-operations': GestionLogistiquePage, // Gestion de flotte et opérations
+    'optimisation-carburant': OptimisationCarburantPage, // Suivi et optimisation de la consommation de carburant
+    'gestion-pneus': GestionPneusPage, // Gestion du cycle de vie des pneus pour engins lourds
+    'fondamentaux-fms': FondamentauxFmsPage, // Fondamentaux des systèmes de gestion de flotte (FMS)
+    'cmms-mines': CmmsMiniesPage, // CMMS (GMAO) pour les mines
+    'erp-minier': ErpMinierPage, // Introduction à l'ERP minier (SAP, Oracle, etc.)
+    'integration-systemes': IntegrationSystemesPage, // Intégration FMS, CMMS, ERP & outils de planification minière
+    'telematique-iot': TelematiqueIotPage, // Télématique et IoT pour l'industrie minière
+    'analytique-miniere': AnalytiqueMinierePage, // Analytique minière et systèmes d'aide à la décision
+    'gestion-changement': GestionChangementPage, // Gestion du changement dans les organisations minières
+    'formation-personnel': FormationPersonnelPage, // Formation du personnel et développement des talents
     'kpis-tableaux-bord': GestionPerformancePage, // KPIs et tableaux de bord
     'planification-itineraires': GestionTempsPage, // Planification d'itinéraires
     'planification-maintenance': PlanificationMinierePage, // Planification de maintenance
