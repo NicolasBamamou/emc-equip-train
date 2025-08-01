@@ -31,21 +31,21 @@ const CoursesPage = () => {
             <div className="absolute inset-0">
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/good operator.jpg"
+                  src="/sip-equip-train/images/good operator.jpg"
                   alt=""
                   className="w-full h-full object-cover animate-fade-1"
                 />
               </div>
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/Loader operating.jpg"
+                  src="/sip-equip-train/images/Loader operating.jpg"
                   alt=""
                   className="w-full h-full object-cover animate-fade-2"
                 />
               </div>
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/Team and loader.jpg"
+                  src="/sip-equip-train/images/Team and loader.jpg"
                   alt=""
                   className="w-full h-full object-cover animate-fade-3"
                 />

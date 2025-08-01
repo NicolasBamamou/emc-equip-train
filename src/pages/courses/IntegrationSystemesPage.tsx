@@ -17,7 +17,7 @@ const IntegrationSystemesPage = () => {
         <section className="relative min-h-[500px] flex items-center">
           <div className="absolute inset-0 z-0">
             <img
-              src="/emc-equip-train/images/team.jpg"
+              src="/sip-equip-train/images/team.jpg"
               alt="Intégration des Systèmes"
               className="w-full h-full object-cover"
             />

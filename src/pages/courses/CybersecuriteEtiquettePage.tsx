@@ -35,7 +35,7 @@ const CybersecuriteEtiquettePage = () => {
         <section className="relative min-h-[500px] flex items-center">
           <div className="absolute inset-0 z-0">
             <img
-              src="/emc-equip-train/images/expert.jpg"
+              src="/sip-equip-train/images/expert.jpg"
               alt="Cybersécurité et étiquette digitale"
               className="w-full h-full object-cover"
             />

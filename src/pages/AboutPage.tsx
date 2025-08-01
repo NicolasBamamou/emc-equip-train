@@ -6,24 +6,24 @@ import { Card, CardContent } from '@/components/ui/card';
 const instructors = [
   {
     name: "Lucien Haba",
-    position: "PDG de EMC",
+    position: "PDG de SIP",
     experience: "15+ ans",
     bio: "M. Haba apporte plus de 15 ans d'expérience terrain dans l'opération d'excavatrice à travers des projets de construction, d'exploitation minière et d'infrastructure.",
-    image: "/emc-equip-train/images/CEO.jpg"
+    image: "/sip-equip-train/images/CEO.jpg"
   },
   {
     name: "Mariam Touré",
     position: "Instructrice Sénior - Opération de Grue",
     experience: "12+ ans",
     bio: "Mariam est spécialisée dans l'opération de grues à tour et mobiles avec une vaste expérience dans les projets de mine.",
-    image: "/emc-equip-train/images/Secretary.jpg"
+    image: "/sip-equip-train/images/Secretary.jpg"
   },
   {
     name: "Robert Camara",
     position: "Instructeur - Opération de Bulldozer et Niveleuse",
     experience: "10+ ans",
     bio: "Robert a travaillé intensivement dans le développement de terrains et la construction de routes, maîtrisant divers équipements de terrassement.",
-    image:"/emc-equip-train/images/truck operatoo.jpg"
+    image:"/sip-equip-train/images/truck operatoo.jpg"
   }
 ];
 
@@ -39,21 +39,21 @@ const AboutPage = () => {
             <div className="absolute inset-0">
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/Excavator.png"
+                  src="/sip-equip-train/images/Excavator.png"
                   alt=""
                   className="w-full h-full object-cover animate-fade-1"
                 />
               </div>
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/Loader.png"
+                  src="/sip-equip-train/images/Loader.png"
                   alt=""
                   className="w-full h-full object-cover animate-fade-2"
                 />
               </div>
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/Dozer.png"
+                  src="/sip-equip-train/images/Dozer.png"
                   alt=""
                   className="w-full h-full object-cover animate-fade-3"
                 />
@@ -62,7 +62,7 @@ const AboutPage = () => {
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos de Experise Mining Consulting (EMC)</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">À Propos de Séminaire d'Insertion Professionnel (SIP)</h1>
               <p className="text-lg md:text-xl text-gray-200">
                 Leader dans la formation d'opérateurs d'équipements lourds en Guinée
               </p>
@@ -77,10 +77,10 @@ const AboutPage = () => {
               <h2 className="section-heading text-center">Notre Histoire</h2>
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <p className="mb-4 text-lg">
-                  Établie en 2005, EMC a débuté avec une mission simple : fournir une formation d'opérateur d'équipement lourd de haute qualité qui répond aux besoins réels de l'industrie. Notre fondateur, Lucien Haba, a remarqué un écart entre ce qui était enseigné dans les programmes de formation et ce que les employeurs attendaient réellement des opérateurs.
+                  Établie en 2005, SIP a débuté avec une mission simple : fournir une formation d'opérateur d'équipement lourd de haute qualité qui répond aux besoins réels de l'industrie. Notre fondateur, Lucien Haba, a remarqué un écart entre ce qui était enseigné dans les programmes de formation et ce que les employeurs attendaient réellement des opérateurs.
                 </p>
                 <p className="mb-4 text-lg">
-                  Commençant avec seulement deux équipements et un petit terrain d'entraînement, EMC est devenue l'une des principales installations de formation en équipement lourd de la région. Aujourd'hui, nous exploitons un terrain d'entraînement de 4 hectares avec une flotte d'équipements modernes et des salles de classe conçues pour fournir à la fois des connaissances théoriques et des compétences pratiques.
+                  Commençant avec seulement deux équipements et un petit terrain d'entraînement, SIP est devenue l'une des principales installations de formation en équipement lourd de la région. Aujourd'hui, nous exploitons un terrain d'entraînement de 4 hectares avec une flotte d'équipements modernes et des salles de classe conçues pour fournir à la fois des connaissances théoriques et des compétences pratiques.
                 </p>
                 <p className="text-lg">
                   Au fil des années, nous avons aidé des milliers d'étudiants à lancer des carrières réussies dans l'opération d'équipement lourd, maintenant notre engagement envers l'excellence, la sécurité et l'apprentissage pratique tout au long de notre croissance.

@@ -1,7 +1,7 @@
 export const dieselMechanicsSpecialization = {
   id: 'diesel-mechanics',
   title: "Diesel et Mécanique des Véhicules Lourds",
-  image: "/emc-equip-train/images/Loader.png",
+  image: "/sip-equip-train/images/Loader.png",
   introduction: "Maîtrisez le diagnostic, la maintenance et la réparation des camions miniers et engins lourds.",
   description: "Cette spécialisation couvre le dépannage, la maintenance et la réparation des camions et machines minières : moteurs, hydraulique, transmissions, outils de diagnostic (CAT SIS, Cummins INSITE, etc.).",
   coreCourses: [

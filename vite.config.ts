@@ -9,7 +9,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/emc-equip-train/',
+      base: '/sip-equip-train/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -21,6 +21,6 @@ export default defineConfig({
   preview: {
     port: 3000,
     host: true,
-    base: '/emc-equip-train/'
+    base: '/sip-equip-train/'
   }
 });

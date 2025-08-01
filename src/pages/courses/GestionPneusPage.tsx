@@ -17,7 +17,7 @@ const GestionPneusPage = () => {
         <section className="relative min-h-[500px] flex items-center">
           <div className="absolute inset-0 z-0">
             <img
-              src="/emc-equip-train/images/Excavator.png"
+              src="/sip-equip-train/images/Excavator.png"
               alt="Gestion des Pneus"
               className="w-full h-full object-cover"
             />

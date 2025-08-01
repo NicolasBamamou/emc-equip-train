@@ -1,7 +1,7 @@
 export const heavyEquipmentSpecialization = {
   id: 'heavy-equipment',
   title: "Formation Opérateur d'Équipements Lourds",
-  image: "/emc-equip-train/images/Loader operating.jpg",
+  image: "/sip-equip-train/images/Loader operating.jpg",
   introduction: "Devenez un opérateur qualifié d'engins lourds grâce à une formation pratique sur excavatrices, bulldozers, camions-bennes, chargeuses et niveleuses.",
   description: "Cette spécialisation met l'accent sur la formation pratique à l'utilisation d'équipements tels que : Excavatrices, Bulldozers, Camions-bennes, Chargeuses sur pneus, Niveleuses. Toutes nos formations actuelles sont regroupées ici.",
   coreCourses: [

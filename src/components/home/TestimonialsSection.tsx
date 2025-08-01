@@ -9,14 +9,14 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "EMC m'a fourni les compétences dont j'avais besoin pour obtenir un emploi bien rémunéré en tant qu'opérateur d'excavatrice. Les instructeurs étaient compétents et m'ont soutenu tout au long de ma formation.",
+            quote: "SIP m'a fourni les compétences dont j'avais besoin pour obtenir un emploi bien rémunéré en tant qu'opérateur d'excavatrice. Les instructeurs étaient compétents et m'ont soutenu tout au long de ma formation.",
     name: "Guilavogui Emmanuel",
     position: "Opérateur d'Excavatrice chez SMB"
   },
   {
-    quote: "Après avoir terminé le programme de certification d'opération de pelles hydraulique et chargeuses, j'ai reçu plusieurs offres d'emploi. L'approche pratique chez EMC m'a vraiment préparé pour des situations de travail réelles.",
+    quote: "Après avoir terminé le programme de certification d'opération de pelles hydraulique et chargeuses, j'ai reçu plusieurs offres d'emploi. L'approche pratique chez SIP m'a vraiment préparé pour des situations de travail réelles.",
     name: "Camara Mamadou",
-    position: "Etudiant diplomé de la 36ième promotion à EMC."
+    position: "Etudiant diplomé de la 36ième promotion à SIP."
   },
   {
     quote: "Le programme de formation pour bulldozer a dépassé mes attentes. Les instructeurs étaient patients et ont veillé à ce que je maîtrise toutes les compétences nécessaires avant l'obtention du diplôme.",

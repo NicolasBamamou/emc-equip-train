@@ -124,7 +124,7 @@ const ContactPage = () => {
               {/* Google Map */}
               <div className="h-full min-h-[400px] rounded-lg overflow-hidden shadow-md">
                 <iframe 
-                  title="EMC Location"
+                  title="SIP Location"
                   className="w-full h-full border-0"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31037.17039866381!2d-14.310768!3d10.940105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1cd78e0b831ce7%3A0x5513c5a8517c9f13!2sBok%C3%A9%2C%20Guinea!5e0!3m2!1sen!2s!4v1710612151234!5m2!1sen!2s"
                   allowFullScreen={true}

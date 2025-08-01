@@ -30,7 +30,7 @@ const FeaturesSection = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-heading">Pourquoi Choisir Expertise Mining Consulting?</h2>
+                        <h2 className="section-heading">Pourquoi Choisir Séminaire d'Insertion Professionnel?</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Nous offrons des programmes de formation complets conçus pour vous préparer à une carrière réussie dans l'opération d'équipements lourds.
           </p>

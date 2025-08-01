@@ -1,7 +1,7 @@
 export const operationsManagementSpecialization = {
   id: 'mining-operations-management',
   title: "Gestion des Opérations Minières & Systèmes",
-  image: "/emc-equip-train/images/team.jpg",
+  image: "/sip-equip-train/images/team.jpg",
   introduction: "Le pilier opérationnel et l'intégration numérique qui assurent l'efficacité et la performance de l'ensemble du site minier.",
   description: "Cette spécialisation couvre la gestion de flotte, de carburant, de pneus, d'actifs, ainsi que l'intégration digitale (FMS, CMMS, ERP, planification minière) et le développement du leadership. Elle est structurée autour de trois axes : logistique, intégration des systèmes, et compétences humaines/leadership.",
   coreCourses: [

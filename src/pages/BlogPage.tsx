@@ -31,7 +31,7 @@ const blogPosts = [
   {
     id: 3,
     title: "De Stagiaire à Expert : Le Parcours d'un Diplômé dans l'Opération de Grue",
-    excerpt: "Suivez le parcours inspirant de Jean Dupont, un diplômé d'EMC qui est passé de stagiaire à opérateur de grue senior dans une grande entreprise de construction en seulement trois ans.",
+            excerpt: "Suivez le parcours inspirant de Jean Dupont, un diplômé de SIP qui est passé de stagiaire à opérateur de grue senior dans une grande entreprise de construction en seulement trois ans.",
     date: "10 avril 2023",
     author: "Robert Johnson",
     readTime: "10 min de lecture",

@@ -1,7 +1,7 @@
 export const miningSafetySpecialization = {
   id: 'mining-safety',
   title: "Sécurité et Réglementation Minière",
-  image: "/emc-equip-train/images/minig.jpg",
+  image: "/sip-equip-train/images/minig.jpg",
   introduction: "Maîtrisez la sécurité minière et la conformité réglementaire pour un environnement de travail sûr et conforme aux normes internationales.",
   description: "Dans le secteur minier, la sécurité est une culture vitale. Cette spécialisation couvre les protocoles de sécurité sur site, la gestion des risques, la formation aux situations d'urgence et la conformité réglementaire.",
   coreCourses: [

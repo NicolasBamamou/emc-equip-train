@@ -1,7 +1,7 @@
 export const miningEngineeringSpecialization = {
   id: 'mining-engineering',
   title: "Génie Minier et Planification des Mines",
-  image: "/emc-equip-train/images/Grader.png",
+  image: "/sip-equip-train/images/Grader.png",
   introduction: "De l'exploration à la réhabilitation, devenez l'expert stratégique du secteur minier guinéen.",
   description: "Le génie minier et la planification des mines constituent le cerveau et la stratégie de l'industrie minière. Cette spécialisation couvre l'interprétation des données géologiques, la conception de mines sûres et rentables, la planification de l'extraction, et l'application des cadres environnementaux et réglementaires.",
   coreCourses: [

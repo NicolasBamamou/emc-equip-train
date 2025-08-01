@@ -32,7 +32,7 @@ const ResolutionConflitsPage = () => {
         <section className="relative min-h-[500px] flex items-center">
           <div className="absolute inset-0 z-0">
             <img
-              src="/emc-equip-train/images/trainer.jpg"
+              src="/sip-equip-train/images/trainer.jpg"
               alt="Résolution de conflits et feedback"
               className="w-full h-full object-cover"
             />

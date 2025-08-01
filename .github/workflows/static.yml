@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE_URL: /emc-equip-train/
+          VITE_BASE_URL: /sip-equip-train/
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

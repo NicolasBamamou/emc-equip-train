@@ -4,7 +4,7 @@ const specializations = [
     {
       id: 'heavy-equipment',
       title: "Formation Opérateur d’Équipements Lourds",
-      image: "/emc-equip-train/images/Loader operating.jpg",
+      image: "/sip-equip-train/images/Loader operating.jpg",
       introduction: "Devenez un opérateur qualifié d'engins lourds grâce à une formation pratique sur excavatrices, bulldozers, camions-bennes, chargeuses et niveleuses.",
       description: "Cette spécialisation met l'accent sur la formation pratique à l'utilisation d'équipements tels que : Excavatrices, Bulldozers, Camions-bennes, Chargeuses sur pneus, Niveleuses. Toutes nos formations actuelles sont regroupées ici.",
       coreCourses: [
@@ -138,7 +138,7 @@ const specializations = [
     {
       id: 'mining-safety',
       title: "Sécurité et Réglementation Minière",
-      image: "/emc-equip-train/images/minig.jpg",
+      image: "/sip-equip-train/images/minig.jpg",
       introduction: "Maîtrisez la sécurité minière et la conformité réglementaire pour un environnement de travail sûr et conforme aux normes internationales.",
       description: "Dans le secteur minier, la sécurité est une culture vitale. Cette spécialisation couvre les protocoles de sécurité sur site, la gestion des risques, la formation aux situations d'urgence et la conformité réglementaire.",
       coreCourses: [
@@ -480,7 +480,7 @@ const specializations = [
     {
       id: 'diesel-mechanics',
       title: "Diesel et Mécanique des Véhicules Lourds",
-      image: "/emc-equip-train/images/Loader.png",
+      image: "/sip-equip-train/images/Loader.png",
       introduction: "Maîtrisez le diagnostic, la maintenance et la réparation des camions miniers et engins lourds.",
       description: "Cette spécialisation couvre le dépannage, la maintenance et la réparation des camions et machines minières : moteurs, hydraulique, transmissions, outils de diagnostic (CAT SIS, Cummins INSITE, etc.).",
       coreCourses: [
@@ -697,7 +697,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Débutant',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Introduction à la sécurité électrique et aux bonnes pratiques en atelier.',
           topics: ['Sécurité de base', 'EPI électriques', 'Procédures de coupure'],
           certification: 'Attestation de Sécurité Électrique'
@@ -708,7 +708,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Débutant',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Bases des circuits électriques DC/AC et des mesures fondamentales.',
           topics: ['Loi d’Ohm', 'Utilisation du multimètre', 'Schémas de circuits'],
           certification: 'Attestation Circuits DC/AC'
@@ -719,7 +719,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Débutant',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Apprenez les techniques de câblage et les normes associées.',
           topics: ['Types de câbles', 'Normes de couleur', 'Sécurité de câblage'],
           certification: 'Attestation de Câblage'
@@ -730,7 +730,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Débutant',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Savoir lire et interpréter les schémas électriques et les symboles.',
           topics: ['Symboles normalisés', 'Lecture de plans', 'Exercices pratiques'],
           certification: 'Attestation Lecture de Schémas'
@@ -741,7 +741,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Débutant',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Découverte des principes fondamentaux des moteurs et générateurs.',
           topics: ['Fonctionnement moteur', 'Générateurs', 'Applications minières'],
           certification: 'Attestation Moteurs & Générateurs'
@@ -752,7 +752,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Intermédiaire',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Étude des moteurs électriques et des variateurs de fréquence.',
           topics: ['Types de moteurs', 'Principe VFD', 'Applications'],
           certification: 'Attestation VFD'
@@ -763,7 +763,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Intermédiaire',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Découverte des capteurs et actionneurs industriels.',
           topics: ['Types de capteurs', 'Actionneurs', 'Intégration en automatisme'],
           certification: 'Attestation Capteurs & Actionneurs'
@@ -774,7 +774,7 @@ const specializations = [
           duration: '2 Semaines',
           level: 'Intermédiaire',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Programmation de PLC et introduction aux systèmes de contrôle.',
           topics: ['Bases PLC', 'Langages de programmation', 'Exemples industriels'],
           certification: 'Attestation PLC'
@@ -785,7 +785,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Intermédiaire',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Étude des systèmes électriques spécifiques aux mines.',
           topics: ['Transformateurs', 'TGBT', 'Appareillage de puissance'],
           certification: 'Attestation Systèmes Électriques'
@@ -796,7 +796,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Intermédiaire',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Découverte des batteries et de l’électronique de puissance.',
           topics: ['Types de batteries', 'Gestion de l’énergie', 'Sécurité batteries'],
           certification: 'Attestation Batteries & Électronique'
@@ -807,7 +807,7 @@ const specializations = [
           duration: '2 Semaines',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Intégration de la mécatronique dans les équipements miniers.',
           topics: ['Automatisation', 'Capteurs avancés', 'Maintenance prédictive'],
           certification: 'Attestation Mécatronique'
@@ -818,7 +818,7 @@ const specializations = [
           duration: '2 Semaines',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Automatisation et supervision industrielle avec SCADA.',
           topics: ['SCADA', 'Contrôle à distance', 'Applications minières'],
           certification: 'Attestation SCADA'
@@ -829,7 +829,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Méthodes de diagnostic et de dépannage électrique.',
           topics: ['Outils de diagnostic', 'Méthodes de recherche de pannes', 'Études de cas'],
           certification: 'Attestation Diagnostic Électrique'
@@ -840,7 +840,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Étude des protocoles de communication industrielle.',
           topics: ['Modbus', 'CANbus', 'Profibus'],
           certification: 'Attestation Protocoles Industriels'
@@ -851,7 +851,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Sécurité et maintenance des équipements haute tension.',
           topics: ['Sécurité HT', 'Maintenance préventive', 'Procédures d’intervention'],
           certification: 'Attestation Haute Tension'
@@ -862,7 +862,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Débutant',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Sécurité et bonnes pratiques en atelier mécanique.',
           topics: ['EPI', 'Procédures de sécurité', 'Prévention des accidents'],
           certification: 'Attestation Sécurité Atelier'
@@ -873,7 +873,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Diagnostic des systèmes CAN Bus et ECU.',
           topics: ['CAN Bus', 'ECU', 'Diagnostic électronique'],
           certification: 'Attestation CAN Bus'
@@ -884,7 +884,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Utilisation des outils de diagnostic modernes.',
           topics: ['CAT ET', 'Cummins INSITE', 'Bosch KTS'],
           certification: 'Attestation Diagnostic Outils'
@@ -895,7 +895,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Étude des systèmes électriques des engins lourds.',
           topics: ['Alternateurs', 'Démarreurs', 'Capteurs'],
           certification: 'Attestation Systèmes Électriques'
@@ -906,7 +906,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Maintenance préventive et inspection régulière.',
           topics: ['Routines d’inspection', 'Prévention des pannes', 'Check-lists'],
           certification: 'Attestation Maintenance Préventive'
@@ -917,7 +917,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Gestion des émissions et conformité environnementale.',
           topics: ['Normes environnementales', 'Réduction des émissions', 'Contrôle pollution'],
           certification: 'Attestation Conformité Environnementale'
@@ -928,7 +928,7 @@ const specializations = [
           duration: '1 Semaine',
           level: 'Avancé',
           price: 'À définir',
-          image: '/emc-equip-train/images/Loader.png',
+          image: '/sip-equip-train/images/Loader.png',
           description: 'Techniques avancées de dépannage.',
           topics: ['Méthodes de recherche de pannes', 'Outils de diagnostic', 'Études de cas'],
           certification: 'Attestation Dépannage'
@@ -938,7 +938,7 @@ const specializations = [
     {
       id: 'mining-engineering',
       title: "Génie Minier et Planification des Mines",
-      image: "/emc-equip-train/images/Grader.png", // Placeholder, change if you have a better image
+      image: "/sip-equip-train/images/Grader.png", // Placeholder, change if you have a better image
       introduction: "De l’exploration à la réhabilitation, devenez l’expert stratégique du secteur minier guinéen.",
       description: "Le génie minier et la planification des mines constituent le cerveau et la stratégie de l’industrie minière. Cette spécialisation couvre l’interprétation des données géologiques, la conception de mines sûres et rentables, la planification de l’extraction, et l’application des cadres environnementaux et réglementaires.",
       coreCourses: [
@@ -1266,7 +1266,7 @@ const specializations = [
     {
       id: 'electrical-mechatronics',
       title: "Formation en Électricité et Mécatronique",
-      image: "/emc-equip-train/images/crane.webp", // Placeholder, change if you have a better image
+      image: "/sip-equip-train/images/crane.webp", // Placeholder, change if you have a better image
       introduction: "Préparez-vous aux métiers techniques de l’automatisation, de l’électrification et de la maintenance avancée dans les mines modernes.",
       description: "Cette spécialisation est essentielle pour les opérations minières modernes, de plus en plus automatisées et électrifiées. Elle forme des techniciens capables de maintenir, diagnostiquer et optimiser les systèmes électriques, électroniques et mécatroniques des équipements miniers.",
       coreCourses: [
@@ -1561,7 +1561,7 @@ const specializations = [
     {
       id: 'mining-operations-management',
       title: "Gestion des Opérations Minières & Systèmes",
-      image: "/emc-equip-train/images/team.jpg", // Placeholder, change if you have a better image
+      image: "/sip-equip-train/images/team.jpg", // Placeholder, change if you have a better image
       introduction: "Le pilier opérationnel et l’intégration numérique qui assurent l’efficacité et la performance de l’ensemble du site minier.",
       description: "Cette spécialisation couvre la gestion de flotte, de carburant, de pneus, d’actifs, ainsi que l’intégration digitale (FMS, CMMS, ERP, planification minière) et le développement du leadership. Elle est structurée autour de trois axes : logistique, intégration des systèmes, et compétences humaines/leadership.",
       coreCourses: [
@@ -1872,7 +1872,7 @@ const specializations = [
     {
       id: 'soft-skills-digital',
       title: "Compétences Transversales et Culture Digitale",
-      image: "/emc-equip-train/images/smiling.jpg", // Placeholder, change if you have a better image
+      image: "/sip-equip-train/images/smiling.jpg", // Placeholder, change if you have a better image
       introduction: "Les compétences humaines et la culture digitale sont essentielles pour réussir et évoluer dans le secteur minier moderne.",
       description: "Cette spécialisation développe la communication, le travail d’équipe, l’adaptabilité et la maîtrise des outils numériques, indispensables pour l’excellence professionnelle et l’intégration dans des équipes multiculturelles.",
       coreCourses: [

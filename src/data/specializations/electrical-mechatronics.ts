@@ -1,7 +1,7 @@
 export const electricalMechatronicsSpecialization = {
   id: 'electrical-mechatronics',
   title: "Formation en Électricité et Mécatronique",
-  image: "/emc-equip-train/images/crane.webp",
+  image: "/sip-equip-train/images/crane.webp",
   introduction: "Préparez-vous aux métiers techniques de l'automatisation, de l'électrification et de la maintenance avancée dans les mines modernes.",
   description: "Cette spécialisation est essentielle pour les opérations minières modernes, de plus en plus automatisées et électrifiées. Elle forme des techniciens capables de maintenir, diagnostiquer et optimiser les systèmes électriques, électroniques et mécatroniques des équipements miniers.",
   coreCourses: [

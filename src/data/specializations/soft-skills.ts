@@ -1,7 +1,7 @@
 export const softSkillsSpecialization = {
   id: 'soft-skills-digital',
   title: "Compétences Transversales et Culture Digitale",
-  image: "/emc-equip-train/images/smiling.jpg",
+  image: "/sip-equip-train/images/smiling.jpg",
   introduction: "Les compétences humaines et la culture digitale sont essentielles pour réussir et évoluer dans le secteur minier moderne.",
   description: "Cette spécialisation développe la communication, le travail d'équipe, l'adaptabilité et la maîtrise des outils numériques, indispensables pour l'excellence professionnelle et l'intégration dans des équipes multiculturelles.",
   coreCourses: [

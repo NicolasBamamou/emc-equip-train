@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>EMC Formation</title>
+    <title>SIP Formation</title>
     <script>
       (function() {
         const segments = window.location.pathname.split('/');
-        const repo = 'emc-equip-train';
+        const repo = 'sip-equip-train';
         const path = segments.length > 2 ? segments.slice(2).join('/') : '';
         window.location.replace(`/${repo}/?path=${path}`);
       })();

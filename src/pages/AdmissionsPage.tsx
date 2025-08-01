@@ -67,21 +67,21 @@ const AdmissionsPage = () => {
             <div className="absolute inset-0">
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/working.jpg"
+                  src="/sip-equip-train/images/working.jpg"
                   alt=""
                   className="w-full h-full object-cover animate-fade-1"
                 />
               </div>
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/minig.jpg"
+                  src="/sip-equip-train/images/minig.jpg"
                   alt=""
                   className="w-full h-full object-cover animate-fade-2"
                 />
               </div>
               <div className="absolute inset-0">
                 <img
-                  src="/emc-equip-train/images/truck working.jpg"
+                  src="/sip-equip-train/images/truck working.jpg"
                   alt=""
                   className="w-full h-full object-cover animate-fade-3"
                 />
@@ -92,7 +92,7 @@ const AdmissionsPage = () => {
             <div className="max-w-3xl mx-auto text-center text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Admissions</h1>
               <p className="text-lg md:text-xl">
-                Commencez votre carrière dans l'opération d'équipements lourds avec EMC Formation
+                Commencez votre carrière dans l'opération d'équipements lourds avec SIP Formation
               </p>
             </div>
           </div>

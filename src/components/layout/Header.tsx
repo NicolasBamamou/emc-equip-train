@@ -18,7 +18,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary leading-tight">
-              Expertise Mining Consulting
+              Séminaire d'Insertion Professionnel
             </h1>
           </Link>
 
