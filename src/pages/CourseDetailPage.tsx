@@ -111,6 +111,15 @@ import TelematiqueIotPage from './courses/TelematiqueIotPage';
 import AnalytiqueMinierePage from './courses/AnalytiqueMinierePage';
 import GestionChangementPage from './courses/GestionChangementPage';
 import FormationPersonnelPage from './courses/FormationPersonnelPage';
+// Soft Skills & Digital Culture Course Pages
+import AnglaisTechniqueMinePage from './courses/AnglaisTechniqueMinePage';
+import RedactionRapportsPage from './courses/RedactionRapportsPage';
+import ResolutionConflitsPage from './courses/ResolutionConflitsPage';
+import CultureInformatiqueBasePage from './courses/CultureInformatiqueBasePage';
+import OutilsDigitauxMinePage from './courses/OutilsDigitauxMinePage';
+import SaisieDonneesRapportsPage from './courses/SaisieDonneesRapportsPage';
+import MicrosoftOfficePage from './courses/MicrosoftOfficePage';
+import CybersecuriteEtiquettePage from './courses/CybersecuriteEtiquettePage';
 
 const CourseDetailPage = () => {
   const { courseId } = useParams<{ courseId: string }>();
@@ -251,7 +260,15 @@ const CourseDetailPage = () => {
 
     // ===== SOFT SKILLS & DIGITAL CULTURE =====
     'communication-professionnelle': CommunicationProfessionnellePage, // Communication professionnelle
+    'anglais-technique-mine': AnglaisTechniqueMinePage, // Anglais technique pour la mine
+    'redaction-rapports': RedactionRapportsPage, // Rédaction de rapports et documentation
     'communication-interpersonnelle': CommunicationEfficacePage, // Communication interpersonnelle
+    'resolution-conflits': ResolutionConflitsPage, // Résolution de conflits et culture du feedback
+    'culture-informatique-base': CultureInformatiqueBasePage, // Culture informatique de base (email, fichiers, Excel, PDF)
+    'outils-digitaux-mine': OutilsDigitauxMinePage, // Outils digitaux pour la mine (tablettes FMS, ERP, applis sécurité)
+    'saisie-donnees-rapports': SaisieDonneesRapportsPage, // Saisie de données, formulaires numériques et rapports miniers
+    'microsoft-office': MicrosoftOfficePage, // Introduction à Microsoft Office / Google Workspace
+    'cybersecurite-etiquette': CybersecuriteEtiquettePage, // Bases de cybersécurité & étiquette digitale
     'leadership-operations': LeadershipOperationsPage, // Leadership et opérations
     'bases-leadership-superviseurs': LeadershipOperationsPage, // Bases du leadership pour superviseurs
     'maintenance-prev': MaintenancePreventivePage, // Maintenance préventive
