@@ -82,22 +82,22 @@ const SpecializationDetail = ({ spec }: { spec: Specialization }) => {
 
   return (
     <div>
-      <h2 className="section-heading text-center mb-2">{spec.title}</h2>
-      <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-8">{spec.description}</p>
+      <h2 className="section-heading text-center mb-2 text-2xl sm:text-3xl">{spec.title}</h2>
+      <p className="text-center text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed">{spec.description}</p>
       {/* Modules from subcategories array */}
       {spec.subcategories && (
-        <div className={`grid md:grid-cols-${spec.subcategories.length > 3 ? 4 : 3} gap-6 mb-12`}>
+        <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${spec.subcategories.length > 3 ? 4 : 3} gap-4 sm:gap-6 mb-8 sm:mb-12`}>
           {spec.subcategories.map((module, idx) => (
-            <div key={idx} className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-              <h3 className="text-xl font-bold mb-4 text-primary text-center">{module.title}</h3>
-              <ul className="space-y-2">
+            <div key={idx} className="bg-white rounded-xl shadow-md p-4 sm:p-6 flex flex-col">
+              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-primary text-center leading-tight">{module.title}</h3>
+              <ul className="space-y-1 sm:space-y-2">
                 {module.courses.map((course, i) => {
                   const courseId = course.id || findCourseIdByTitle(spec, course.title);
                   return (
                     <li key={i}>
                       <Link
                         to={courseId ? `/course/${courseId}` : '#'}
-                        className={`font-medium transition-colors ${courseId ? 'text-blue-700 hover:underline' : 'text-gray-400 cursor-not-allowed'}`}
+                        className={`font-medium transition-colors text-sm sm:text-base ${courseId ? 'text-blue-700 hover:underline' : 'text-gray-400 cursor-not-allowed'}`}
                       >
                         {course.label || course.title}
                       </Link>

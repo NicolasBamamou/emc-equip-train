@@ -20,7 +20,7 @@ const CoursesPage = () => {
       <Header />
       <main className="flex-grow">
         {/* Section Héro */}
-        <section className="relative min-h-[300px] flex items-center">
+        <section className="relative min-h-[250px] sm:min-h-[300px] flex items-center">
           <div className="absolute inset-0 z-0">
             <div className="hero-bg-overlay" />
             <div className="absolute inset-0">
@@ -49,8 +49,8 @@ const CoursesPage = () => {
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Nos Formations</h1>
-              <p className="text-lg md:text-xl">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">Nos Formations</h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
                 Explorez nos spécialisations en formation professionnelle pour l'opération d'équipements lourds et la sécurité minière. Sélectionnez une spécialisation pour découvrir les cours proposés.
               </p>
             </div>
@@ -58,46 +58,46 @@ const CoursesPage = () => {
         </section>
 
         {/* Spécialisations ou Détail */}
-        <section className="py-16">
+        <section className="py-8 sm:py-16">
           <div className="container mx-auto px-4">
             {/* Si aucune spécialisation sélectionnée, afficher la grille */}
             {!selectedSpec && (
               <div>
-            <div className="mb-12">
-                  <h2 className="section-heading text-center text-3xl md:text-4xl font-extrabold mb-4 text-primary drop-shadow-sm">Découvrez Nos Spécialisations</h2>
-                  <p className="text-center text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed bg-blue-50 rounded-xl px-6 py-4 shadow-sm">
+            <div className="mb-8 sm:mb-12">
+                  <h2 className="section-heading text-center text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 text-primary drop-shadow-sm">Découvrez Nos Spécialisations</h2>
+                  <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed bg-blue-50 rounded-xl px-4 sm:px-6 py-4 shadow-sm">
                     Explorez un éventail complet de spécialisations conçues pour répondre à tous les besoins du secteur minier moderne : opération d'équipements lourds, sécurité, mécanique, électricité, ingénierie, gestion, compétences humaines et culture digitale. Sélectionnez une spécialisation pour découvrir les parcours, modules et certifications proposés.
               </p>
             </div>
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                   {specializations.map((spec) => (
-                    <div key={spec.id} className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow">
-                      <img src={spec.image} alt={spec.title} className="w-40 h-40 object-cover rounded-full mb-4 border-4 border-blue-100" />
-                      <h3 className="text-2xl font-bold mb-2 text-primary">{spec.title}</h3>
-                      <p className="text-gray-700 mb-2 font-medium">{spec.introduction}</p>
-                      <div className="mb-2">
-                        <span className="font-semibold">Cours phares :</span>
-                        <ul className="list-disc pl-5 text-left text-gray-600">
+                    <div key={spec.id} className="bg-white rounded-lg shadow-md p-4 sm:p-6 lg:p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow">
+                      <img src={spec.image} alt={spec.title} className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 object-cover rounded-full mb-4 border-4 border-blue-100" />
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 text-primary leading-tight">{spec.title}</h3>
+                      <p className="text-gray-700 mb-2 font-medium text-sm sm:text-base leading-relaxed">{spec.introduction}</p>
+                      <div className="mb-2 w-full">
+                        <span className="font-semibold text-sm sm:text-base">Cours phares :</span>
+                        <ul className="list-disc pl-5 text-left text-gray-600 text-xs sm:text-sm">
                           {spec.coreCourses.map((course, i) => (
-                            <li key={i}>{course}</li>
+                            <li key={i} className="leading-relaxed">{course}</li>
                           ))}
                         </ul>
                       </div>
-                      <div className="mb-2">
-                        <span className="font-semibold">Certifications visées :</span>
-                        <ul className="list-disc pl-5 text-left text-gray-600">
+                      <div className="mb-2 w-full">
+                        <span className="font-semibold text-sm sm:text-base">Certifications visées :</span>
+                        <ul className="list-disc pl-5 text-left text-gray-600 text-xs sm:text-sm">
                           {spec.certifications.map((cert, i) => (
-                            <li key={i}>{cert}</li>
+                            <li key={i} className="leading-relaxed">{cert}</li>
                           ))}
                         </ul>
                       </div>
                       <div className="flex items-center justify-center mb-4">
-                        <span className="font-semibold mr-2">Note :</span>
-                        <span className="text-yellow-500 text-lg">{'★'.repeat(Math.floor(spec.rating))}{spec.rating % 1 >= 0.5 ? '½' : ''}</span>
-                        <span className="ml-2 text-gray-600">({spec.rating.toFixed(1)})</span>
+                        <span className="font-semibold mr-2 text-sm sm:text-base">Note :</span>
+                        <span className="text-yellow-500 text-base sm:text-lg">{'★'.repeat(Math.floor(spec.rating))}{spec.rating % 1 >= 0.5 ? '½' : ''}</span>
+                        <span className="ml-2 text-gray-600 text-sm sm:text-base">({spec.rating.toFixed(1)})</span>
                       </div>
                       <button
-                        className="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+                        className="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors text-sm sm:text-base"
                         onClick={() => setSelectedSpec(spec.id)}
                       >
                         Voir les cours
