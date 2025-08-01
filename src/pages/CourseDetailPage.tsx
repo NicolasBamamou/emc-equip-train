@@ -1,9 +1,9 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Clock, Users, Award, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Clock, Users, Award, CheckCircle, ChevronRight } from 'lucide-react';
 import specializations from '../data/specializations';
 import LoadingSpinner from '../components/LoadingSpinner';
 
@@ -123,7 +123,22 @@ import MicrosoftOfficePage from './courses/MicrosoftOfficePage';
 import CybersecuriteEtiquettePage from './courses/CybersecuriteEtiquettePage';
 
 const CourseDetailPage = () => {
-  const { courseId } = useParams<{ courseId: string }>();
+  const { courseId, specializationId } = useParams<{ courseId: string; specializationId?: string }>();
+  const location = useLocation();
+  
+  // Determine the back URL based on the current route
+  const getBackUrl = () => {
+    if (specializationId) {
+      return `/specialization/${specializationId}`;
+    }
+    // If no specializationId, try to find the course's specialization
+    for (const spec of specializations) {
+      if (spec.courses?.some(c => c.id === courseId)) {
+        return `/specialization/${spec.id}`;
+      }
+    }
+    return '/courses';
+  };
   
   // Route to individual course pages for custom styling
   const customPages: { [key: string]: React.ComponentType } = {
@@ -328,6 +343,34 @@ const CourseDetailPage = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
+        {/* Breadcrumb Navigation */}
+        <nav className="bg-gray-50 border-b">
+          <div className="container mx-auto px-4 py-3">
+            <div className="flex items-center space-x-2 text-sm sm:text-base">
+              <Link to="/" className="text-gray-500 hover:text-gray-700 transition-colors">
+                Accueil
+              </Link>
+              <ChevronRight className="w-4 h-4 text-gray-400" />
+              <Link to="/courses" className="text-gray-500 hover:text-gray-700 transition-colors">
+                Formations
+              </Link>
+              <ChevronRight className="w-4 h-4 text-gray-400" />
+              {foundSpecialization && (
+                <>
+                  <Link 
+                    to={`/specialization/${foundSpecialization.id}`} 
+                    className="text-gray-500 hover:text-gray-700 transition-colors"
+                  >
+                    {foundSpecialization.title}
+                  </Link>
+                  <ChevronRight className="w-4 h-4 text-gray-400" />
+                </>
+              )}
+              <span className="text-primary font-semibold">{foundCourse?.title}</span>
+            </div>
+          </div>
+        </nav>
+
         {/* Hero Section */}
         <section className="relative min-h-[300px] sm:min-h-[400px] flex items-center">
           <div className="absolute inset-0 z-0">
@@ -340,9 +383,9 @@ const CourseDetailPage = () => {
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-white">
-              <Link to="/courses" className="inline-flex items-center text-white hover:text-blue-200 mb-4 text-sm sm:text-base">
+              <Link to={getBackUrl()} className="inline-flex items-center text-white hover:text-blue-200 mb-4 text-sm sm:text-base">
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Retour aux formations
+                {specializationId ? 'Retour à la spécialisation' : 'Retour aux formations'}
               </Link>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">{foundCourse.title}</h1>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 leading-relaxed">{foundCourse.description}</p>

@@ -24,12 +24,14 @@ interface CourseCardProps {
   };
   variant?: 'default' | 'compact' | 'featured';
   showActions?: boolean;
+  specializationId?: string;
 }
 
 const CourseCard: React.FC<CourseCardProps> = ({ 
   course, 
   variant = 'default',
-  showActions = true 
+  showActions = true,
+  specializationId
 }) => {
   const isCompact = variant === 'compact';
   const isFeatured = variant === 'featured';
@@ -81,7 +83,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
       {showActions && (
         <CardFooter className="pt-4 px-4 sm:px-6 pb-4 sm:pb-6">
           <Button asChild className="w-full text-xs sm:text-sm h-10 sm:h-11" size={isCompact ? 'sm' : 'default'}>
-            <Link to={`/course/${course.id}`}>
+            <Link to={specializationId ? `/specialization/${specializationId}/course/${course.id}` : `/course/${course.id}`}>
               {isCompact ? 'Voir' : 'En Savoir Plus'}
             </Link>
           </Button>

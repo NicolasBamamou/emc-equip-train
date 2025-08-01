@@ -174,7 +174,7 @@ const SpecializationDetail = ({ spec }: { spec: Specialization }) => {
                       <Link to="/contact">Demander des Informations</Link>
                     </Button>
                     <Button variant="outline" asChild className="text-sm sm:text-base">
-                      <Link to={`/course/${course.id || course.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
+                      <Link to={`/specialization/${spec.id}/course/${course.id || course.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
                         En savoir plus
                       </Link>
                     </Button>

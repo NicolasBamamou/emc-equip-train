@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import CourseDetailPage from "./pages/CourseDetailPage";
+import SpecializationPage from "./pages/SpecializationPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import ContactPage from "./pages/ContactPage";
 import BlogPage from "./pages/BlogPage";
@@ -26,6 +27,8 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/specialization/:specializationId" element={<SpecializationPage />} />
+            <Route path="/specialization/:specializationId/course/:courseId" element={<CourseDetailPage />} />
             <Route path="/course/:courseId" element={<CourseDetailPage />} />
             <Route path="/courses/:courseId" element={<CourseDetailPage />} />
             <Route path="/admissions" element={<AdmissionsPage />} />

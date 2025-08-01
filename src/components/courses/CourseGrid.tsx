@@ -24,6 +24,7 @@ interface CourseGridProps {
   showViewToggle?: boolean;
   variant?: 'default' | 'compact' | 'featured';
   maxItems?: number;
+  specializationId?: string;
 }
 
 const CourseGrid: React.FC<CourseGridProps> = ({
@@ -33,7 +34,8 @@ const CourseGrid: React.FC<CourseGridProps> = ({
   showFilters = true,
   showViewToggle = true,
   variant = 'default',
-  maxItems
+  maxItems,
+  specializationId
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [levelFilter, setLevelFilter] = useState('');
@@ -152,6 +154,7 @@ const CourseGrid: React.FC<CourseGridProps> = ({
               key={course.id}
               course={course}
               variant={variant}
+              specializationId={specializationId}
             />
           ))}
         </div>
