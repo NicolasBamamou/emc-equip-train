@@ -35,7 +35,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   const isFeatured = variant === 'featured';
 
   return (
-    <Card className={`overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg ${
+    <Card className={`overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg min-h-[300px] sm:min-h-[350px] ${
       isFeatured ? 'ring-2 ring-primary/20' : ''
     }`}>
       <div className={`overflow-hidden ${isCompact ? 'h-32' : 'h-48 sm:h-56'}`}>
@@ -79,8 +79,8 @@ const CourseCard: React.FC<CourseCardProps> = ({
       </CardContent>
       
       {showActions && (
-        <CardFooter className="pt-4 px-4 sm:px-6">
-          <Button asChild className="w-full text-xs sm:text-sm" size={isCompact ? 'sm' : 'default'}>
+        <CardFooter className="pt-4 px-4 sm:px-6 pb-4 sm:pb-6">
+          <Button asChild className="w-full text-xs sm:text-sm h-10 sm:h-11" size={isCompact ? 'sm' : 'default'}>
             <Link to={`/course/${course.id}`}>
               {isCompact ? 'Voir' : 'En Savoir Plus'}
             </Link>

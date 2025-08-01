@@ -36,7 +36,7 @@ const SpecializationCard: React.FC<SpecializationCardProps> = ({
   return (
     <Card className={`overflow-hidden transition-all duration-300 hover:shadow-lg ${
       isFeatured ? 'ring-2 ring-primary/20' : ''
-    } ${isCompact ? 'h-full' : ''}`}>
+    } ${isCompact ? 'h-full' : 'min-h-[350px] sm:min-h-[400px]'}`}>
       <div className={`overflow-hidden ${isCompact ? 'h-32' : 'h-48 sm:h-56'}`}>
         <img 
           src={specialization.image} 
@@ -126,10 +126,10 @@ const SpecializationCard: React.FC<SpecializationCardProps> = ({
       </CardContent>
       
       {onSelect && (
-        <div className="p-4 pt-0 px-4 sm:px-6">
+        <div className="p-4 pt-0 px-4 sm:px-6 pb-4 sm:pb-6">
           <Button 
             onClick={handleSelect}
-            className="w-full text-xs sm:text-sm"
+            className="w-full text-xs sm:text-sm h-10 sm:h-11"
             size={isCompact ? 'sm' : 'default'}
           >
             Voir les cours

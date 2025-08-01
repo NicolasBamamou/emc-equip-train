@@ -166,14 +166,14 @@ const SpecializationDetail = ({ spec }: { spec: Specialization }) => {
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
-                  <div className="flex gap-4 mt-4">
-                    <Button asChild>
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-4">
+                    <Button asChild className="text-sm sm:text-base">
                       <Link to="/admissions">S'inscrire</Link>
                     </Button>
-                    <Button variant="outline" asChild>
+                    <Button variant="outline" asChild className="text-sm sm:text-base">
                       <Link to="/contact">Demander des Informations</Link>
                     </Button>
-                    <Button variant="outline" asChild>
+                    <Button variant="outline" asChild className="text-sm sm:text-base">
                       <Link to={`/course/${course.id || course.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
                         En savoir plus
                       </Link>

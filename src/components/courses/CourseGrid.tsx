@@ -144,7 +144,7 @@ const CourseGrid: React.FC<CourseGridProps> = ({
       {filteredCourses.length > 0 ? (
         <div className={
           viewMode === 'grid' 
-            ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'
+            ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 auto-rows-fr'
             : 'space-y-3 sm:space-y-4'
         }>
           {filteredCourses.map((course) => (
