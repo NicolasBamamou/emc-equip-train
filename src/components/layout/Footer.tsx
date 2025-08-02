@@ -34,16 +34,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation */}
           <div>
             <h3 className="text-xl font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">
-              <li><Link to="" className="hover:text-blue-400 transition-colors">🏠 Accueil</Link></li>
-              <li><Link to="about" className="hover:text-blue-400 transition-colors">🏢 À Propos</Link></li>
-              <li><Link to="courses" className="hover:text-blue-400 transition-colors">🎓 Spécialisations</Link></li>
-              <li><Link to="admissions" className="hover:text-blue-400 transition-colors">📝 Admissions</Link></li>
-              <li><Link to="blog" className="hover:text-blue-400 transition-colors">📰 Blog Expertise</Link></li>
-              <li><Link to="contact" className="hover:text-blue-400 transition-colors">📞 Contact</Link></li>
+              <li><Link to="/" className="hover:text-blue-400 transition-colors">🏠 Accueil</Link></li>
+              <li><Link to="/about" className="hover:text-blue-400 transition-colors">🏢 À Propos</Link></li>
+              <li><Link to="/courses" className="hover:text-blue-400 transition-colors">🎓 Spécialisations</Link></li>
+              <li><Link to="/admissions" className="hover:text-blue-400 transition-colors">📝 Admissions</Link></li>
+              <li><Link to="/blog" className="hover:text-blue-400 transition-colors">📰 Blog Expertise</Link></li>
+              <li><Link to="/contact" className="hover:text-blue-400 transition-colors">📞 Contact</Link></li>
             </ul>
             <div className="mt-4 pt-4 border-t border-gray-700">
               <h4 className="font-semibold mb-2">📊 Nos Résultats</h4>
@@ -75,18 +75,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
-                <span>Boké Ville Zone minière, Baralande N°14, ECM 12345, Guinée</span>
+                <span>Boké Ville Zone minière, Baralande N°14, SIP 12345, Guinée</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 flex-shrink-0" />
-                <a href="tel:+224626250624" className="hover:text-blue-400 transition-colors">
-                  (+224) 626-250-624
+                <a href="tel:+224622625062" className="hover:text-blue-400 transition-colors">
+                  (+224) 622 62 50 62
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 flex-shrink-0" />
-                <a href="mailto:expertiseminingconsulting@gmail.com" className="hover:text-blue-400 transition-colors">
-                  expertiseminingconsulting@gmail.com
+                <a href="mailto:seminaireinsertionprofesionel@gmail.com" className="hover:text-blue-400 transition-colors">
+                  seminaireinsertionprofesionel@gmail.com
                 </a>
               </li>
             </ul>

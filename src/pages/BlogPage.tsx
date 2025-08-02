@@ -40,9 +40,9 @@ const BlogPage = () => {
         <section className="bg-gray-900 text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog Expertise Mining Consulting</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog Expertise SIP</h1>
               <p className="text-lg md:text-xl">
-                Aperçus de l'industrie, histoires de réussite et les dernières nouveautés en matière d'opération d'équipement lourd.
+                Aperçus de l'industrie minière, histoires de réussite et expertise technique couvrant nos spécialisations pour votre insertion professionnelle complète dans l'écosystème minier guinéen et au-delà.
               </p>
             </div>
           </div>
