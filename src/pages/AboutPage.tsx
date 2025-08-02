@@ -98,29 +98,54 @@ const AboutPage = () => {
               <Card>
                 <CardContent className="pt-6">
                   <h3 className="text-2xl font-bold mb-4 text-primary">Notre Mission</h3>
+                  <p className="mb-4">
+                    Accompagner l'insertion professionnelle complète dans l'écosystème minier guinéen en offrant des formations certifiantes multidisciplinaires qui couvrent l'ensemble des compétences techniques, digitales, managériales et humaines nécessaires pour exceller dans l'industrie minière moderne.
+                  </p>
                   <p>
-                    Fournir une formation d'opérateur d'équipement lourd de premier plan qui met l'accent sur la sécurité, les compétences pratiques et la préparation à la carrière, préparant nos diplômés à apporter des contributions immédiates à leurs employeurs et à l'industrie.
+                    Nous formons des professionnels polyvalents, sécuritaires et adaptés aux exigences évolutives du secteur minier ouest-africain.
                   </p>
                 </CardContent>
               </Card>
               
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="text-2xl font-bold mb-4 text-primary">Nos Valeurs</h3>
-                  <ul className="space-y-2">
-                    <li>
-                      <span className="font-semibold">La Sécurité d'Abord:</span> Nous intégrons la conscience de la sécurité dans chaque aspect de notre formation.
-                    </li>
-                    <li>
-                      <span className="font-semibold">Apprentissage Pratique:</span> Nous croyons que l'expérience pratique est essentielle à la maîtrise.
-                    </li>
-                    <li>
-                      <span className="font-semibold">Pertinence pour l'Industrie:</span> Notre programme évolue avec les besoins de l'industrie et les avancées technologiques.
-                    </li>
-                    <li>
-                      <span className="font-semibold">Réussite des Étudiants:</span> Nous mesurons notre succès par les réalisations professionnelles de nos diplômés.
-                    </li>
-                  </ul>
+                  <h3 className="text-2xl font-bold mb-4 text-primary">Notre Vision</h3>
+                  <p className="mb-4">
+                    Devenir le centre d'excellence de référence en Afrique de l'Ouest pour la formation et l'insertion professionnelle dans les métiers miniers.
+                  </p>
+                  <p>
+                    Créer un écosystème complet de développement des talents qui transforme les vies et propulse l'industrie minière guinéenne vers les standards internationaux d'excellence et d'innovation.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="mt-12 max-w-4xl mx-auto">
+              <Card>
+                <CardContent className="pt-6">
+                  <h3 className="text-2xl font-bold mb-6 text-primary text-center">Nos Valeurs Fondamentales</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="font-semibold text-lg mb-2">🛡️ Excellence et Sécurité</h4>
+                      <p className="text-sm text-gray-600 mb-3">Culture sécuritaire intégrée et standards d'excellence dans chaque formation.</p>
+                      
+                      <h4 className="font-semibold text-lg mb-2">🤝 Inclusion et Développement Humain</h4>
+                      <p className="text-sm text-gray-600 mb-3">Égalité des chances et accompagnement personnalisé pour tous nos apprenants.</p>
+                      
+                      <h4 className="font-semibold text-lg mb-2">🚀 Innovation et Adaptabilité</h4>
+                      <p className="text-sm text-gray-600">Transformation digitale et adaptation aux évolutions technologiques du secteur.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg mb-2">🌍 Impact Sociétal et Durabilité</h4>
+                      <p className="text-sm text-gray-600 mb-3">Contribution au développement communautaire et conscience environnementale.</p>
+                      
+                      <h4 className="font-semibold text-lg mb-2">💡 Innovation Pédagogique</h4>
+                      <p className="text-sm text-gray-600 mb-3">Pédagogie active, mentorat professionnel et formation holistique.</p>
+                      
+                      <h4 className="font-semibold text-lg mb-2">⚡ Insertion Professionnelle</h4>
+                      <p className="text-sm text-gray-600">Accompagnement jusqu'à l'emploi avec un taux de placement de 85%+.</p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>

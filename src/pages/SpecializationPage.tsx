@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -10,6 +10,15 @@ import LoadingSpinner from '../components/LoadingSpinner';
 
 const SpecializationPage = () => {
   const { specializationId } = useParams<{ specializationId: string }>();
+  
+  // Scroll to top when component mounts or specializationId changes
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, [specializationId]);
   
   // Find the specialization
   const specialization = specializations.find(spec => spec.id === specializationId);

@@ -7,9 +7,9 @@ const CTASection = () => {
   return (
     <section className="py-20 bg-primary text-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Prêt à Commencer Votre Carrière dans l'Opération d'Équipement Lourd?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Prêt à Transformer Votre Avenir Professionnel dans l'Industrie Minière?</h2>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-          Faites le premier pas vers une carrière enrichissante. Inscrivez-vous aujourd'hui ou contactez-nous pour en savoir plus sur nos programmes de formation.
+          Rejoignez les 2000+ diplômés SIP qui excellent dans leurs carrières. Choisissez parmi nos 7 spécialisations et bénéficiez d'un accompagnement jusqu'à l'emploi avec 85% de taux de placement.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button size="lg" asChild className="bg-white text-primary hover:bg-gray-100">

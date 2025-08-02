@@ -5,23 +5,23 @@ import { Award, Calendar, Users, Clock } from 'lucide-react';
 const features = [
   {
     icon: <Award className="h-10 w-10 text-primary" />,
-    title: "Certifications Reconnues par l'Industrie",
-    description: "Nos programmes mènent à des certifications qui sont reconnues et respectées dans toute l'industrie des équipements lourds."
+    title: "7 Spécialisations Certifiantes",
+    description: "Formation complète couvrant toutes les compétences techniques, digitales et managériales pour exceller dans l'industrie minière."
   },
   {
     icon: <Calendar className="h-10 w-10 text-primary" />,
-    title: "Horaires Flexibles",
-    description: "Choisissez parmi des cours de jour, du soir et de fin de semaine pour adapter la formation à votre vie bien remplie."
+    title: "Insertion Professionnelle Garantie",
+    description: "Taux de placement de 85%+ dans les 6 mois grâce à notre réseau de partenaires industriels et notre accompagnement personnalisé."
   },
   {
     icon: <Users className="h-10 w-10 text-primary" />,
-    title: "Instructeurs Experts",
-    description: "Apprenez auprès d'instructeurs certifiés possédant des années d'expérience concrète dans l'opération d'équipements lourds."
+    title: "Experts Multidisciplinaires",
+    description: "Apprenez auprès d'instructeurs certifiés couvrant l'ensemble de l'écosystème minier : technique, sécurité, gestion et digital."
   },
   {
     icon: <Clock className="h-10 w-10 text-primary" />,
-    title: "Programmes Accélérés",
-    description: "Soyez formé et certifié en aussi peu que 4 à 12 semaines, selon le programme."
+    title: "Parcours Personnalisés",
+    description: "Formations modulaires de 2 semaines à 12 mois selon vos objectifs professionnels et votre niveau initial."
   }
 ];
 
@@ -30,9 +30,9 @@ const FeaturesSection = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-                        <h2 className="section-heading">Pourquoi Choisir Séminaire d'Insertion Professionnel?</h2>
+          <h2 className="section-heading">Pourquoi Choisir SIP pour Votre Insertion Professionnelle?</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Nous offrons des programmes de formation complets conçus pour vous préparer à une carrière réussie dans l'opération d'équipements lourds.
+            Nous offrons un écosystème complet de formation multidisciplinaire conçu pour votre réussite professionnelle dans l'industrie minière guinéenne et ouest-africaine.
           </p>
         </div>
 
