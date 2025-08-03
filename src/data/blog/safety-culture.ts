@@ -5,7 +5,7 @@ export const safetyArticle = {
   date: "2 août 2025",
   author: "Dr. Sophie Dubois",
   readTime: "12 min de lecture",
-  image: "./images/work.jpg",
+  image: "./images/comment.png",
   category: "Sécurité",
   specializations: ["mining-safety", "heavy-equipment", "soft-skills-digital"],
   content: `

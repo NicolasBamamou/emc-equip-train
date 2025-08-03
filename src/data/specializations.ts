@@ -4,7 +4,7 @@ const specializations = [
     {
       id: 'heavy-equipment',
       title: "Formation Opérateur d’Équipements Lourds",
-      image: "/sip-equip-train/images/Loader operating.jpg",
+      image: "/sip-equip-train/images/equipment loud.jpg",
       introduction: "Devenez un opérateur qualifié d'engins lourds grâce à une formation pratique sur excavatrices, bulldozers, camions-bennes, chargeuses et niveleuses.",
       description: "Cette spécialisation met l'accent sur la formation pratique à l'utilisation d'équipements tels que : Excavatrices, Bulldozers, Camions-bennes, Chargeuses sur pneus, Niveleuses. Toutes nos formations actuelles sont regroupées ici.",
       coreCourses: [
@@ -44,7 +44,7 @@ const specializations = [
       duration: "3 Semaines",
       level: "Débutant à Intermédiaire",
       price: "5.500.000FG",
-      image: "./images/Dozer.png",
+      image: "./images/budozer.jpg",
       description: "Apprenez à utiliser les bulldozers de manière sûre et efficace pour le défrichage, le nivellement et les opérations de manutention de matériaux.",
       topics: [
         "Types et applications de bulldozers",
@@ -63,7 +63,7 @@ const specializations = [
           duration: "5 Semaines",
       level: "Débutant",
       price: "5.500.000FG",
-      image: "./images/Loader.png",
+      image: "./images/chargeuse.png",
           description: "Seulement 12 semaines pour doter nos stagiaires des compétences essentielles nécessaires à l'exploitation efficace et sécurisée des chargeuses dans l'industrie minière.",
       topics: [
         "Maîtrise de la chargeuse : Conduite, manœuvres et productivité",
@@ -82,7 +82,7 @@ const specializations = [
       duration: "3 Semaines",
       level: "Débutant à Intermédiaire",
       price: "6.500.000FG",
-      image: "./images/Backhoe-2.png",
+      image: "./images/Backhoe-Loader-New.H03.2k-1024x1024.webp",
       description: "Maîtrisez l'opération de chargeuses-pelleteuses pour l'excavation, le creusement de tranchées et la manutention de matériaux.",
       topics: [
         "Composants et commandes de la pelle rétrocaveuse",
@@ -101,7 +101,7 @@ const specializations = [
           duration: "4 Semaines",
       level: "Débutant à Avancé",
       price: "2.500.000FG",
-      image: "./images/Rock-Truck.png",
+      image: "./images/truck.avif",
       description: "Notre formation spécialisée en camion minier vous prépare à conduire et opérer ces véhicules puissants dans les environnements les plus exigeants.",
       topics: [
         "Conduite et manœuvres : Maîtrise du camion articulé en terrain difficile",
@@ -120,7 +120,7 @@ const specializations = [
       duration: "6 Semaines",
       level: "Intermédiaire à Avancé",
       price: "5.500.000FG",
-      image: "./images/crane.webp",
+      image: "./images/crane.png",
       description: "Formation complète sur l'opération de grues mobiles, les protocoles de sécurité et la gestion des charges.",
       topics: [
         "Types et composants de grues",
@@ -138,7 +138,7 @@ const specializations = [
     {
       id: 'mining-safety',
       title: "Sécurité et Réglementation Minière",
-      image: "/sip-equip-train/images/minig.jpg",
+      image: "/sip-equip-train/images/Safety.webp",
       introduction: "Maîtrisez la sécurité minière et la conformité réglementaire pour un environnement de travail sûr et conforme aux normes internationales.",
       description: "Dans le secteur minier, la sécurité est une culture vitale. Cette spécialisation couvre les protocoles de sécurité sur site, la gestion des risques, la formation aux situations d'urgence et la conformité réglementaire.",
       coreCourses: [
@@ -158,7 +158,7 @@ const specializations = [
           duration: "2 Semaines",
           level: "Débutant",
           price: "1.000.000FG",
-          image: "./images/smiling.jpg",
+          image: "./images/exper.png",
           description: "Découvrez les bases de la sécurité dans l'industrie minière, les risques majeurs et la culture de prévention.",
           topics: [
             "Principes fondamentaux de la sécurité minière",
@@ -173,7 +173,7 @@ const specializations = [
           duration: "1 Semaine",
           level: "Débutant",
           price: "500.000FG",
-          image: "./images/working.jpg",
+          image: "./images/EPI.png",
           description: "Maîtrisez l'utilisation correcte des EPI pour réduire les risques d'accident sur site.",
           topics: [
             "Types d'EPI et leur usage",
@@ -188,7 +188,7 @@ const specializations = [
           duration: "1 Semaine",
           level: "Débutant",
           price: "700.000FG",
-          image: "./images/durabity.jpg",
+          image: "./images/danger.png",
           description: "Apprenez à repérer, signaler et prévenir les dangers dans l'environnement minier.",
           topics: [
             "Méthodes d'identification des dangers",
@@ -203,7 +203,7 @@ const specializations = [
           duration: "2 Semaines",
           level: "Débutant",
           price: "1.200.000FG",
-          image: "./images/expert.jpg",
+          image: "./images/first aid.png",
           description: "Formez-vous aux gestes qui sauvent et aux protocoles d'urgence en site minier.",
           topics: [
             "Premiers secours de base",
@@ -218,7 +218,7 @@ const specializations = [
           duration: "1 Semaine",
           level: "Débutant",
           price: "600.000FG",
-          image: "./images/working.jpg",
+          image: "./images/manutention.png",
           description: "Réduisez les risques de blessures grâce à de bonnes pratiques de manutention et d'ergonomie.",
           topics: [
             "Principes d'ergonomie au travail",
@@ -233,7 +233,7 @@ const specializations = [
           duration: "1 Semaine",
           level: "Débutant",
           price: "800.000FG",
-          image: "./images/work.jpg",
+          image: "./images/fire.png",
           description: "Maîtrisez les bases de la prévention incendie et les procédures d'évacuation.",
           topics: [
             "Risques d'incendie en milieu minier",
@@ -265,7 +265,7 @@ const specializations = [
           duration: "3 Semaines",
           level: "Intermédiaire",
           price: "2.500.000FG",
-          image: "./images/Loader operating.jpg",
+          image: "./images/Engin security.png",
           description: "Maîtrisez l'utilisation sécurisée des équipements lourds utilisés dans l'industrie minière.",
           topics: [
             "Inspection pré-opérationnelle des équipements",
@@ -297,7 +297,7 @@ const specializations = [
           duration: "1 Semaine",
           level: "Intermédiaire",
           price: "1.500.000FG",
-          image: "./images/teaminfo.jpg",
+          image: "./images/Induction.png",
           description: "Formation complète d'accueil et d'intégration pour nouveaux employés sur site minier.",
           topics: [
             "Présentation du site et des installations",
@@ -313,7 +313,7 @@ const specializations = [
           duration: "2 Semaines",
           level: "Intermédiaire",
           price: "1.800.000FG",
-          image: "./images/Secretary.jpg",
+          image: "./images/incendi.png",
           description: "Développez vos compétences en investigation d'incidents et analyse des causes racines.",
           topics: [
             "Méthodologies d'investigation",
@@ -329,7 +329,7 @@ const specializations = [
           duration: "3 Semaines",
           level: "Intermédiaire",
           price: "2.200.000FG",
-          image: "./images/working.jpg",
+          image: "./images/protocol.png",
           description: "Maîtrisez les protocoles de sécurité pour les interventions électriques et mécaniques.",
           topics: [
             "Consignation électrique (LOTO)",
@@ -346,7 +346,7 @@ const specializations = [
           duration: "4 Semaines",
           level: "Avancé",
           price: "3.500.000FG",
-          image: "./images/expert.jpg",
+          image: "./images/ISO.png",
           description: "Maîtrisez la mise en place et la gestion d'un système de management de la santé et sécurité selon la norme ISO 45001.",
           topics: [
             "Exigences de la norme ISO 45001",
@@ -362,7 +362,7 @@ const specializations = [
           duration: "3 Semaines",
           level: "Avancé",
           price: "3.000.000FG",
-          image: "./images/CEO.jpg",
+          image: "./images/regulations.png",
           description: "Approfondissez vos connaissances des réglementations minières locales et internationales pour assurer la conformité.",
           topics: [
             "Code minier guinéen",
@@ -378,7 +378,7 @@ const specializations = [
           duration: "3 Semaines",
           level: "Avancé",
           price: "2.800.000FG",
-          image: "./images/trainer.jpg",
+          image: "./images/supervisor.png",
           description: "Développez vos compétences de supervision en santé et sécurité pour encadrer efficacement vos équipes.",
           topics: [
             "Leadership en sécurité",
@@ -394,7 +394,7 @@ const specializations = [
           duration: "2 Semaines",
           level: "Avancé",
           price: "2.500.000FG",
-          image: "./images/working.jpg",
+          image: "./images/matiere.png",
           description: "Apprenez la gestion sécurisée des matières dangereuses dans l'environnement minier.",
           topics: [
             "Classification des matières dangereuses",
@@ -426,7 +426,7 @@ const specializations = [
           duration: "4 Semaines",
           level: "Avancé",
           price: "3.800.000FG",
-          image: "./images/smiling.jpg",
+          image: "./images/industrielle.png",
           description: "Approfondissez vos connaissances en hygiène industrielle pour préserver la santé des travailleurs miniers.",
           topics: [
             "Évaluation des expositions professionnelles",
@@ -480,7 +480,7 @@ const specializations = [
     {
       id: 'diesel-mechanics',
       title: "Diesel et Mécanique des Véhicules Lourds",
-      image: "/sip-equip-train/images/Loader.png",
+      image: "/sip-equip-train/images/diesel_engine.png",
       introduction: "Maîtrisez le diagnostic, la maintenance et la réparation des camions miniers et engins lourds.",
       description: "Cette spécialisation couvre le dépannage, la maintenance et la réparation des camions et machines minières : moteurs, hydraulique, transmissions, outils de diagnostic (CAT SIS, Cummins INSITE, etc.).",
       coreCourses: [
