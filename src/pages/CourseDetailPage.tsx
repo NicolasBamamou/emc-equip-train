@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams, Link, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, Link, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -36,7 +36,6 @@ import TeamworkPage from './courses/TeamworkPage';
 import ElectriqueIndustriellePage from './courses/ElectriqueIndustriellePage';
 import AutomatisationPage from './courses/AutomatisationPage';
 // Heavy Equipment Course Pages
-import OperationExcavatorPage from './courses/OperationExcavatorPage';
 import OperationBulldozerPage from './courses/OperationBulldozerPage';
 import OperationChargeusePage from './courses/OperationChargeusePage';
 import OperationCamionPage from './courses/OperationCamionPage';
@@ -125,6 +124,15 @@ import CybersecuriteEtiquettePage from './courses/CybersecuriteEtiquettePage';
 const CourseDetailPage = () => {
   const { courseId, specializationId } = useParams<{ courseId: string; specializationId?: string }>();
   const location = useLocation();
+  const navigate = useNavigate();
+  
+  // Redirect excavator course to dedicated page
+  useEffect(() => {
+    if (courseId === 'excavator') {
+      navigate('/courses/excavator-certification', { replace: true });
+      return;
+    }
+  }, [courseId, navigate]);
   
   // Determine the back URL based on the current route
   const getBackUrl = () => {
@@ -143,7 +151,7 @@ const CourseDetailPage = () => {
   // Route to individual course pages for custom styling
   const customPages: { [key: string]: React.ComponentType } = {
     // ===== HEAVY EQUIPMENT OPERATION SPECIALIZATION =====
-    'excavator': OperationExcavatorPage, // Certification d'Opérateur d'Excavatrice
+    // Note: excavator course now has its own dedicated page at /courses/excavator-certification
     'bulldozer': OperationBulldozerPage, // Programme de Formation Bulldozer
     'Chargeuses': OperationChargeusePage, // Certification Opérateurs de Chargeuses (Note: Capital C as in data)
     'chargeuses': OperationChargeusePage, // Alternative lowercase

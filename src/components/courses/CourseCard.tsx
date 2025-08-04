@@ -21,6 +21,7 @@ interface CourseCardProps {
     price: string;
     image: string;
     certification?: string;
+    link?: string; // Custom link for courses with dedicated pages
   };
   variant?: 'default' | 'compact' | 'featured';
   showActions?: boolean;
@@ -35,6 +36,14 @@ const CourseCard: React.FC<CourseCardProps> = ({
 }) => {
   const isCompact = variant === 'compact';
   const isFeatured = variant === 'featured';
+
+  // Use custom link if provided, otherwise use default route structure
+  const getCourseLinkUrl = () => {
+    if (course.link) {
+      return course.link;
+    }
+    return specializationId ? `/specialization/${specializationId}/course/${course.id}` : `/course/${course.id}`;
+  };
 
   return (
     <Card className={`overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg min-h-[300px] sm:min-h-[350px] ${
@@ -83,7 +92,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
       {showActions && (
         <CardFooter className="pt-4 px-4 sm:px-6 pb-4 sm:pb-6">
           <Button asChild className="w-full text-xs sm:text-sm h-10 sm:h-11" size={isCompact ? 'sm' : 'default'}>
-            <Link to={specializationId ? `/specialization/${specializationId}/course/${course.id}` : `/course/${course.id}`}>
+            <Link to={getCourseLinkUrl()}>
               {isCompact ? 'Voir' : 'En Savoir Plus'}
             </Link>
           </Button>

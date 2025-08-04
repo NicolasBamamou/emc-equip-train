@@ -15,6 +15,7 @@ import AdmissionsPage from "./pages/AdmissionsPage";
 import ContactPage from "./pages/ContactPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import ExcavatorCertificationPage from "./pages/courses/ExcavatorCertificationPage";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogPostPage />} />
+            <Route path="/courses/excavator-certification" element={<ExcavatorCertificationPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>

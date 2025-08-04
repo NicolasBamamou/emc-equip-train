@@ -19,21 +19,24 @@ export const heavyEquipmentSpecialization = {
     {
       id: "excavator",
       title: "Certification d'Opérateur d'Excavatrice",
-      duration: "12 Semaines",
+      duration: "4 Semaines Intensives",
       level: "Débutant à Avancé",
       price: "6.500.000FG",
-      image: "./images/Excavator.png",
-      description: "Maîtrisez l'opération d'excavatrices hydrauliques dans divers contextes de construction et de terrassement.",
+      image: "/sip-equip-train/images/Excavator.png",
+      description: "Formation pratique complète alignée sur les normes minières et BTP pour devenir opérateur d'excavatrice certifié.",
+      detailedDescription: "Ce cours intensif de 4 semaines (160 heures) combine 70% de pratique et 30% de théorie pour former des opérateurs d'excavatrice compétents et sûrs. La formation couvre les fondamentaux de sécurité, les techniques opérationnelles avancées, la maintenance préventive et les scénarios réels d'optimisation.",
+      link: "/courses/excavator-certification",
       topics: [
-        "Types et composants d'excavatrices",
-        "Inspection pré-opération et protocoles de sécurité",
-        "Techniques d'opération de base et contrôles",
-        "Opérations de creusement de tranchées et de nivellement",
-        "Techniques de chargement et manutention de matériaux",
-        "Manœuvres avancées et excavation de précision",
-        "Bases de maintenance et dépannage"
+        "Règles de chantier et lecture de plans",
+        "Équipements de protection et lois locales",
+        "Contrôles de base et creusement précis",
+        "Chargement camion et travail en pente",
+        "Vérifications quotidiennes et lubrification",
+        "Diagnostic de pannes simples",
+        "Chantiers simulés miniers et BTP",
+        "Gestion des obstacles et efficacité énergétique"
       ],
-      certification: "NCCER Opérations d'Équipement Lourd - Excavateur"
+      certification: "Certificat d'Opérateur d'Excavatrice Niveau 1 (valide 5 ans, conforme CQP TPE)"
     },
     {
       id: "bulldozer",
