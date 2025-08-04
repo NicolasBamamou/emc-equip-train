@@ -77,207 +77,247 @@ const OperationChargeusePage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-600 to-orange-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-block px-4 py-2 bg-white bg-opacity-20 rounded-full">
-                <p className="text-sm font-semibold uppercase tracking-wider">Formation Certifiante</p>
+      <section className="bg-gradient-to-br from-orange-600 via-orange-700 to-orange-800 text-white overflow-hidden relative">
+        {/* Mobile optimized hero with better spacing */}
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-28">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
+              <div className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full">
+                <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider">Formation Certifiante</p>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Certification Opérateurs de <span className="text-orange-200">Chargeuses</span>
+              
+              {/* Mobile-optimized typography */}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Certification Opérateurs de <span className="text-orange-200 block sm:inline">Chargeuses</span>
               </h1>
-              <p className="text-xl md:text-2xl text-orange-100 font-medium">
+              
+              <p className="text-lg sm:text-xl md:text-2xl text-orange-100 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Formation pratique alignée sur les normes minières, BTP et génie civil
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              
+              {/* Mobile-first button layout */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 justify-center lg:justify-start">
                 <Button 
                   onClick={() => scrollToSection('register')} 
-                  className="px-8 py-4 bg-white text-orange-600 font-bold rounded-lg hover:bg-gray-100 transition duration-300 shadow-xl"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-gray-100 transition duration-300 shadow-xl text-sm sm:text-base"
                 >
                   S'inscrire maintenant <ChevronRight className="ml-2" size={16} />
                 </Button>
                 <Button 
                   onClick={() => scrollToSection('overview')} 
                   variant="outline" 
-                  className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:bg-opacity-10 transition duration-300"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-white bg-white/10 backdrop-blur-sm text-white font-bold rounded-xl hover:bg-white hover:text-orange-600 transition duration-300 text-sm sm:text-base"
                 >
                   En savoir plus
                 </Button>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute -top-10 -left-10 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-              <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"></div>
-              <div className="relative">
-                <img 
-                  src="/sip-equip-train/images/Loader.png" 
-                  alt="Chargeuse sur chantier" 
-                  className="rounded-xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-all duration-500 hover:scale-105"
-                />
+            
+            {/* Mobile-optimized image section */}
+            <div className="relative mt-8 lg:mt-0 flex justify-center">
+              <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg">
+                <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-16 h-16 sm:w-20 sm:h-20 bg-blue-400/30 rounded-full blur-xl animate-pulse"></div>
+                <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-16 h-16 sm:w-20 sm:h-20 bg-blue-600/30 rounded-full blur-xl animate-pulse animation-delay-2000"></div>
+                <div className="relative">
+                  <img 
+                    src="/sip-equip-train/images/Loader.png" 
+                    alt="Chargeuse sur chantier" 
+                    className="w-full h-auto rounded-2xl shadow-2xl border-2 sm:border-4 border-white/20 transform hover:scale-105 transition-all duration-500"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <div className="bg-orange-700 text-white py-6">
+      {/* Mobile-optimized Stats Bar */}
+      <div className="bg-orange-700 text-white py-4 sm:py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div className="p-2">
-              <p className="text-2xl md:text-3xl font-bold">92%</p>
-              <p className="text-sm md:text-base">Embauche en CDI</p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 text-center">
+            <div className="p-2 sm:p-3">
+              <p className="text-xl sm:text-2xl md:text-3xl font-bold">92%</p>
+              <p className="text-xs sm:text-sm md:text-base leading-tight">Embauche en CDI</p>
             </div>
-            <div className="p-2">
-              <p className="text-2xl md:text-3xl font-bold">160h</p>
-              <p className="text-sm md:text-base">Formation pratique</p>
+            <div className="p-2 sm:p-3">
+              <p className="text-xl sm:text-2xl md:text-3xl font-bold">160h</p>
+              <p className="text-xs sm:text-sm md:text-base leading-tight">Formation pratique</p>
             </div>
-            <div className="p-2">
-              <p className="text-2xl md:text-3xl font-bold">+25%</p>
-              <p className="text-sm md:text-base">Augmentation salariale</p>
+            <div className="p-2 sm:p-3">
+              <p className="text-xl sm:text-2xl md:text-3xl font-bold">+25%</p>
+              <p className="text-xs sm:text-sm md:text-base leading-tight">Augmentation salariale</p>
             </div>
-            <div className="p-2">
-              <p className="text-2xl md:text-3xl font-bold">5 ans</p>
-              <p className="text-sm md:text-base">Certification valide</p>
+            <div className="p-2 sm:p-3">
+              <p className="text-xl sm:text-2xl md:text-3xl font-bold">5 ans</p>
+              <p className="text-xs sm:text-sm md:text-base leading-tight">Certification valide</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Course Overview */}
-      <section id="overview" className="py-16 md:py-24 bg-white">
+      {/* Course Overview - Mobile Optimized */}
+      <section id="overview" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Aperçu du Cours</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+          <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Aperçu du Cours</h2>
+            <div className="w-16 sm:w-20 h-1 bg-orange-600 mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="mb-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Pourquoi ce cours ?</h3>
-                <p className="text-lg text-gray-600 mb-6">
+          <div className="space-y-10 sm:space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+            {/* Content Section - Mobile First */}
+            <div className="space-y-6 sm:space-y-8">
+              <div className="bg-gradient-to-br from-orange-50 to-blue-50 p-4 sm:p-6 lg:p-8 rounded-2xl">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Pourquoi ce cours ?</h3>
+                <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                   Devenez un opérateur de chargeuse sur pneus ou chenilles certifié, capable de maximiser l'efficacité et la sécurité sur les chantiers les plus exigeants !
                 </p>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-orange-100 text-orange-600">
-                        <CheckCircle size={16} />
+                
+                {/* Mobile-optimized benefit cards */}
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-sm">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+                        <div className="flex items-center justify-center h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-orange-100 text-orange-600">
+                          <CheckCircle size={14} className="sm:w-4 sm:h-4" />
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm sm:text-base text-gray-700">
+                          <span className="font-semibold">Risques critiques :</span> Évitez les accidents grâce à des techniques stabilisées.
+                        </p>
                       </div>
                     </div>
-                    <p className="ml-3 text-gray-700">
-                      <span className="font-semibold">Risques critiques :</span> Évitez les accidents (basculements, collisions) grâce à des techniques stabilisées.
-                    </p>
                   </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-600">
-                        <CheckCircle size={16} />
+                  
+                  <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-sm">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+                        <div className="flex items-center justify-center h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-blue-100 text-blue-600">
+                          <CheckCircle size={14} className="sm:w-4 sm:h-4" />
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm sm:text-base text-gray-700">
+                          <span className="font-semibold">Pénurie de compétences :</span> Répondez à la demande croissante d'opérateurs qualifiés.
+                        </p>
                       </div>
                     </div>
-                    <p className="ml-3 text-gray-700">
-                      <span className="font-semibold">Pénurie de compétences :</span> Répondez à la demande croissante d'opérateurs qualifiés (source: FFB 2025).
-                    </p>
                   </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-600">
-                        <CheckCircle size={16} />
+                  
+                  <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-sm">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+                        <div className="flex items-center justify-center h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-blue-100 text-blue-600">
+                          <CheckCircle size={14} className="sm:w-4 sm:h-4" />
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm sm:text-base text-gray-700">
+                          <span className="font-semibold">Productivité :</span> Maîtrisez le chargement précis et l'optimisation des cycles.
+                        </p>
                       </div>
                     </div>
-                    <p className="ml-3 text-gray-700">
-                      <span className="font-semibold">Productivité :</span> Maîtrisez le chargement précis, le déplacement de matériaux et l'optimisation des cycles de travail.
-                    </p>
                   </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-blue-600">
-                        <CheckCircle size={16} />
+                  
+                  <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-sm">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+                        <div className="flex items-center justify-center h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-blue-100 text-blue-600">
+                          <CheckCircle size={14} className="sm:w-4 sm:h-4" />
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm sm:text-base text-gray-700">
+                          <span className="font-semibold">Conformité :</span> Certification obligatoire pour les sites réglementés.
+                        </p>
                       </div>
                     </div>
-                    <p className="ml-3 text-gray-700">
-                      <span className="font-semibold">Conformité :</span> Certification obligatoire pour les sites réglementés (normes ISO 15998, Directive Machinerie).
-                    </p>
                   </div>
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h4 className="font-bold text-lg text-gray-800 mb-3">Public Cible</h4>
+              {/* Mobile-optimized info cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <Card className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 sm:p-6 border-0 shadow-lg">
+                  <h4 className="font-bold text-base sm:text-lg text-gray-800 mb-2 sm:mb-3">Public Cible</h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
+                    <li className="flex items-start text-sm sm:text-base">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
                       <span>Professionnels du BTP, mines, carrières</span>
                     </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                      <span>Jeunes en formation mécanique/travaux publics</span>
+                    <li className="flex items-start text-sm sm:text-base">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
+                      <span>Jeunes en formation mécanique</span>
                     </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                      <span>Conducteurs non certifiés visant une spécialisation</span>
+                    <li className="flex items-start text-sm sm:text-base">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
+                      <span>Conducteurs non certifiés</span>
                     </li>
                   </ul>
-                </div>
+                </Card>
                 
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <h4 className="font-bold text-lg text-gray-800 mb-3">Prérequis</h4>
+                <Card className="bg-gradient-to-br from-orange-50 to-orange-100 p-4 sm:p-6 border-0 shadow-lg">
+                  <h4 className="font-bold text-base sm:text-lg text-gray-800 mb-2 sm:mb-3">Prérequis</h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
+                    <li className="flex items-start text-sm sm:text-base">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
                       <span>Âge minimum : 18 ans</span>
                     </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
+                    <li className="flex items-start text-sm sm:text-base">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
                       <span>Certificat médical d'aptitude</span>
                     </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                      <span>Notions de base en mécanique ou expérience chantier</span>
+                    <li className="flex items-start text-sm sm:text-base">
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
+                      <span>Notions de base en mécanique</span>
                     </li>
                   </ul>
-                </div>
+                </Card>
               </div>
             </div>
             
+            {/* Image Section - Mobile optimized */}
             <div className="relative">
-              <div className="bg-orange-600 rounded-xl p-1 shadow-xl hover:shadow-2xl transition duration-300 hover:-translate-y-2">
-                <div className="relative overflow-hidden rounded-lg">
+              <div className="bg-gradient-to-br from-orange-600 to-orange-700 rounded-2xl p-1 shadow-2xl hover:shadow-3xl transition duration-300 hover:-translate-y-1">
+                <div className="relative overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm">
                   <img 
                     src="/sip-equip-train/images/chargeuse.png" 
                     alt="Opérateur de chargeuse" 
-                    className="w-full h-auto rounded-lg"
+                    className="w-full h-auto rounded-xl"
                   />
-                  <div className="absolute inset-0 bg-blue-600 bg-opacity-20 flex items-center justify-center">
-                    <button className="bg-white bg-opacity-90 rounded-full p-4 hover:bg-opacity-100 transition duration-300 shadow-lg transform hover:scale-110">
-                      <Play className="text-blue-600" size={24} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent flex items-center justify-center">
+                    <button className="bg-white/90 backdrop-blur-sm rounded-full p-3 sm:p-4 hover:bg-white transition duration-300 shadow-lg transform hover:scale-110">
+                      <Play className="text-orange-600" size={20} />
                     </button>
                   </div>
                 </div>
               </div>
               
-              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
-                  <div className="bg-blue-100 p-3 rounded-full mr-4">
-                    <CalendarDays className="text-blue-600" size={20} />
+              {/* Mobile-optimized info cards below image */}
+              <div className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <Card className="bg-white p-3 sm:p-4 rounded-xl shadow-md border-l-4 border-l-blue-600">
+                  <div className="flex items-center">
+                    <div className="bg-blue-100 p-2 sm:p-3 rounded-full mr-3 sm:mr-4 flex-shrink-0">
+                      <CalendarDays className="text-blue-600" size={16} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-sm sm:text-base">4 semaines</p>
+                      <p className="text-xs sm:text-sm text-gray-500">Formation intensive</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-semibold">4 semaines</p>
-                    <p className="text-sm text-gray-500">Formation intensive</p>
+                </Card>
+                <Card className="bg-white p-3 sm:p-4 rounded-xl shadow-md border-l-4 border-l-orange-600">
+                  <div className="flex items-center">
+                    <div className="bg-orange-100 p-2 sm:p-3 rounded-full mr-3 sm:mr-4 flex-shrink-0">
+                      <MapPin className="text-orange-600" size={16} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-sm sm:text-base">Centre Boké</p>
+                      <p className="text-xs sm:text-sm text-gray-500">Formation sur site</p>
+                    </div>
                   </div>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
-                  <div className="bg-blue-100 p-3 rounded-full mr-4">
-                    <MapPin className="text-blue-600" size={20} />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Centre Boké</p>
-                    <p className="text-sm text-gray-500">Formation sur site</p>
-                  </div>
-                </div>
+                </Card>
               </div>
             </div>
           </div>
@@ -430,166 +470,211 @@ const OperationChargeusePage = () => {
         </div>
       </section>
 
-      {/* Course Structure */}
-      <section id="structure" className="py-16 md:py-24 bg-white">
+      {/* Course Structure - Mobile Optimized */}
+      <section id="structure" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Structure du Cours</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
-            <p className="mt-4 max-w-2xl mx-auto text-gray-600">
+          <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Structure du Cours</h2>
+            <div className="w-16 sm:w-20 h-1 bg-orange-600 mx-auto"></div>
+            <p className="mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base text-gray-600 leading-relaxed">
               4 semaines intensives avec 80% de pratique sur des chargeuses réelles et 20% de théorie interactive
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            <Card className="bg-gray-50 p-6 shadow-sm hover:shadow-md transition duration-300">
-              <div className="text-blue-600 text-3xl font-bold mb-3">1</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Fondamentaux & Sécurité</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Réglementation chantier</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Études de cas d'accidents</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Équipements de protection</span>
-                </li>
-              </ul>
-            </Card>
-            
-            <Card className="bg-gray-50 p-6 shadow-sm hover:shadow-md transition duration-300">
-              <div className="text-blue-600 text-3xl font-bold mb-3">2</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Techniques Opérationnelles</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Prise en main de l'engin</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Chargement rapide de camions</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Gestion des angles morts</span>
-                </li>
-              </ul>
-            </Card>
-            
-            <Card className="bg-gray-50 p-6 shadow-sm hover:shadow-md transition duration-300">
-              <div className="text-blue-600 text-3xl font-bold mb-3">3</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Applications Avancées</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Nivellement de précision</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Tri de matériaux</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Utilisation d'accessoires</span>
-                </li>
-              </ul>
-            </Card>
-            
-            <Card className="bg-gray-50 p-6 shadow-sm hover:shadow-md transition duration-300">
-              <div className="text-blue-600 text-3xl font-bold mb-3">4</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Maintenance & Performance</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Vérifications quotidiennes</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Changement de godet</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Dépannage hydraulique</span>
-                </li>
-              </ul>
-            </Card>
-            
-            <Card className="bg-gray-50 p-6 shadow-sm hover:shadow-md transition duration-300">
-              <div className="text-blue-600 text-3xl font-bold mb-3">5</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Projet Final</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Chantier simulé</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Chargement chronométré</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 text-sm mt-1 mr-2" size={16} />
-                  <span>Respect consignes environnementales</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-          
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Méthodes Pédagogiques</h3>
-              <div className="space-y-6">
-                <div className="flex">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
-                      <Wrench size={24} />
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-lg font-medium text-gray-900">80% Pratique</h4>
-                    <p className="mt-1 text-gray-600">
-                      Ateliers sur chargeuses réelles (15-30 tonnes), chantiers-écoles (carrières, déchetteries), simulateurs de basculement.
-                    </p>
+          {/* Mobile-first module cards */}
+          <div className="space-y-4 sm:space-y-6 lg:grid lg:grid-cols-5 lg:gap-4 lg:space-y-0">
+            <Card className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 sm:p-6 shadow-lg border-0 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-3 sm:space-x-0 sm:block">
+                <div className="flex-shrink-0 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg sm:text-xl">
+                    1
                   </div>
                 </div>
-                
-                <div className="flex">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
-                      <FileText size={24} />
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Fondamentaux & Sécurité</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <div className="flex items-start">
+                      <CheckCircle className="text-blue-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Réglementation chantier</span>
                     </div>
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-lg font-medium text-gray-900">20% Théorie</h4>
-                    <p className="mt-1 text-gray-600">
-                      Vidéos interactives (démonstrations Volvo), analyses 3D des angles morts, quiz en réalité augmentée.
-                    </p>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-blue-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Études de cas d'accidents</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-blue-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Équipements de protection</span>
+                    </div>
                   </div>
                 </div>
               </div>
+            </Card>
+            
+            <Card className="bg-gradient-to-br from-orange-50 to-orange-100 p-4 sm:p-6 shadow-lg border-0 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-3 sm:space-x-0 sm:block">
+                <div className="flex-shrink-0 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-lg sm:text-xl">
+                    2
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Techniques Opérationnelles</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <div className="flex items-start">
+                      <CheckCircle className="text-orange-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Prise en main de l'engin</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-orange-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Chargement rapide de camions</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-orange-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Gestion des angles morts</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+            
+            <Card className="bg-gradient-to-br from-green-50 to-green-100 p-4 sm:p-6 shadow-lg border-0 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-3 sm:space-x-0 sm:block">
+                <div className="flex-shrink-0 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg sm:text-xl">
+                    3
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Applications Avancées</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <div className="flex items-start">
+                      <CheckCircle className="text-green-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Nivellement de précision</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-green-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Tri de matériaux</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-green-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Utilisation d'accessoires</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+            
+            <Card className="bg-gradient-to-br from-purple-50 to-purple-100 p-4 sm:p-6 shadow-lg border-0 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-3 sm:space-x-0 sm:block">
+                <div className="flex-shrink-0 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-lg sm:text-xl">
+                    4
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Maintenance & Performance</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <div className="flex items-start">
+                      <CheckCircle className="text-purple-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Vérifications quotidiennes</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-purple-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Changement de godet</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-purple-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Dépannage hydraulique</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+            
+            <Card className="bg-gradient-to-br from-red-50 to-red-100 p-4 sm:p-6 shadow-lg border-0 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+              <div className="flex items-start space-x-3 sm:space-x-0 sm:block">
+                <div className="flex-shrink-0 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg sm:text-xl">
+                    5
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Projet Final</h3>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <div className="flex items-start">
+                      <CheckCircle className="text-red-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Chantier simulé</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-red-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Chargement chronométré</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="text-red-500 text-sm mt-0.5 mr-2 flex-shrink-0" size={14} />
+                      <span className="text-xs sm:text-sm text-gray-600">Respect consignes environnementales</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+          
+          {/* Mobile-optimized methods section */}
+          <div className="mt-12 sm:mt-16 space-y-8 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start lg:space-y-0">
+            <div className="space-y-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">Méthodes Pédagogiques</h3>
+              
+              <Card className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 sm:p-6 shadow-xl">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-white/20 backdrop-blur-sm">
+                      <Wrench size={20} />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg sm:text-xl font-bold mb-2">80% Pratique</h4>
+                    <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
+                      Ateliers sur chargeuses réelles, chantiers-écoles, simulateurs de basculement.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+              
+              <Card className="bg-gradient-to-r from-orange-600 to-orange-700 text-white p-4 sm:p-6 shadow-xl">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-white/20 backdrop-blur-sm">
+                      <FileText size={20} />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg sm:text-xl font-bold mb-2">20% Théorie</h4>
+                    <p className="text-sm sm:text-base text-orange-100 leading-relaxed">
+                      Vidéos interactives, analyses 3D des angles morts, quiz en réalité augmentée.
+                    </p>
+                  </div>
+                </div>
+              </Card>
             </div>
             
-            <Card className="bg-orange-600 p-6 text-white">
-              <h3 className="text-xl font-bold mb-4">Outils & Équipements</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center">
-                  <CheckCircle className="mr-2 text-orange-200" size={16} />
-                  <span>Chargeuses dernier cri</span>
+            <Card className="bg-gradient-to-br from-orange-600 to-orange-700 p-4 sm:p-6 text-white shadow-2xl">
+              <h3 className="text-lg sm:text-xl font-bold mb-4">Outils & Équipements</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <CheckCircle className="mr-2 text-orange-200 flex-shrink-0" size={16} />
+                  <span className="text-xs sm:text-sm">Chargeuses dernier cri</span>
                 </div>
-                <div className="flex items-center">
-                  <CheckCircle className="mr-2 text-blue-200" size={16} />
-                  <span>Drones analyse chantier</span>
+                <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <CheckCircle className="mr-2 text-orange-200 flex-shrink-0" size={16} />
+                  <span className="text-xs sm:text-sm">Drones analyse chantier</span>
                 </div>
-                <div className="flex items-center">
-                  <CheckCircle className="mr-2 text-blue-200" size={16} />
-                  <span>Kits diagnostic électronique</span>
+                <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <CheckCircle className="mr-2 text-orange-200 flex-shrink-0" size={16} />
+                  <span className="text-xs sm:text-sm">Kits diagnostic électronique</span>
                 </div>
-                <div className="flex items-center">
-                  <CheckCircle className="mr-2 text-blue-200" size={16} />
-                  <span>Simulateurs VR</span>
+                <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                  <CheckCircle className="mr-2 text-orange-200 flex-shrink-0" size={16} />
+                  <span className="text-xs sm:text-sm">Simulateurs VR</span>
                 </div>
               </div>
             </Card>
