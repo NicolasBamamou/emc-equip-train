@@ -46,14 +46,14 @@ const CourseCard: React.FC<CourseCardProps> = ({
   };
 
   return (
-    <Card className={`overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg min-h-[300px] sm:min-h-[350px] ${
+    <Card className={`overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg min-h-[320px] sm:min-h-[380px] ${
       isFeatured ? 'ring-2 ring-primary/20' : ''
     }`}>
-      <div className={`overflow-hidden ${isCompact ? 'h-32' : 'h-48 sm:h-56'}`}>
+      <div className={`overflow-hidden bg-gray-50 ${isCompact ? 'h-36' : 'h-56 sm:h-64'}`}>
         <img 
           src={course.image} 
           alt={course.title} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          className="w-full h-full object-contain transition-transform duration-500 hover:scale-105 p-2"
           loading="lazy"
         />
       </div>

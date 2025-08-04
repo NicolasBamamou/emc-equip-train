@@ -37,7 +37,7 @@ const HeroSection = () => {
             Votre Insertion Professionnelle Complète dans l'Écosystème Minier
           </h1>
           <p className="text-lg md:text-xl mb-8">
-            SIP propose 7 spécialisations certifiantes pour votre réussite professionnelle : opération d'équipements, sécurité minière, mécanique diesel, génie minier, électricité industrielle, gestion d'opérations et compétences transversales. Transformez votre carrière avec une formation complète dispensée par des experts reconnus.
+            SIP propose des spécialisations certifiantes pour votre réussite professionnelle : opération d'équipements, sécurité minière, mécanique diesel, génie minier, électricité industrielle, gestion d'opérations et compétences transversales. Transformez votre carrière avec une formation complète dispensée par des experts reconnus.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="text-md px-6">
