@@ -1136,7 +1136,7 @@ const OperationChargeusePage = () => {
               <ul className="space-y-2">
                 <li className="text-gray-400 flex items-start">
                   <MapPin className="text-orange-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                  <span>Boké Ville Zone minière, Baralande N°14, ECM 12345, Guinée</span>
+                  <span>Kindia Ville Zone minière, Baralande N°14, SIP 12345, Guinée</span>
                 </li>
               </ul>
             </div>
@@ -1146,11 +1146,11 @@ const OperationChargeusePage = () => {
               <ul className="space-y-2">
                 <li className="flex items-center text-gray-400">
                   <Phone className="mr-3 text-orange-400" size={16} />
-                  <span>(+224) 626-250-624</span>
+                  <span>(+224) 626-101-101</span>
                 </li>
                 <li className="flex items-center text-gray-400">
                   <Mail className="mr-3 text-orange-400" size={16} />
-                  <span>expertiseminingconsulting@gmail.com</span>
+                  <span>seminaireinsertionprofesionel@gmail.com</span>
                 </li>
                 <li className="flex items-center text-gray-400">
                   <Clock className="mr-3 text-orange-400" size={16} />

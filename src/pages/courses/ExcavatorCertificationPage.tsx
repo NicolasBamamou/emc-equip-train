@@ -977,7 +977,7 @@ const ExcavatorCertificationPage = () => {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <MapPin className="text-yellow-500 mr-2 mt-1" size={16} />
-                  <span>Boké Ville Zone minière, Baralande N°14, ECM 12345, Guinée</span>
+                  <span>Kindia Ville Zone minière, Baralande N°14, SIP 12345, Guinée</span>
                 </li>
               </ul>
             </div>
@@ -987,11 +987,11 @@ const ExcavatorCertificationPage = () => {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <Phone className="text-yellow-500 mr-2" size={16} />
-                  <span>(+224) 626-250-624</span>
+                  <span>(+224) 626-101-101</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="text-yellow-500 mr-2" size={16} />
-                  <span>expertiseminingconsulting@gmail.com</span>
+                  <span>seminaireinsertionprofesionel@gmail.com</span>
                 </li>
                 <li className="flex items-center">
                   <Clock className="text-yellow-500 mr-2" size={16} />

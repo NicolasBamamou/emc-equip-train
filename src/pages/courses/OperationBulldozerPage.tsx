@@ -822,7 +822,7 @@ const BulldozerCertificationPage = () => {
             <div>
               <h3 className="text-white text-lg font-bold mb-4">Centre de Formation</h3>
               <ul className="space-y-2">
-                <li><MapPin className="text-blue-400 mr-2 inline" size={16} /> Boké Ville Zone minière, Baralande N°14, ECM 12345, Guinée</li>
+                <li><MapPin className="text-blue-400 mr-2 inline" size={16} /> Kindia Ville Zone minière, Baralande N°14, SIP 12345, Guinée</li>
               </ul>
             </div>
             <div>
@@ -839,11 +839,11 @@ const BulldozerCertificationPage = () => {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <Phone className="text-blue-400 mr-2" size={16} />
-                  <span>(+224) 626-250-624</span>
+                  <span>(+224) 626-101-101</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="text-blue-400 mr-2" size={16} />
-                  <span>expertiseminingconsulting@gmail.com</span>
+                  <span>seminaireinsertionprofesionel@gmail.com</span>
                 </li>
                 <li className="flex items-center">
                   <Clock className="text-blue-400 mr-2" size={16} />
