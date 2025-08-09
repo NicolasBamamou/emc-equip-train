@@ -21,6 +21,5 @@ export default defineConfig({
   preview: {
     port: 3000,
     host: true,
-    base: '/sip-equip-train/'
-  }
+  },
 });

@@ -101,17 +101,19 @@ const ExcavatorCertificationPage = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <div className="relative">
+              <div className="relative flex flex-col items-center">
                 <img src="/sip-equip-train/images/Excavator.png" alt="Excavatrice en action" className="rounded-xl shadow-2xl"/>
-                <div className="absolute -bottom-6 -right-6 bg-white text-gray-800 p-4 rounded-xl shadow-lg">
-                  <div className="flex items-center">
-                    <div className="bg-yellow-100 p-3 rounded-full mr-3">
-                      <Award className="text-yellow-500" size={24} />
-                    </div>
-                    <div>
-                      <p className="font-bold">Certification reconnue</p>
-                      <p className="text-sm">Normes ISO/OSHA</p>
-                    </div>
+              </div>
+              
+              {/* Move the certification badge here, below the image */}
+              <div className="mt-4 flex justify-center">
+                <div className="bg-white text-gray-800 p-4 rounded-xl shadow-lg flex items-center w-full max-w-xs">
+                  <div className="bg-yellow-100 p-3 rounded-full mr-3">
+                    <Award className="text-yellow-500" size={24} />
+                  </div>
+                  <div>
+                    <p className="font-bold">Certification reconnue</p>
+                    <p className="text-sm">Normes ISO/OSHA</p>
                   </div>
                 </div>
               </div>
