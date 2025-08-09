@@ -39,6 +39,7 @@ import AutomatisationPage from './courses/AutomatisationPage';
 import OperationBulldozerPage from './courses/OperationBulldozerPage';
 import OperationChargeusePage from './courses/OperationChargeusePage';
 import OperationCamionPage from './courses/OperationCamionPage';
+import BackhoePage from './courses/BackhoePage';
 // Mining Operations Management Course Pages
 import GestionLogistiquePage from './courses/GestionLogistiquePage';
 import GestionPerformancePage from './courses/GestionPerformancePage';
@@ -155,6 +156,7 @@ const CourseDetailPage = () => {
     'bulldozer': OperationBulldozerPage, // Programme de Formation Bulldozer
     'Chargeuses': OperationChargeusePage, // Certification Opérateurs de Chargeuses (Note: Capital C as in data)
     'chargeuses': OperationChargeusePage, // Alternative lowercase
+    'backhoe': BackhoePage, // Formation d'Opérateur de Pelle Rétrocaveuse
     'camion': OperationCamionPage, // Certification d'Opérateur de camion minier
 
     // ===== MINING SAFETY & REGULATION SPECIALIZATION =====
