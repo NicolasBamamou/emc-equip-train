@@ -283,3 +283,247 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.scrollbar-hide {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Mining Truck Animation */
+.mining-truck-animation {
+  position: absolute;
+  bottom: 15%;
+  left: -30%;
+  animation: moveTruckLeft 25s linear infinite;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.mining-truck-reverse {
+  position: absolute;
+  top: 20%;
+  right: -25%;
+  animation: moveTruckRight 35s linear infinite;
+  animation-delay: 8s;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.mining-truck-distant {
+  position: absolute;
+  top: 30%;
+  left: -15%;
+  animation: moveTruckDistant 40s linear infinite;
+  animation-delay: 15s;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.mining-truck {
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 20px rgba(251, 146, 60, 0.3));
+  transform-origin: center bottom;
+}
+
+.dust-trail {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  animation: moveDust 25s linear infinite;
+}
+
+.dust-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(251, 146, 60, 0.3);
+  border-radius: 50%;
+  animation: dustFloat 1.5s ease-out infinite;
+}
+
+.truck-svg {
+  width: 120px;
+  height: 60px;
+}
+
+.exhaust-smoke {
+  animation: smokeFloat 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+/* Wheel rotation */
+.wheel {
+  animation: wheelRotate 0.5s linear infinite;
+  transform-origin: center;
+}
+
+/* Headlight glow */
+.headlight {
+  animation: headlightGlow 3s ease-in-out infinite;
+}
+
+@keyframes moveTruckLeft {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes moveTruckRight {
+  0% {
+    right: -25%;
+  }
+  100% {
+    right: 120%;
+  }
+}
+
+@keyframes moveTruckDistant {
+  0% {
+    left: -15%;
+  }
+  100% {
+    left: 115%;
+  }
+}
+
+/* Enhanced Dust Trail Animations */
+.dust-trail {
+  position: absolute;
+  bottom: -5px;
+  left: -150px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dust-trail-reverse {
+  position: absolute;
+  bottom: -5px;
+  right: -120px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@keyframes dustFloat {
+  0% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.3);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-40px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes dustFloatReverse {
+  0% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-15px) scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-30px) scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes smokeFloat {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(-10px, -15px) scale(1.3);
+    opacity: 0.1;
+  }
+}
+
+@keyframes wheelRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes headlightGlow {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #FFD700);
+  }
+  50% {
+    opacity: 0.7;
+    filter: drop-shadow(0 0 10px #FFD700);
+  }
+}
+
+/* Responsive truck size */
+@media (max-width: 768px) {
+  .truck-svg {
+    width: 90px;
+    height: 45px;
+  }
+  
+  /* Mobile responsive adjustments for mining trucks */
+  .mining-truck-animation {
+    bottom: 10%;
+    left: -40%;
+    animation: moveTruckLeftMobile 20s linear infinite;
+  }
+  
+  .mining-truck-reverse {
+    top: 25%;
+    right: -35%;
+    animation: moveTruckRightMobile 30s linear infinite;
+  }
+  
+  .mining-truck-distant {
+    top: 35%;
+    left: -25%;
+    animation: moveTruckDistantMobile 35s linear infinite;
+  }
+  
+  @keyframes moveTruckLeftMobile {
+    0% { left: -40%; }
+    100% { left: 130%; }
+  }
+  
+  @keyframes moveTruckRightMobile {
+    0% { right: -35%; }
+    100% { right: 130%; }
+  }
+  
+  @keyframes moveTruckDistantMobile {
+    0% { left: -25%; }
+    100% { left: 125%; }
+  }
+}
+
+@media (max-width: 480px) {
+  .truck-svg {
+    width: 70px;
+    height: 35px;
+  }
+  
+  .mining-truck-animation {
+    height: 60px;
+    bottom: 20%;
+  }
+}
